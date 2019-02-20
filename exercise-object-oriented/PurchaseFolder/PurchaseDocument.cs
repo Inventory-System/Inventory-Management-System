@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace exercise_object_oriented
 {
-    class PurchaseDocument : Document<PurchaseProductDocument>
+    public class PurchaseDocument : Document<PurchaseProductDocument>
          
     {
         public  PurchaseDocument()
@@ -18,7 +18,7 @@ namespace exercise_object_oriented
       }
 
         public DateTime purchaseDate { get; set; }
-        Party supplier;
+       // Party supplier;
 
     }
 }
