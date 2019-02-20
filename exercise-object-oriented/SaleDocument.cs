@@ -8,6 +8,11 @@ namespace exercise_object_oriented
 {
     class SaleDocument:Document<SaleProductDocument>
     {
-
+        public SaleDocument()
+        {
+            SaleDate = DateTime.Now;
+        }
+        public DateTime SaleDate { get; set; }
+        Party customer;
     }
 }
