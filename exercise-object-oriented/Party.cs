@@ -22,10 +22,6 @@ namespace exercise_object_oriented
             posiontion = Position.None;
         }
 
-        public override Guid id
-        {
-            get { return new Guid(); }
-        }
         public int registrationNumber { get; set; }
         public DateTime registrationDate { get; set; }
         public string city { get; set; }

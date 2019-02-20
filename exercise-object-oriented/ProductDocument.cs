@@ -8,10 +8,6 @@ namespace exercise_object_oriented
 {
     public abstract class ProductDocument : BaseClass
     {
-        public override Guid id
-        {
-            get { return new Guid(); }
-        }
 
         public ProductDocument()
         {

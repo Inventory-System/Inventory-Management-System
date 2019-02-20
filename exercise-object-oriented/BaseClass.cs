@@ -8,7 +8,10 @@ namespace exercise_object_oriented
 {
      public abstract class BaseClass
     {
-        public abstract Guid id { get; }
+         public Guid id
+         {
+             get { return new Guid(); }
+         }
         public int code { get; set; }
     }
 }

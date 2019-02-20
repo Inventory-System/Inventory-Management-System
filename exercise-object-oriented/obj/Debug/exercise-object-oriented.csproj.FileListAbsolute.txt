@@ -8,3 +8,9 @@ C:\Users\t.safari\Documents\Visual Studio 2013\Projects\exercise-object-oriented
 C:\Users\t.safari\Documents\Visual Studio 2013\Projects\exercise-object-oriented\Inventory-Manegement-System\exercise-object-oriented\obj\Debug\exercise-object-oriented.exe
 C:\Users\t.safari\Documents\Visual Studio 2013\Projects\exercise-object-oriented\Inventory-Manegement-System\exercise-object-oriented\obj\Debug\exercise-object-oriented.pdb
 C:\Users\t.safari\Documents\Visual Studio 2013\Projects\exercise-object-oriented\Inventory-Manegement-System\exercise-object-oriented\obj\Debug\exercise-object-oriented.csprojResolveAssemblyReference.cache
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\exercise-object-oriented\bin\Debug\exercise-object-oriented.exe.config
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\exercise-object-oriented\obj\Debug\exercise-object-oriented.exe
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\exercise-object-oriented\obj\Debug\exercise-object-oriented.pdb
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\exercise-object-oriented\obj\Debug\exercise-object-oriented.csprojResolveAssemblyReference.cache
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\exercise-object-oriented\bin\Debug\exercise-object-oriented.exe
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\exercise-object-oriented\bin\Debug\exercise-object-oriented.pdb
