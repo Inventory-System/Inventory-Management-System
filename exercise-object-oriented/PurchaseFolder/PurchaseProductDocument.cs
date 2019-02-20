@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace exercise_object_oriented.PurchaseFolder
 {
-    class PurchaseProductDocument: ProductDocument<PurchaseDocument>
+    public class PurchaseProductDocument: ProductDocument<PurchaseDocument>
     {
+        Party supplier;
     }
 }
