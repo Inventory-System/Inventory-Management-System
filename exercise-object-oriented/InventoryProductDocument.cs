@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace exercise_object_oriented
 {
-    public class InventoryPorodactDocument:ProductDocument<InventoryDocument>
+    public class InventoryProductDocument:ProductDocument<InventoryDocument>
     {
         public DateTime EpxDate { set; get; }
         public DateTime DateIn { set; get; }
