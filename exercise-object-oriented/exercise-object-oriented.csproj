@@ -44,6 +44,8 @@
     <Compile Include="BaseClass.cs" />
     <Compile Include="Company.cs" />
     <Compile Include="Document.cs" />
+    <Compile Include="InventoryDocument.cs" />
+    <Compile Include="InventoryProductDocument.cs" />
     <Compile Include="Party.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Invoice.cs" />
