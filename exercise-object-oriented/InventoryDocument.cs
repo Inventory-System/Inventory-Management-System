@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace exercise_object_oriented
 {
-        public class InventoryDocument : Document<InventoryPorodactDocument>
+        public class InventoryDocument : Document<InventoryProductDocument>
         {
             public string InventoryName { set; get; }
             public string InventoryCod { set; get; }
