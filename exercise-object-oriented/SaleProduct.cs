@@ -9,7 +9,7 @@ namespace exercise_object_oriented
     class SaleProductDocument:ProductDocument<SaleDocument>
     {
         Party party;
-        DateTime datetime();
+        DateTime datetime;
         
     }
 }

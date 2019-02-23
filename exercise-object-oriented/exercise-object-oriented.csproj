@@ -56,6 +56,8 @@
     <Compile Include="Measurement.cs" />
     <Compile Include="PurchaseFolder\PurchaseDocument.cs" />
     <Compile Include="PurchaseFolder\PurchaseProductDocument.cs" />
+    <Compile Include="SaleDocument.cs" />
+    <Compile Include="SaleProduct.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
