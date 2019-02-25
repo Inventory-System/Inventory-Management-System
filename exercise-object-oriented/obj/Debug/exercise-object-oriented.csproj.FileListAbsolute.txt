@@ -20,3 +20,6 @@ C:\Users\p.pazhoheshi\Desktop\Inventory-Management-System\exercise-object-orient
 C:\Users\p.pazhoheshi\Desktop\Inventory-Management-System\exercise-object-oriented\obj\Debug\exercise-object-oriented.csprojResolveAssemblyReference.cache
 C:\Users\p.pazhoheshi\Desktop\Inventory-Management-System\exercise-object-oriented\bin\Debug\exercise-object-oriented.exe
 C:\Users\p.pazhoheshi\Desktop\Inventory-Management-System\exercise-object-oriented\bin\Debug\exercise-object-oriented.pdb
+C:\Users\h.moradi\Documents\Visual Studio 2013\Projects\system\Inventory-Management-System\exercise-object-oriented\bin\Debug\exercise-object-oriented.exe.config
+C:\Users\h.moradi\Documents\Visual Studio 2013\Projects\system\Inventory-Management-System\exercise-object-oriented\obj\Debug\exercise-object-oriented.exe
+C:\Users\h.moradi\Documents\Visual Studio 2013\Projects\system\Inventory-Management-System\exercise-object-oriented\obj\Debug\exercise-object-oriented.pdb
