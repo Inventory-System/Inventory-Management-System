@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{854F3FEF-1BC8-4FC1-8CF0-9D689AED8A61}</ProjectGuid>
+    <ProjectGuid>{FA6D72A3-8AE6-4D19-9F79-F9845558ABCA}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>exercise_object_oriented</RootNamespace>
-    <AssemblyName>exercise-object-oriented</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>Sale</RootNamespace>
+    <AssemblyName>Sale</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -41,30 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseClass.cs" />
-    <Compile Include="Company.cs" />
-    <Compile Include="Document.cs" />
-    <Compile Include="InventoryDocument.cs" />
-    <Compile Include="InventoryProductDocument.cs" />
-    <Compile Include="Party.cs" />
-    <Compile Include="Person.cs" />
-    <Compile Include="Invoice.cs" />
-    <Compile Include="Product.cs" />
-    <Compile Include="ProductDocument.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Measurement.cs" />
-    <Compile Include="PurchaseFolder\PurchaseDocument.cs" />
-    <Compile Include="PurchaseFolder\PurchaseProductDocument.cs" />
-    <Compile Include="SaleDocument.cs" />
-    <Compile Include="SaleProductDocument.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\exercise-object-oriented\exercise-object-oriented.csproj">
+      <Project>{854f3fef-1bc8-4fc1-8cf0-9d689aed8a61}</Project>
+      <Name>exercise-object-oriented</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

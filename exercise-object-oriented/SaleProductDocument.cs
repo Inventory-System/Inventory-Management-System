@@ -10,6 +10,8 @@ namespace exercise_object_oriented
     {
         Party party;
         DateTime datetime;
+
+
         
     }
 }
