@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace exercise_object_oriented
 {
-    class SaleDocument:Document<SaleProductDocument>
+  public  class SaleDocument:Document<SaleProductDocument>
     {
         public SaleDocument()
         {

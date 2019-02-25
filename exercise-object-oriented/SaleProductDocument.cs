@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace exercise_object_oriented
 {
-    class SaleProductDocument:ProductDocument<SaleDocument>
+  public  class SaleProductDocument:ProductDocument<SaleDocument>
     {
         Party party;
         DateTime datetime;

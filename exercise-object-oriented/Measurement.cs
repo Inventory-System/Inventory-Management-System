@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace exercise_object_oriented
 {
-    class Measurement:BaseClass
+  public  class Measurement:BaseClass
     {
         public string  Name { get; set; }
     }

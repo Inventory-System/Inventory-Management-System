@@ -15,7 +15,7 @@ namespace exercise_object_oriented
         Employee = 0x4
     }
    
-    class Party:BaseClass
+  public  class Party:BaseClass
     {
         public Party() 
         {

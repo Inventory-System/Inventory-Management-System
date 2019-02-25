@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace exercise_object_oriented
 {
-    class Person:Party
+  public  class Person:Party
     {
         public string firstName { get; set; }
         public string lastName { get; set; }
