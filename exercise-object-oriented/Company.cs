@@ -8,7 +8,7 @@ namespace exercise_object_oriented
 {
    public class Company:Party
     {
-        public string companyName{ get; set; }
-        public string jobTitle { get; set; }
+        public string CompanyName{ get; set; }
+        public string JobTitle { get; set; }
     }
 }
