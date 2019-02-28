@@ -12,6 +12,6 @@ namespace exercise_object_oriented
          {
              get { return new Guid(); }
          }
-        public int code { get; set; }
+        public int Code { get; set; }
     }
 }
