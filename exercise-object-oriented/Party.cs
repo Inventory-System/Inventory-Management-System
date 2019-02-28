@@ -22,11 +22,11 @@ namespace exercise_object_oriented
             posiontion = Position.None;
         }
 
-        public int registrationNumber { get; set; }
-        public DateTime registrationDate { get; set; }
-        public string city { get; set; }
-        public string address { get; set; }
-        public int phoneNumber { get; set; }
+        public int RegistrationNumber { get; set; }
+        public DateTime RegistrationDate { get; set; }
+        public string City { get; set; }
+        public string Address { get; set; }
+        public int PhoneNumber { get; set; }
         public Position posiontion { get; set; }
     }
 }

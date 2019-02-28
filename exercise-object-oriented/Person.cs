@@ -8,9 +8,9 @@ namespace exercise_object_oriented
 {
   public  class Person:Party
     {
-        public string firstName { get; set; }
-        public string lastName { get; set; }
-        public string emailAddress { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string EmailAddress { get; set; }
 
 
     }

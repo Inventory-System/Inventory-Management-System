@@ -10,20 +10,20 @@ namespace exercise_object_oriented
     {
         public Document()
         {
-            createDate = DateTime.Now;
+            CreateDate = DateTime.Now;
         }
 
-        public DateTime createDate { get; set; }
-        public int codeDocument { get; set; }
+        public DateTime CreateDate { get; set; }
+        public int CodeDocument { get; set; }
     }
 
 
     public abstract class Document<T> : Document where T : ProductDocument
     {
-        public List<T> documentsList { get; set; }
+        public List<T> DocumentsList { get; set; }
         public void Add(T TproductDoc)
         {
-            documentsList.Add(TproductDoc);
+            DocumentsList.Add(TproductDoc);
         }
 
 

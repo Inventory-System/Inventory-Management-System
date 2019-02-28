@@ -19,8 +19,8 @@ namespace exercise_object_oriented
         public int piece { get; set; }
 
         //   public int totalPrice{ get; set; }
-        public int profit { get; set; }
-        public int sellingPrice { get; set; }
+        public int Profit { get; set; }
+        public int SellingPrice { get; set; }
         public Product product { get; set; }
         private Guid productId;
     }
@@ -28,9 +28,5 @@ namespace exercise_object_oriented
     {
         public T TDocument;
 
-       // public void Insert( T value) 
-       // {
-       //     document.Add(value);
-       // } 
     }
 }
