@@ -14,10 +14,10 @@ namespace exercise_object_oriented
         {
            // supplier.posiontion = Position.Supplier;
            // employee.posiontion = Position.Employee;
-            purchaseDate = DateTime.Now;
+            PurchaseDate = DateTime.Now;
       }
 
-        public DateTime purchaseDate { get; set; }
+        public DateTime PurchaseDate { get; set; }
        // Party supplier;
 
     }

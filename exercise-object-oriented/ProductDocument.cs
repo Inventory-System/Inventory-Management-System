@@ -12,11 +12,11 @@ namespace exercise_object_oriented
         public ProductDocument()
         {
             // totalPrice = piece * orginalPrice;
-            productId = product.id;
+            productId = product.Id;
         }
 
-        public int orginalPrice { get; set; }
-        public int piece { get; set; }
+        public int OrginalPrice { get; set; }
+        public int Piece { get; set; }
 
         //   public int totalPrice{ get; set; }
         public int Profit { get; set; }

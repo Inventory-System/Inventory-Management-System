@@ -9,10 +9,10 @@ namespace exercise_object_oriented
     public class Product:BaseClass
     {
         public Product() {
-            measurementId = measuerment.id;
+            MeasurementId = measuerment.Id;
         }
-        public string name { get; set; }
+        public string Name { get; set; }
         Measurement measuerment;
-        public Guid measurementId { get; set; }
+        public Guid MeasurementId { get; set; }
     }
 }
