@@ -12,21 +12,21 @@ namespace exercise_object_oriented
         public ProductDocument()
         {
             // totalPrice = piece * orginalPrice;
-            productId = product.Id;
         }
-
-        public int OrginalPrice { get; set; }
-        public int Piece { get; set; }
+        public virtual int OrginalPrice { get; set; }
+        public virtual int Piece { get; set; }
 
         //   public int totalPrice{ get; set; }
-        public int Profit { get; set; }
-        public int SellingPrice { get; set; }
-        public Product product { get; set; }
-        private Guid productId;
+        public virtual int Profit { get; set; }
+        public virtual int SellingPrice { get; set; }
+        public virtual Product product { get; set; }
+
+      
+       // public virtual Document docuemnt { get; set; }
     }
     public  abstract class ProductDocument<T> :ProductDocument where T: Document
     {
-        public T TDocument;
+        public T document;
 
     }
 }

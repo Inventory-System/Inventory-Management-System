@@ -8,6 +8,6 @@ namespace exercise_object_oriented
 {
   public  class Measurement:BaseClass
     {
-        public string  Name { get; set; }
+        public virtual string  Name { get; set; }
     }
 }

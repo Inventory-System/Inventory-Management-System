@@ -12,20 +12,20 @@ namespace exercise_object_oriented
         {
             CreateDate = DateTime.Now;
         }
-
-        public DateTime CreateDate { get; set; }
-        public int CodeDocument { get; set; }
+     //   public virtual List<ProductDocument> ProductDocuments { get; set; }
+        public virtual DateTime CreateDate { get; set; }
+        //public virtual int CodeDocument { get; set; }
     }
 
 
     public abstract class Document<T> : Document where T : ProductDocument
     {
-        public List<T> DocumentsList { get; set; }
-        public void Add(T TproductDoc)
+        public virtual List<T> ProductDocumentsList { get; set; }
+        public  virtual void Add(T TproductDoc)
         {
-            DocumentsList.Add(TproductDoc);
+            ProductDocumentsList.Add(TproductDoc);
         }
-
+ 
 
     }
 }
