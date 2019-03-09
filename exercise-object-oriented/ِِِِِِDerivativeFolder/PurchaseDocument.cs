@@ -12,13 +12,12 @@ namespace exercise_object_oriented
     {
         public  PurchaseDocument()
         {
-           // supplier.posiontion = Position.Supplier;
-           // employee.posiontion = Position.Employee;
+         
+            //party.posiontion = Position.Supplier;
             PurchaseDate = DateTime.Now;
       }
 
         public DateTime PurchaseDate { get; set; }
-       // Party supplier;
 
     }
 }

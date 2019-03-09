@@ -8,10 +8,6 @@ namespace exercise_object_oriented.PurchaseFolder
 {
     public class PurchaseProductDocument: ProductDocument<PurchaseDocument>
     {
-        Party supplier;
-        public PurchaseProductDocument() 
-        {
-            supplier.posiontion = Position.Supplier;
-        }
+
     }
 }

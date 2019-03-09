@@ -8,7 +8,6 @@ namespace exercise_object_oriented
 {
   public  class SaleProductDocument:ProductDocument<SaleDocument>
     {
-        Party party;
         DateTime datetime;
 
 

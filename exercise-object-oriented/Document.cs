@@ -12,9 +12,8 @@ namespace exercise_object_oriented
         {
             CreateDate = DateTime.Now;
         }
-     //   public virtual List<ProductDocument> ProductDocuments { get; set; }
         public virtual DateTime CreateDate { get; set; }
-        //public virtual int CodeDocument { get; set; }
+        public virtual Party party { get; set; }
     }
 
 
