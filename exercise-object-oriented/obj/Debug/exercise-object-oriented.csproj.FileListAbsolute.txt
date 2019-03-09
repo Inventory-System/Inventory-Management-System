@@ -62,3 +62,6 @@ C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management
 C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System2\exercise-object-oriented\bin\Debug\SharpArch.NHibernate.pdb
 C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System2\exercise-object-oriented\bin\Debug\SharpArch.NHibernate.xml
 C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System2\exercise-object-oriented\obj\Debug\exercise-object-oriented.csprojResolveAssemblyReference.cache
+C:\Users\p.pazhoheshi\Desktop\1\Inventory-Management-System\exercise-object-oriented\bin\Debug\exercise-object-oriented.exe.config
+C:\Users\p.pazhoheshi\Desktop\1\Inventory-Management-System\exercise-object-oriented\obj\Debug\exercise-object-oriented.exe
+C:\Users\p.pazhoheshi\Desktop\1\Inventory-Management-System\exercise-object-oriented\obj\Debug\exercise-object-oriented.pdb
