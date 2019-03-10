@@ -68,12 +68,14 @@
   <ItemGroup>
     <Compile Include="BaseClass.cs" />
     <Compile Include="Company.cs" />
+    <Compile Include="Conventions\MyIdConvention.cs" />
+    <Compile Include="Conventions\MyPropertyConvention.cs" />
     <Compile Include="Document.cs" />
-    <Compile Include="FNHFolder\DocumentMap.cs" />
-    <Compile Include="FNHFolder\FluentNHibernateHelper.cs" />
-    <Compile Include="FNHFolder\MeasurementMap.cs" />
-    <Compile Include="FNHFolder\ProductDocumentMap.cs" />
-    <Compile Include="FNHFolder\ProductMap.cs" />
+    <Compile Include="FNHClass\DocumentMap.cs" />
+    <Compile Include="FNHClass\FluentNHibernateHelper.cs" />
+    <Compile Include="FNHClass\MeasurementMap.cs" />
+    <Compile Include="FNHClass\ProductDocumentMap.cs" />
+    <Compile Include="FNHClass\ProductMap.cs" />
     <Compile Include="Party.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Product.cs" />
@@ -81,12 +83,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Measurement.cs" />
-    <Compile Include="ِِِِِِDerivativeFolder\InventoryDocument.cs" />
-    <Compile Include="ِِِِِِDerivativeFolder\InventoryProductDocument.cs" />
-    <Compile Include="ِِِِِِDerivativeFolder\PurchaseDocument.cs" />
-    <Compile Include="ِِِِِِDerivativeFolder\PurchaseProductDocument.cs" />
-    <Compile Include="ِِِِِِDerivativeFolder\SaleDocument.cs" />
-    <Compile Include="ِِِِِِDerivativeFolder\SaleProductDocument.cs" />
+    <Compile Include="DerivativeClass\InventoryDocument.cs" />
+    <Compile Include="DerivativeClass\InventoryProductDocument.cs" />
+    <Compile Include="DerivativeClass\PurchaseDocument.cs" />
+    <Compile Include="DerivativeClass\PurchaseProductDocument.cs" />
+    <Compile Include="DerivativeClass\SaleDocument.cs" />
+    <Compile Include="DerivativeClass\SaleProductDocument.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

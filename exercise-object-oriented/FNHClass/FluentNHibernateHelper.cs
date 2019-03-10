@@ -10,6 +10,7 @@ using FluentNHibernate;
 using FluentNHibernate.Automapping;
 using FluentNHibernate.Cfg.Db;
 using NHibernate.Tool.hbm2ddl;
+using exercise_object_oriented.Conventions;
 
 namespace exercise_object_oriented.FNHFolder
 {
@@ -40,22 +41,9 @@ namespace exercise_object_oriented.FNHFolder
                 return _sessionFactory;
             }
         }
-        //private static  string connectionString = "Data Source=T-SAFARI;Initial Catalog=SecTestDB;User ID=sa;Password=s@123456";
         private static ISessionFactory CreatSessionFactory() 
         {
-            string ConnectionString = "Data Source=.;Initial Catalog=Fars04112017 ;User ID=sa;Password=sa123";
-          //  var fluentConfiguration = Fluently.Configure().Database(MsSqlConfiguration.MsSql2012.ConnectionString(ConnectionString).ShowSql());
-            //var configuration = fluentConfiguration.Mappings(m => m.FluentMappings.AddFromAssemblyOf<Program>());
-            //var configuration = fluentConfiguration.Mappings(m => m.FluentMappings.AddFromAssembly(typeof(Program).Assembly).Conventions.Add(typeof(MyIdConvention)));
-            //_sessionFactory = configuration
-            //    .ExposeConfiguration(cfg => new SchemaExport(cfg).Create(true, true))
-            //    .BuildSessionFactory();
-           
-            //var connectionStringSettings = System.Configuration.ConfigurationManager.ConnectionStrings["DefaultConnection"];
-            //if (connectionStringSettings != null)
-            //{
-            //    connectionString = connectionStringSettings.ConnectionString;
-            //}
+            string ConnectionString = "Data Source=T-SAFARI;Initial Catalog=SecTestDB;User ID=sa;Password=s@123456";
 
             var cfgi = new StoreConfiguration();
 
@@ -67,7 +55,7 @@ namespace exercise_object_oriented.FNHFolder
             var configuration =
                 fluentConfiguration.Mappings(m => m.AutoMappings.Add(AutoMap.AssemblyOf<Person>(cfgi).
                     UseOverridesFromAssemblyOf<ProductDocumentMap>().Conventions.Add(typeof(MyIdConvention))));
-            var buildSessionFactory = configuration.ExposeConfiguration(cfg =>
+           _sessionFactory = configuration.ExposeConfiguration(cfg =>
                 {
                     new SchemaUpdate(cfg).Execute(false, false);
                     new SchemaExport(cfg)
