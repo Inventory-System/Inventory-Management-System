@@ -15,9 +15,7 @@ namespace exercise_object_oriented.Conventions
             if (instance.Name == "Name")
             {
                 instance.Not.Nullable();
-                if (instance.EntityType == typeof(Measurement))
-                    instance.Length(20);
-                else if (instance.EntityType == typeof(Product))
+                if (instance.EntityType == typeof(Product))
                     instance.Length(50);
             }
             if (instance.Name == "RegistrationNumber" || instance.Name == "PhoneNumber")

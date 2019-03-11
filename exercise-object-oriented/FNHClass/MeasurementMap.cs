@@ -5,14 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 using FluentNHibernate.Mapping;
+using FluentNHibernate.Automapping.Alterations;
 
 namespace exercise_object_oriented.Mapping
 {
-    class MeasurementMap:ClassMap<Measurement>
+    class MeasurementMap:IAutoMappingOverride<Measurement>
     {
-        public MeasurementMap()
+        public void Override(FluentNHibernate.Automapping.AutoMapping<Measurement> mapping)
         {
-            Map(x => x.Name);
+            mapping.Map(x => x.Name).Length(20).Not.Nullable();
         }
     }
 }
