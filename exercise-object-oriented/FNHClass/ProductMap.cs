@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FluentNHibernate.Mapping;
+using FluentNHibernate.Automapping.Alterations;
 
 namespace exercise_object_oriented.Mapping
 {
-    class ProductMap: ClassMap<Product>
+    public class ProductMap : IAutoMappingOverride<Product>
     {
-        public ProductMap() 
+        public void Override(FluentNHibernate.Automapping.AutoMapping<Product> mapping)
         {
-            Map( x => x.Name );
-            References(x => x.measuerment);
+            mapping.Map(x => x.Name).Not.Nullable().Length(50);
+            mapping.References(x => x.measuerment).Not.Nullable();
         }
-        
     }
 }
