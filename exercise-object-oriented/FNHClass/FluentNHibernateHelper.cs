@@ -54,7 +54,7 @@ namespace exercise_object_oriented.FNHFolder
                 );
             var configuration =
                 fluentConfiguration.Mappings(m => m.AutoMappings.Add(AutoMap.AssemblyOf<Person>(cfgi).
-                    UseOverridesFromAssemblyOf<ProductDocumentMap>().Conventions.Add(typeof(MyIdConvention))));
+                    UseOverridesFromAssemblyOf<ProductDocumentMap>().Conventions.Add(typeof(CustomIdConvention))));
            _sessionFactory = configuration.ExposeConfiguration(cfg =>
                 {
                     new SchemaUpdate(cfg).Execute(false, false);
