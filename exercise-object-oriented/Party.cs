@@ -24,7 +24,6 @@ namespace exercise_object_oriented
 
         public virtual int RegistrationNumber { get; set; }
         public virtual DateTime RegistrationDate { get; set; }
-        public virtual string City { get; set; }
         public virtual string Address { get; set; }
         public virtual int PhoneNumber { get; set; }
         public virtual string EmailAddress { get; set; }
