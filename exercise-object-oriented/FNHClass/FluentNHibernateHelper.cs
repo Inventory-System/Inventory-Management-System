@@ -43,7 +43,7 @@ namespace exercise_object_oriented.FNHFolder
         }
         private static ISessionFactory CreatSessionFactory() 
         {
-            string ConnectionString = "Data Source=T-SAFARI;Initial Catalog=SecTestDB;User ID=sa;Password=s@123456";
+            string ConnectionString = "Data Source=T-SAFARI;Initial Catalog=InheritanchTestDB;User ID=sa;Password=s@123456";
 
             var cfgi = new StoreConfiguration();
 
