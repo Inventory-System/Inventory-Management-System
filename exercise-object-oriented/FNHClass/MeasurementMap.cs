@@ -12,8 +12,6 @@ namespace exercise_object_oriented.Mapping
     {
         public MeasurementMap()
         {
-            Id(x => x.Id);
-            Map(x => x.Code);
             Map(x => x.Name);
         }
     }

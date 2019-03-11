@@ -11,8 +11,6 @@ namespace exercise_object_oriented.Mapping
     {
         public ProductMap() 
         {
-            Id( x => x.Id );
-            Map( x => x.Code );
             Map( x => x.Name );
             References(x => x.measuerment);
         }

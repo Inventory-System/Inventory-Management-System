@@ -13,8 +13,6 @@ namespace exercise_object_oriented.FNHFolder
     {
         public ProductDocumentMap()
         {
-            Id(x => x.Id);
-            Map(x => x.Code);
             Map(x => x.OrginalPrice);
             Map(x => x.Piece);
             Map(x => x.Profit);
