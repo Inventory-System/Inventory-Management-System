@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace exercise_object_oriented.Conventions
 {
-    class MyPropertyConvention
+    class CustomPropertyConvention
     {
         public void Apply(IPropertyInstance instance)
         {

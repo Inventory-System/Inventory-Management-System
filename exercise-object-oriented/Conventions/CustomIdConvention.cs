@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace exercise_object_oriented.Conventions
 {
-    public class MyIdConvention : IIdConvention
+    public class CustomIdConvention : IIdConvention
     {
         public void Apply(IIdentityInstance instanse)
         {
