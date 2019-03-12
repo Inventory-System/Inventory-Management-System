@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{854F3FEF-1BC8-4FC1-8CF0-9D689AED8A61}</ProjectGuid>
+    <ProjectGuid>{37F07211-EBF6-4C7C-A68F-204FD066E501}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>exercise_object_oriented</RootNamespace>
-    <AssemblyName>exercise-object-oriented</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>Purchase</RootNamespace>
+    <AssemblyName>Purchase</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -66,26 +67,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseClass.cs" />
-    <Compile Include="Company.cs" />
-    <Compile Include="Conventions\CustomIdConvention.cs" />
-    <Compile Include="Conventions\CustomPropertyConvention.cs" />
-    <Compile Include="Document.cs" />
-    <Compile Include="Party.cs" />
-    <Compile Include="Person.cs" />
-    <Compile Include="Product.cs" />
-    <Compile Include="ProductDocument.cs" />
+    <Compile Include="DocumentMap.cs" />
+    <Compile Include="FluentNHibernateHelper.cs" />
+    <Compile Include="MeasurementMap.cs" />
+    <Compile Include="ProductDocumentMap.cs" />
+    <Compile Include="ProductMap.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Measurement.cs" />
+    <Compile Include="PurchaseDocument.cs" />
+    <Compile Include="PurchaseProductDocument.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\exercise-object-oriented\exercise-object-oriented.csproj">
+      <Project>{854f3fef-1bc8-4fc1-8cf0-9d689aed8a61}</Project>
+      <Name>exercise-object-oriented</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

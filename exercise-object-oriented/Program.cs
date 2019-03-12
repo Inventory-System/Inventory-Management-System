@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using FluentNHibernate;
-using exercise_object_oriented.FNHFolder;
+using exercise_object_oriented;
 
 namespace exercise_object_oriented
 {
