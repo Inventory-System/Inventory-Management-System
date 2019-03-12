@@ -50,7 +50,7 @@ namespace Inventory.HelperClass
                     .ShowSql()
                 );
             var configuration =
-                fluentConfiguration.Mappings(m => m.AutoMappings.Add(AutoMap.AssemblyOf<Person>(cfgi).
+                fluentConfiguration.Mappings(m => m.AutoMappings.Add(AutoMap.AssemblyOf<InventoryDocument>(cfgi).
                     UseOverridesFromAssemblyOf<InventoryDocument>().Conventions.Add(typeof(InventoryDocument))));
             var buildSessionFactory = configuration.ExposeConfiguration(cfg =>
                 {
