@@ -11,6 +11,7 @@ using FluentNHibernate.Automapping;
 using FluentNHibernate.Cfg.Db;
 using NHibernate.Tool.hbm2ddl;
 using exercise_object_oriented.Conventions;
+using exercise_object_oriented.FNHClass;
 
 
 namespace exercise_object_oriented.FNHFolder
@@ -19,14 +20,11 @@ namespace exercise_object_oriented.FNHFolder
     {
         public override bool ShouldMap(Type type)
         {
-
-            if ( (type.BaseType != null && type.BaseType == typeof(BaseClass) ) || type.BaseType == typeof(Party))
+            if(type.IsSubclassOf(typeof(BaseClass)))
             {
                 return true;
             }
-
             return false;
-
         }
     }
     public class FluentNHibernateHelper
@@ -55,6 +53,7 @@ namespace exercise_object_oriented.FNHFolder
                 );
             var configuration =
                 fluentConfiguration.Mappings(m => m.AutoMappings.Add(AutoMap.AssemblyOf<Person>(cfgi).
+                    IgnoreBase<Party>().
                     UseOverridesFromAssemblyOf<ProductDocumentMap>().Conventions.Add(typeof(CustomIdConvention))));
            _sessionFactory = configuration.ExposeConfiguration(cfg =>
                 {
