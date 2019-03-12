@@ -51,7 +51,7 @@ namespace Inventory.HelperClass
                 );
             var configuration =
                 fluentConfiguration.Mappings(m => m.AutoMappings.Add(AutoMap.AssemblyOf<InventoryDocument>(cfgi).
-                    UseOverridesFromAssemblyOf<InventoryDocument>().Conventions.Add(typeof(InventoryDocument))));
+                    UseOverridesFromAssemblyOf<InventoryDocument>().Conventions.Add(typeof(BasseIdConvention))));
             var buildSessionFactory = configuration.ExposeConfiguration(cfg =>
                 {
                     new SchemaUpdate(cfg).Execute(false, false);
