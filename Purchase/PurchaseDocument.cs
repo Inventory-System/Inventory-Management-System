@@ -17,7 +17,7 @@ namespace exercise_object_oriented
             PurchaseDate = DateTime.Now;
       }
 
-        public DateTime PurchaseDate { get; set; }
+        public virtual DateTime PurchaseDate { get; set; }
 
     }
 }

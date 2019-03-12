@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace exercise_object_oriented.FNHClass
 {
-    class CompanyMap:IAutoMappingOverride<Company>
+    public class CompanyMap:IAutoMappingOverride<Company>
     {
         public void Override(FluentNHibernate.Automapping.AutoMapping<Company> mapping)
         {

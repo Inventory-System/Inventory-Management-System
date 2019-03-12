@@ -22,7 +22,7 @@ namespace exercise_object_oriented
     }
     public  abstract class ProductDocument<T> :ProductDocument where T: Document
     {
-        public T document;
+        public virtual T document { get; set; }
 
     }
 }

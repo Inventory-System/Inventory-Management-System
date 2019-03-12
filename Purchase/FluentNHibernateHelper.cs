@@ -19,14 +19,11 @@ namespace exercise_object_oriented.FNHFolder
     {
         public override bool ShouldMap(Type type)
         {
-
-            if (type.BaseType != null && type.BaseType == typeof(BaseClass))
+            if (type.IsSubclassOf(typeof(BaseClass)))
             {
                 return true;
             }
-
             return false;
-
         }
     }
     public class FluentNHibernateHelper
@@ -42,9 +39,9 @@ namespace exercise_object_oriented.FNHFolder
                 return _sessionFactory;
             }
         }
-        public static ISessionFactory CreatSessionFactory() 
+        public static ISessionFactory CreatSessionFactory()
         {
-            string ConnectionString = "Data Source=T-SAFARI;Initial Catalog=InheritanchTestDB;User ID=sa;Password=s@123456";
+            string ConnectionString = "Data Source=T-SAFARI;Initial Catalog=testInventoryDB;User ID=sa;Password=s@123456";
 
             var cfgi = new StoreConfiguration();
 
@@ -54,15 +51,16 @@ namespace exercise_object_oriented.FNHFolder
                     .ShowSql()
                 );
             var configuration =
-                fluentConfiguration.Mappings(m => m.AutoMappings.Add(AutoMap.AssemblyOf<Person>(cfgi).
-                    UseOverridesFromAssemblyOf<ProductDocumentMap>().Conventions.Add(typeof(CustomIdConvention))));
-           _sessionFactory = configuration.ExposeConfiguration(cfg =>
-                {
-                    new SchemaUpdate(cfg).Execute(false, false);
-                    new SchemaExport(cfg)
-                        .Create(true, true);
-                })
-                .BuildSessionFactory();
+                fluentConfiguration.Mappings(m => m.AutoMappings.Add(AutoMap.AssemblyOf<BaseClass>(cfgi).
+                  //  IgnoreBase<Party>().
+                    UseOverridesFromAssemblyOf<BaseClass>().Conventions.Add(typeof(CustomIdConvention))).
+                    Add(AutoMap.AssemblyOf<PurchaseDocument>(cfgi)));
+            _sessionFactory = configuration.ExposeConfiguration(cfg =>
+            {
+                new SchemaUpdate(cfg).Execute(false, false);
+                new SchemaExport(cfg).Create(true, true);
+            })
+                 .BuildSessionFactory();
             return _sessionFactory;
         }
 

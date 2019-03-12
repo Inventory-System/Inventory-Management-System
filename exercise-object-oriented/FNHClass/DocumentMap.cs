@@ -9,7 +9,7 @@ using FluentNHibernate.Automapping.Alterations;
 
 namespace exercise_object_oriented.FNHFolder
 {
-    class DocumentMap : IAutoMappingOverride<Document>
+    public class DocumentMap : IAutoMappingOverride<Document>
     {
         public void Override(FluentNHibernate.Automapping.AutoMapping<Document> mapping)
         {
@@ -21,7 +21,7 @@ namespace exercise_object_oriented.FNHFolder
         }
     }
 
-    class Document2Map : IAutoMappingOverride<Document<ProductDocument>>
+    public class Document2Map : IAutoMappingOverride<Document<ProductDocument>>
     {
 
         public void Override(FluentNHibernate.Automapping.AutoMapping<Document<ProductDocument>> mapping)

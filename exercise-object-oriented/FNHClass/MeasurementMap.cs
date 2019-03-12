@@ -5,7 +5,7 @@ using FluentNHibernate.Automapping.Alterations;
 
 namespace exercise_object_oriented.Mapping
 {
-    class MeasurementMap:IAutoMappingOverride<Measurement>
+    public class MeasurementMap:IAutoMappingOverride<Measurement>
     {
         public void Override(FluentNHibernate.Automapping.AutoMapping<Measurement> mapping)
         {

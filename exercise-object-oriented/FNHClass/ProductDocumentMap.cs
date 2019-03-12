@@ -10,7 +10,7 @@ using FluentNHibernate.Automapping.Alterations;
 
 namespace exercise_object_oriented.FNHFolder
 {
-    class ProductDocumentMap : IAutoMappingOverride<ProductDocument>
+    public class ProductDocumentMap : IAutoMappingOverride<ProductDocument>
     {
         public void Override(FluentNHibernate.Automapping.AutoMapping<ProductDocument> mapping)
         {
@@ -24,22 +24,4 @@ namespace exercise_object_oriented.FNHFolder
             //References(x => x.TDocument);
         }
     }
-
-    //    class ProductDocument2Map : SubclassMap<ProductDocument<Document>>
-    //    {
-    //        public ProductDocument2Map()
-    //        {
-    //            DiscriminatorValue("dfssss");
-    //            References(x => x.document);
-    //    //        Id(x => x.Id);
-    //    //        Map(x => x.Code);
-    //    //        Map(x => x.OrginalPrice);
-    //    //        Map(x => x.Piece);
-    //    //        Map(x => x.Profit);
-    //    //        Map(x => x.SellingPrice);
-    //    //        References(x => x.product);
-    //           // HasOne(x => x.TDocument);
-    //        }
-    //    }
-//    }
 }

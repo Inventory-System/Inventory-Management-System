@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace exercise_object_oriented.FNHClass
 {
-    class personMap : IAutoMappingOverride<Person>
+    public class personMap : IAutoMappingOverride<Person>
     {
         public void Override(FluentNHibernate.Automapping.AutoMapping<Person> mapping)
         {
