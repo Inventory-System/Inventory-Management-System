@@ -14,6 +14,7 @@ namespace exercise_object_oriented.FNHFolder
     {
         public void Override(FluentNHibernate.Automapping.AutoMapping<ProductDocument> mapping)
         {
+<<<<<<< HEAD:exercise-object-oriented/FNHClass/ProductDocumentMap.cs
             mapping.Map(x => x.OrginalPrice);
             mapping.Map(x => x.Piece);
             mapping.Map(x => x.Profit);
@@ -22,24 +23,13 @@ namespace exercise_object_oriented.FNHFolder
             //  References(x => x.document);
             // HasOne(x => x.TDocument);
             //References(x => x.TDocument);
+=======
+            Map(x => x.OrginalPrice);
+            Map(x => x.Piece);
+            Map(x => x.Profit);
+            Map(x => x.SellingPrice);
+            References(x => x.product);
+>>>>>>> a1aef27290c18cfaac97b09830285f0c0e44a1cf:exercise-object-oriented/FNHFolder/ProductDocumentMap.cs
         }
     }
-
-    //    class ProductDocument2Map : SubclassMap<ProductDocument<Document>>
-    //    {
-    //        public ProductDocument2Map()
-    //        {
-    //            DiscriminatorValue("dfssss");
-    //            References(x => x.document);
-    //    //        Id(x => x.Id);
-    //    //        Map(x => x.Code);
-    //    //        Map(x => x.OrginalPrice);
-    //    //        Map(x => x.Piece);
-    //    //        Map(x => x.Profit);
-    //    //        Map(x => x.SellingPrice);
-    //    //        References(x => x.product);
-    //           // HasOne(x => x.TDocument);
-    //        }
-    //    }
-//    }
 }

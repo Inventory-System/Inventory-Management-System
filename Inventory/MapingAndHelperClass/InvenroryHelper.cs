@@ -5,17 +5,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using FluentNHibernate;
 using FluentNHibernate.Automapping;
 using FluentNHibernate.Cfg.Db;
 using NHibernate.Tool.hbm2ddl;
-using exercise_object_oriented.Conventions;
+using exercise_object_oriented;
+using exercise_object_oriented.FNHFolder;
+using Inventory.InventoryCLass;
 
-
-namespace exercise_object_oriented.FNHFolder
+namespace Inventory.HelperClass
 {
-    public class StoreConfiguration : DefaultAutomappingConfiguration
+    public class InventoryConfiguration : DefaultAutomappingConfiguration
     {
         public override bool ShouldMap(Type type)
         {
@@ -27,7 +27,7 @@ namespace exercise_object_oriented.FNHFolder
             return false;
         }
     }
-    public class FluentNHibernateHelper
+    public class InvenroryHelper
     {
         private static ISessionFactory _sessionFactory;
         private static ISessionFactory SessionFactory
@@ -39,14 +39,10 @@ namespace exercise_object_oriented.FNHFolder
                 return _sessionFactory;
             }
         }
-        public static ISessionFactory CreatSessionFactory() 
+        //private static  string connectionString = "Data Source=T-SAFARI;Initial Catalog=SecTestDB;User ID=sa;Password=s@123456";
+        private static ISessionFactory CreatSessionFactory() 
         {
-<<<<<<< HEAD:Purchase/FluentNHibernateHelper.cs
-            string ConnectionString = "Data Source=T-SAFARI;Initial Catalog=InheritanchTestDB;User ID=sa;Password=s@123456";
-
-=======
             string ConnectionString = "Data Source=.;Initial Catalog=Inventory;User ID=sa;Password=sa123";
->>>>>>> a1aef27290c18cfaac97b09830285f0c0e44a1cf:exercise-object-oriented/FNHFolder/FluentNHibernateHelper.cs
             var cfgi = new StoreConfiguration();
             var fluentConfiguration = Fluently.Configure()
                 .Database(MsSqlConfiguration.MsSql2012
@@ -54,14 +50,9 @@ namespace exercise_object_oriented.FNHFolder
                     .ShowSql()
                 );
             var configuration =
-                fluentConfiguration.Mappings(m => m.AutoMappings.Add(AutoMap.AssemblyOf<Person>(cfgi).
-<<<<<<< HEAD:Purchase/FluentNHibernateHelper.cs
-                    UseOverridesFromAssemblyOf<ProductDocumentMap>().Conventions.Add(typeof(CustomIdConvention))));
-           _sessionFactory = configuration.ExposeConfiguration(cfg =>
-=======
-                    UseOverridesFromAssemblyOf<BasseIdConvention>().Conventions.Add(typeof(BasseIdConvention))));
+                fluentConfiguration.Mappings(m => m.AutoMappings.Add(AutoMap.AssemblyOf<InventoryDocument>(cfgi).
+                    UseOverridesFromAssemblyOf<InventoryDocument>().Conventions.Add(typeof(BasseIdConvention))));
             var buildSessionFactory = configuration.ExposeConfiguration(cfg =>
->>>>>>> a1aef27290c18cfaac97b09830285f0c0e44a1cf:exercise-object-oriented/FNHFolder/FluentNHibernateHelper.cs
                 {
                     new SchemaUpdate(cfg).Execute(false, false);
                     new SchemaExport(cfg).Create(true, true);

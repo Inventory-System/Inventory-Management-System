@@ -4,7 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+<<<<<<< HEAD
     <ProjectGuid>{71FCC2AC-BBF2-482C-9BD1-AC6BDB5E513D}</ProjectGuid>
+=======
+    <ProjectGuid>{FD8D2C38-B068-4534-A3FC-DE9BF99AE77C}</ProjectGuid>
+>>>>>>> a1aef27290c18cfaac97b09830285f0c0e44a1cf
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Inventory</RootNamespace>
@@ -67,10 +71,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="HelperClass\InventoryHelper.cs" />
     <Compile Include="InventoryDocument.cs" />
     <Compile Include="InventoryProductDocument.cs" />
     <Compile Include="MapingClass\InventoryClassMaping.cs" />
+=======
+    <Compile Include="InventoryCLass\InventoryDocument.cs" />
+    <Compile Include="InventoryCLass\InventoryProductDocument.cs" />
+    <Compile Include="MapingAndHelperClass\InvenroryHelper.cs" />
+    <Compile Include="MapingAndHelperClass\InventoryMaping.cs" />
+>>>>>>> a1aef27290c18cfaac97b09830285f0c0e44a1cf
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -79,6 +90,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+>>>>>>> a1aef27290c18cfaac97b09830285f0c0e44a1cf
     <ProjectReference Include="..\exercise-object-oriented\exercise-object-oriented.csproj">
       <Project>{854f3fef-1bc8-4fc1-8cf0-9d689aed8a61}</Project>
       <Name>exercise-object-oriented</Name>

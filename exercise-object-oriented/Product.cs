@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace exercise_object_oriented
 {
-    public class Product:BaseClass
+    public class Product : BaseClass
     {
         public Product() {
         }

@@ -14,6 +14,7 @@ namespace exercise_object_oriented
     {
         static void Main(string[] args)
         {
+<<<<<<< HEAD
 
             //using (var session = FluentNHibernateHelper.OpenSesseion())
             //{
@@ -37,6 +38,13 @@ namespace exercise_object_oriented
             //    }
             ////}
             //Console.ReadLine();
+=======
+            using (var session = FluentNHibernateHelper.OpenSesseion())
+            { 
+            
+            }
+            Console.ReadLine();
+>>>>>>> a1aef27290c18cfaac97b09830285f0c0e44a1cf
         }
     }
 }
