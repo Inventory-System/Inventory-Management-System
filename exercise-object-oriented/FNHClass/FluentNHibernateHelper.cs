@@ -11,7 +11,7 @@ using FluentNHibernate.Automapping;
 using FluentNHibernate.Cfg.Db;
 using NHibernate.Tool.hbm2ddl;
 using exercise_object_oriented.Conventions;
-using exercise_object_oriented.FNHClass;
+using exercise_object_oriented.FNHFolder;
 
 
 namespace exercise_object_oriented.FNHFolder
@@ -42,7 +42,7 @@ namespace exercise_object_oriented.FNHFolder
         }
         public static ISessionFactory CreatSessionFactory() 
         {
-            string ConnectionString = "Data Source=T-SAFARI;Initial Catalog=InheritanchTestDB;User ID=sa;Password=s@123456";
+            string ConnectionString = "Data Source=T-SAFARI;Initial Catalog=testInventoryDB;User ID=sa;Password=s@123456";
 
             var cfgi = new StoreConfiguration();
 

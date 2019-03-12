@@ -5,27 +5,28 @@ using System.Text;
 using System.Threading.Tasks;
 
 using FluentNHibernate.Mapping;
+using FluentNHibernate.Automapping.Alterations;
 
 namespace exercise_object_oriented.FNHFolder
 {
-    //class DocumentMap: ClassMap<Document>
-    //{
-    //    public DocumentMap()
-    //    {
-    //        Id(x => x.Id);
-    //        Map(x => x.Code);
-    //        Map(x => x.CreateDate);
-    //       // HasMany(x => x.ProductDocumentsList);
-    //        DiscriminateSubClassesOnColumn("FieldType");
-    //    }
-    //}
+    class DocumentMap : IAutoMappingOverride<Document>
+    {
+        public void Override(FluentNHibernate.Automapping.AutoMapping<Document> mapping)
+        {
+            mapping.Map(x => x.CreateDate);
+            mapping.Map(x => x.party);
+            // HasMany(x => x.ProductDocumentsList);
+          //  mapping.DiscriminateSubClassesOnColumn("");
+          //  DiscriminateSubClassesOnColumn("FieldType");
+        }
+    }
 
-    //class Document2Map : SubclassMap<Document<ProductDocument>> 
-    //{
-    //    public Document2Map() 
-    //    {
-    //        DiscriminatorValue("dfs");
-    //        HasMany(x => x.ProductDocumentsList);
-    //    }
-    //}
+    class Document2Map : IAutoMappingOverride<Document<ProductDocument>>
+    {
+
+        public void Override(FluentNHibernate.Automapping.AutoMapping<Document<ProductDocument>> mapping)
+        {
+            mapping.HasMany(x => x.ProductDocumentsList);
+        }
+    }
 }
