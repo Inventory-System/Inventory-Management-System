@@ -14,7 +14,7 @@ namespace exercise_object_oriented.FNHClass
             mapping.Map(x => x.RegistrationNumber).Not.Nullable();
             mapping.Map(x => x.RegistrationDate);
             mapping.Map(x => x.Address);
-            mapping.Map(x => x.PhoneNumber);
+            mapping.Map(x => x.PhoneNumber).Not.Nullable();
             mapping.Map(x => x.EmailAddress);
             mapping.Map(x => x.posiontion);
         }
