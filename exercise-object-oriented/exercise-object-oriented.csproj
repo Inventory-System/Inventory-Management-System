@@ -71,10 +71,15 @@
     <Compile Include="Conventions\CustomIdConvention.cs" />
     <Compile Include="Conventions\CustomPropertyConvention.cs" />
     <Compile Include="Document.cs" />
+    <Compile Include="FNHClass\DocumentMap.cs" />
+    <Compile Include="FNHClass\FluentNHibernateHelper.cs" />
+    <Compile Include="MeasurementMap.cs" />
     <Compile Include="Party.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="ProductDocument.cs" />
+    <Compile Include="FNHClass\ProductDocumentMap.cs" />
+    <Compile Include="FNHClass\ProductMap.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Measurement.cs" />

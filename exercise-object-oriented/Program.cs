@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using FluentNHibernate;
 using exercise_object_oriented;
+using exercise_object_oriented.FNHFolder;
 
 namespace exercise_object_oriented
 {
@@ -14,8 +15,8 @@ namespace exercise_object_oriented
         static void Main(string[] args)
         {
 
-            //using (var session = FluentNHibernateHelper.OpenSesseion())
-            //{
+            using (var session = FluentNHibernateHelper.OpenSesseion())
+            {
             //    using (var transaction = session.BeginTransaction())
             //    {
             //        var measurmentKg = new Measurement { Code = 11111, Name = "Kg" };
@@ -33,7 +34,7 @@ namespace exercise_object_oriented
             //        session.SaveOrUpdate(product4);
 
             //        transaction.Commit();
-            //    }
+                }
             //}
             Console.ReadLine();
         }
