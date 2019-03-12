@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace exercise_object_oriented
 {
-    public  class ProductDocument : BaseClass
+   public class ProductDocument : BaseClass
     {
-
         public ProductDocument()
         {
         }
@@ -22,7 +21,7 @@ namespace exercise_object_oriented
     }
     public  abstract class ProductDocument<T> :ProductDocument where T: Document
     {
-        public T document;
+        public virtual T document { get; set; }
 
     }
 }
