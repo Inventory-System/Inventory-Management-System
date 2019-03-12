@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{854F3FEF-1BC8-4FC1-8CF0-9D689AED8A61}</ProjectGuid>
+    <ProjectGuid>{FD8D2C38-B068-4534-A3FC-DE9BF99AE77C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>exercise_object_oriented</RootNamespace>
-    <AssemblyName>exercise-object-oriented</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>Inventory</RootNamespace>
+    <AssemblyName>Inventory</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -66,34 +67,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseClass.cs" />
-    <Compile Include="Company.cs" />
-    <Compile Include="Document.cs" />
-    <Compile Include="FNHFolder\BasseConvention.cs" />
-    <Compile Include="FNHFolder\DocumentMap.cs" />
-    <Compile Include="FNHFolder\FluentNHibernateHelper.cs" />
-    <Compile Include="FNHFolder\MeasurementMap.cs" />
-    <Compile Include="FNHFolder\ProductDocumentMap.cs" />
-    <Compile Include="FNHFolder\ProductMap.cs" />
-    <Compile Include="Party.cs" />
-    <Compile Include="Person.cs" />
-    <Compile Include="Product.cs" />
-    <Compile Include="ProductDocument.cs" />
+    <Compile Include="InventoryCLass\InventoryDocument.cs" />
+    <Compile Include="InventoryCLass\InventoryProductDocument.cs" />
+    <Compile Include="MapingAndHelperClass\InvenroryHelper.cs" />
+    <Compile Include="MapingAndHelperClass\InventoryMaping.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Measurement.cs" />
-    <Compile Include="DerivativeFolder\PurchaseDocument.cs" />
-    <Compile Include="DerivativeFolder\PurchaseProductDocument.cs" />
-    <Compile Include="DerivativeFolder\SaleDocument.cs" />
-    <Compile Include="DerivativeFolder\SaleProductDocument.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\exercise-object-oriented\exercise-object-oriented.csproj">
+      <Project>{854f3fef-1bc8-4fc1-8cf0-9d689aed8a61}</Project>
+      <Name>exercise-object-oriented</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

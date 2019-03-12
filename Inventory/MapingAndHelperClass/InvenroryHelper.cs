@@ -5,15 +5,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using FluentNHibernate;
 using FluentNHibernate.Automapping;
 using FluentNHibernate.Cfg.Db;
 using NHibernate.Tool.hbm2ddl;
+using exercise_object_oriented;
+using exercise_object_oriented.FNHFolder;
+using Inventory.InventoryCLass;
 
-namespace exercise_object_oriented.FNHFolder
+namespace Inventory.HelperClass
 {
-    public class StoreConfiguration : DefaultAutomappingConfiguration
+    public class InventoryConfiguration : DefaultAutomappingConfiguration
     {
         public override bool ShouldMap(Type type)
         {
@@ -25,7 +27,7 @@ namespace exercise_object_oriented.FNHFolder
             return false;
         }
     }
-    public class FluentNHibernateHelper
+    public class InvenroryHelper
     {
         private static ISessionFactory _sessionFactory;
         private static ISessionFactory SessionFactory
@@ -49,7 +51,7 @@ namespace exercise_object_oriented.FNHFolder
                 );
             var configuration =
                 fluentConfiguration.Mappings(m => m.AutoMappings.Add(AutoMap.AssemblyOf<Person>(cfgi).
-                    UseOverridesFromAssemblyOf<BasseIdConvention>().Conventions.Add(typeof(BasseIdConvention))));
+                    UseOverridesFromAssemblyOf<InventoryDocument>().Conventions.Add(typeof(InventoryDocument))));
             var buildSessionFactory = configuration.ExposeConfiguration(cfg =>
                 {
                     new SchemaUpdate(cfg).Execute(false, false);
