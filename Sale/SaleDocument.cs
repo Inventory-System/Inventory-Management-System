@@ -12,7 +12,7 @@ namespace exercise_object_oriented
         {
             SaleDate = DateTime.Now;
         }
-        public DateTime SaleDate { get; set; }
-        Party customer;
+        public virtual DateTime SaleDate { get; set; }
+        Party  customer;
     }
 }

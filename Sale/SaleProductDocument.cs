@@ -10,7 +10,5 @@ namespace exercise_object_oriented
     {
         DateTime datetime;
 
-
-        
     }
 }

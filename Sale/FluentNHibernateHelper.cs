@@ -11,6 +11,8 @@ using FluentNHibernate.Automapping;
 using FluentNHibernate.Cfg.Db;
 using NHibernate.Tool.hbm2ddl;
 using exercise_object_oriented.Conventions;
+using exercise_object_oriented;
+using exercise_object_oriented.FNHClass;
 
 
 namespace exercise_object_oriented.FNHFolder
@@ -41,7 +43,7 @@ namespace exercise_object_oriented.FNHFolder
         }
         public static ISessionFactory CreatSessionFactory()
         {
-            string ConnectionString = "Data Source=H-MORADI;Initial Catalog=Sale;User ID=sa;Password=sa123";
+            string ConnectionString = "Data Source=H-MORADI;Initial Catalog=Database1;User ID=sa;Password=sa123";
 
             var cfgi = new StoreConfiguration();
 
@@ -52,13 +54,13 @@ namespace exercise_object_oriented.FNHFolder
                 );
             var configuration =
                 fluentConfiguration.Mappings(m => m.AutoMappings.Add(AutoMap.AssemblyOf<BaseClass>(cfgi).
-                  //  IgnoreBase<Party>().
+                    //  IgnoreBase<Party>().
                     UseOverridesFromAssemblyOf<BaseClass>().Conventions.Add(typeof(CustomIdConvention))).
-                    Add(AutoMap.AssemblyOf<PurchaseDocument>(cfgi)));
+                    Add(AutoMap.AssemblyOf<SaleProductDocument>(cfgi)));
             _sessionFactory = configuration.ExposeConfiguration(cfg =>
             {
-                new SchemaUpdate(cfg).Execute(false, false);
-                new SchemaExport(cfg).Create(true, true);
+               new SchemaUpdate(cfg).Execute(false, false);
+               new SchemaExport(cfg).Create(true, true);
             })
                  .BuildSessionFactory();
             return _sessionFactory;
