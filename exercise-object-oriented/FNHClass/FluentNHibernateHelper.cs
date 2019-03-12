@@ -20,7 +20,7 @@ namespace exercise_object_oriented.FNHFolder
         public override bool ShouldMap(Type type)
         {
 
-            if (type.BaseType != null && type.BaseType == typeof(BaseClass))
+            if ( (type.BaseType != null && type.BaseType == typeof(BaseClass) ) || type.BaseType == typeof(Party))
             {
                 return true;
             }
