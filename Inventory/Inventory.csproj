@@ -67,8 +67,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HelperClass\InventoryHelper.cs" />
     <Compile Include="InventoryDocument.cs" />
     <Compile Include="InventoryProductDocument.cs" />
+    <Compile Include="MapingClass\InventoryMap.cs" />
+    <Compile Include="MapingClass\InventoryProductMap.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using exercise_object_oriented.FNHFolder;
+using Inventory.HelperClass;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,10 +12,11 @@ namespace Inventory
     {
         static void Main(string[] args)
         {
-            using (var session = FluentNHibernateHelper.CreatSessionFactory())
+            using (var session = InventoryHelper.OpenSesseion())
             {
 
             }
+            Console.ReadKey();
         }
     }
 }
