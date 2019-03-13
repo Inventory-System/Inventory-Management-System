@@ -1,5 +1,4 @@
 ﻿using exercise_object_oriented.FNHFolder;
-using Inventory.HelperClass;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Inventory
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {

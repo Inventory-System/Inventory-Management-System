@@ -41,7 +41,7 @@ namespace exercise_object_oriented.FNHFolder
         }
         public static ISessionFactory CreatSessionFactory()
         {
-            string ConnectionString = "Data Source=H-MORADI;Initial Catalog=Sale;User ID=sa;Password=sa123";
+            string ConnectionString = "Data Source=.;Initial Catalog=Inventory;User ID=sa;Password=sa123";
 
             var cfgi = new StoreConfiguration();
 

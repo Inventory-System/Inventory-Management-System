@@ -9,8 +9,8 @@ namespace Inventory.InventoryCLass
 {
     public class InventoryDocument : Document<InventoryProductDocument>
     {
-        public string InventoryName { set; get; }
-        public string InventoryCode { set; get; }
-        public List<ProductDocument> DocumentsList { set; get; }
+        public virtual string InventoryName { set; get; }
+        public virtual string InventoryCode { set; get; }
+        public virtual List<ProductDocument> DocumentsList { set; get; }
     }
 }
