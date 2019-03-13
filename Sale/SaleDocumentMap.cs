@@ -6,16 +6,23 @@ using System.Threading.Tasks;
 
 using FluentNHibernate.Mapping;
 using FluentNHibernate.Automapping.Alterations;
+using exercise_object_oriented;
 
-namespace exercise_object_oriented.Mapping
+namespace Sale
 {
-    class SaleDocumentMap : IAutoMappingOverride<SaleDocumentMap>
+  public  class SaleDocumentMap : IAutoMappingOverride<SaleDocument>
     {
-        public void Override(FluentNHibernate.Automapping.AutoMapping<Measurement> mapping)
+        public void Override(FluentNHibernate.Automapping.AutoMapping<SaleDocument> mapping)
         {
-            mapping.Map(x => x.Name).Length(20).Not.Nullable();
-            mapping.Map(x => x.Code).Length(20).Not.Nullable();
-           
+           // mapping.Map(x => x.CreateDate).Length(20).Not.Nullable();
+          //  mapping.References(x => x.party);
+            mapping.Map(x => x.SaleDate).Length(20).Not.Nullable();
+            //mapping.References(x => x.ProductDocumentsList);
         }
+
+     //   public void Override(FluentNHibernate.Automapping.AutoMapping<SaleDocument> mapping)
+     //   {
+         //   throw new NotImplementedException();
+      //  }
     }
 }

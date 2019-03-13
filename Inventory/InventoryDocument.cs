@@ -1,15 +1,16 @@
-﻿using System;
+﻿using exercise_object_oriented;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace exercise_object_oriented
+using Inventory.InventoryCLass;
+namespace Inventory.InventoryCLass
 {
-        public class InventoryDocument : Document<InventoryProductDocument>
-        {
-            public string InventoryName { set; get; }
-            public string InventoryCod { set; get; }
-
-        }
+    public class InventoryDocument : Document<InventoryProductDocument>
+    {
+        public virtual string InventoryName { set; get; }
+        public virtual string InventoryCode { set; get; }
+        public virtual List<ProductDocument> DocumentsList { set; get; }
+    }
 }

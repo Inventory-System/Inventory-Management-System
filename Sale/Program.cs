@@ -12,6 +12,11 @@ namespace Sale
         static void Main(string[] args)
         {
 
+            using (var session = FluentNHibernateHelper.OpenSesseion())
+            {
+
+            }
+            Console.ReadLine();
         }
     }
 }
