@@ -15,7 +15,7 @@ using exercise_object_oriented;
 using exercise_object_oriented.FNHClass;
 
 
-namespace exercise_object_oriented.FNHFolder
+namespace Sale.FluentNHibernateHelper
 {
     public class StoreConfiguration : DefaultAutomappingConfiguration
     {

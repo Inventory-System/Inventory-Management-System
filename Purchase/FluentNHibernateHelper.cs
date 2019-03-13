@@ -11,9 +11,10 @@ using FluentNHibernate.Automapping;
 using FluentNHibernate.Cfg.Db;
 using NHibernate.Tool.hbm2ddl;
 using exercise_object_oriented.Conventions;
+using exercise_object_oriented;
 
 
-namespace exercise_object_oriented.FNHFolder
+namespace HelperClass.FluentNHibernateHelper
 {
     public class StoreConfiguration : DefaultAutomappingConfiguration
     {
@@ -41,7 +42,7 @@ namespace exercise_object_oriented.FNHFolder
         }
         public static ISessionFactory CreatSessionFactory()
         {
-            string ConnectionString = "Data Source=.;Initial Catalog=Inventory;User ID=sa;Password=sa123";
+            string ConnectionString = "Data Source=.;Initial Catalog=;User ID=sa;Password=sa123";
 
             var cfgi = new StoreConfiguration();
 

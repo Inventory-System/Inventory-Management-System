@@ -11,9 +11,10 @@ using FluentNHibernate.Cfg.Db;
 using NHibernate.Tool.hbm2ddl;
 using exercise_object_oriented.Conventions;
 using Inventory.InventoryCLass;
+using exercise_object_oriented;
 
 
-namespace exercise_object_oriented.FNHFolder
+namespace Inventory.HelperClass
 {
     public class InventoryConfiguration : DefaultAutomappingConfiguration
     {

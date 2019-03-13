@@ -1,4 +1,5 @@
 ﻿using exercise_object_oriented.FNHFolder;
+using Inventory.HelperClass;
 using System;
 using System.Collections.Generic;
 using System.Linq;
