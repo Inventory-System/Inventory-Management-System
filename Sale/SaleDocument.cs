@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace exercise_object_oriented
+ namespace Sale
 {
   public  class SaleDocument:Document<SaleProductDocument>
     {

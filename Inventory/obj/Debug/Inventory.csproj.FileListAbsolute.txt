@@ -22,3 +22,26 @@ C:\Users\p.pazhoheshi\Downloads\New folder\Inventory-Management-System\Inventory
 C:\Users\p.pazhoheshi\Downloads\New folder\Inventory-Management-System\Inventory\bin\Debug\SharpArch.NHibernate.xml
 C:\Users\p.pazhoheshi\Downloads\New folder\Inventory-Management-System\Inventory\obj\Debug\Inventory.exe
 C:\Users\p.pazhoheshi\Downloads\New folder\Inventory-Management-System\Inventory\obj\Debug\Inventory.pdb
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Inventory\bin\Debug\Inventory.exe.config
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Inventory\obj\Debug\Inventory.exe
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Inventory\obj\Debug\Inventory.pdb
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Inventory\bin\Debug\Inventory.exe
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Inventory\bin\Debug\Inventory.pdb
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Inventory\bin\Debug\exercise-object-oriented.exe
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Inventory\bin\Debug\FluentNHibernate.dll
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Inventory\bin\Debug\Iesi.Collections.dll
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Inventory\bin\Debug\Newtonsoft.Json.dll
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Inventory\bin\Debug\NHibernate.dll
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Inventory\bin\Debug\SharpArch.Domain.dll
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Inventory\bin\Debug\SharpArch.NHibernate.dll
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Inventory\bin\Debug\exercise-object-oriented.pdb
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Inventory\bin\Debug\FluentNHibernate.pdb
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Inventory\bin\Debug\FluentNHibernate.xml
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Inventory\bin\Debug\Iesi.Collections.xml
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Inventory\bin\Debug\Newtonsoft.Json.xml
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Inventory\bin\Debug\NHibernate.xml
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Inventory\bin\Debug\SharpArch.Domain.pdb
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Inventory\bin\Debug\SharpArch.Domain.xml
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Inventory\bin\Debug\SharpArch.NHibernate.pdb
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Inventory\bin\Debug\SharpArch.NHibernate.xml
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Inventory\obj\Debug\Inventory.csprojResolveAssemblyReference.cache

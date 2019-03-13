@@ -14,7 +14,7 @@ using exercise_object_oriented.Conventions;
 using exercise_object_oriented;
 
 
-namespace HelperClass.FluentNHibernateHelper
+namespace Purchase
 {
     public class StoreConfiguration : DefaultAutomappingConfiguration
     {

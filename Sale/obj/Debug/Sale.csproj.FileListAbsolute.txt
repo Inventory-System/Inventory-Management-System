@@ -45,3 +45,5 @@ C:\Users\p.pazhoheshi\Downloads\New folder\Inventory-Management-System\Sale\bin\
 C:\Users\p.pazhoheshi\Downloads\New folder\Inventory-Management-System\Sale\obj\Debug\Sale.csprojResolveAssemblyReference.cache
 C:\Users\p.pazhoheshi\Downloads\New folder\Inventory-Management-System\Sale\obj\Debug\Sale.exe
 C:\Users\p.pazhoheshi\Downloads\New folder\Inventory-Management-System\Sale\obj\Debug\Sale.pdb
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Sale\obj\Debug\Sale.csprojResolveAssemblyReference.cache
+C:\Users\h.moradi\Desktop\ts\Inventory-Management-System\Sale\obj\Debug\Sale.exe
