@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using exercise_object_oriented;
-using Sale.FluentNHibernateHelper;
 
 namespace Sale
 {
@@ -13,7 +12,7 @@ namespace Sale
         static void Main(string[] args)
         {
 
-            using (var session = FluentNHibernateHelper)
+            using (var session = FluentNHibernateHelper.OpenSesseion())
             {
 
             }

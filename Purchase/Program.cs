@@ -1,5 +1,4 @@
 ﻿using exercise_object_oriented.FNHFolder;
-using HelperClass.FluentNHibernateHelper;
 using System;
 using System.Collections.Generic;
 using System.Linq;

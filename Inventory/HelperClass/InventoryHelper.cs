@@ -42,7 +42,7 @@ namespace Inventory.HelperClass
         }
         public static ISessionFactory CreatSessionFactory()
         {
-            string ConnectionString = "Data Source=.;Initial Catalog=Inventory;User ID=sa;Password=sa123";
+            string ConnectionString = "Data Source=P-PAZHOHESHI ;Initial Catalog=Inventory;User ID=sa;Password=sa123";
 
             var cfgi = new InventoryConfiguration();
 
