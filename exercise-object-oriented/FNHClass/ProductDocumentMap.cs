@@ -18,10 +18,17 @@ namespace exercise_object_oriented.FNHFolder
             mapping.Map(x => x.Piece);
             mapping.Map(x => x.Profit);
             mapping.Map(x => x.SellingPrice);
-            mapping.References(x => x.product);
-            //  References(x => x.document);
-            // HasOne(x => x.TDocument);
-            //References(x => x.TDocument);
+            mapping.References(x => x.product).Not.Nullable();
+
         }
+    }
+    public class GenericProductDocumentMap : IAutoMappingOverride<ProductDocument<Document>>
+    {
+
+        public void Override(FluentNHibernate.Automapping.AutoMapping<ProductDocument<Document>> mapping)
+        {
+             mapping.HasOne(x => x.document );
+        }
+
     }
 }

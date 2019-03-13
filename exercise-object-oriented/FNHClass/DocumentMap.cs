@@ -14,14 +14,12 @@ namespace exercise_object_oriented.FNHFolder
         public void Override(FluentNHibernate.Automapping.AutoMapping<Document> mapping)
         {
             mapping.Map(x => x.CreateDate);
-            mapping.Map(x => x.party);
-            // HasMany(x => x.ProductDocumentsList);
-          //  mapping.DiscriminateSubClassesOnColumn("");
-          //  DiscriminateSubClassesOnColumn("FieldType");
+            mapping.References(x => x.party);
+
         }
     }
 
-    public class Document2Map : IAutoMappingOverride<Document<ProductDocument>>
+    public class GenericDocumentMap : IAutoMappingOverride<Document<ProductDocument>>
     {
 
         public void Override(FluentNHibernate.Automapping.AutoMapping<Document<ProductDocument>> mapping)

@@ -13,10 +13,7 @@ namespace Purchase
 
         public void Override(FluentNHibernate.Automapping.AutoMapping<PurchaseDocument> mapping)
         {
-            mapping.Map(x=>x.CreateDate);
-            mapping.References(x => x.party).Not.Nullable();
             mapping.Map(x => x.PurchaseDate);
-            mapping.HasMany(x => x.ProductDocumentsList);
 
         }
     }

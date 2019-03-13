@@ -13,7 +13,7 @@ using NHibernate.Tool.hbm2ddl;
 using exercise_object_oriented.Conventions;
 
 
-namespace exercise_object_oriented.FNHFolder
+namespace exercise_object_oriented
 {
     public class StoreConfiguration : DefaultAutomappingConfiguration
     {
