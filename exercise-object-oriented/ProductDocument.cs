@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace exercise_object_oriented
 {
-    public class ProductDocument : BaseClass
+    public abstract class ProductDocument : BaseClass
     {
 
         public ProductDocument()
