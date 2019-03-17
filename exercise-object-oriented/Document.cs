@@ -13,7 +13,7 @@ namespace exercise_object_oriented
             CreateDate = DateTime.Now;
         }
         public virtual DateTime CreateDate { get; set; }
-        public virtual Party party { get; set; }
+        public virtual Party Party { get; set; }
     }
 
 

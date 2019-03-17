@@ -16,13 +16,13 @@ namespace exercise_object_oriented
         public virtual int Piece { get; set; }
         public virtual int Profit { get; set; }
         public virtual int SellingPrice { get; set; }
-        public virtual Product product { get; set; }
+        public virtual Product Product { get; set; }
 
       
     }
     public  abstract class ProductDocument<T> :ProductDocument where T: Document
     {
-        public virtual T document { get; set; }
+        public virtual T Document { get; set; }
 
     }
 }

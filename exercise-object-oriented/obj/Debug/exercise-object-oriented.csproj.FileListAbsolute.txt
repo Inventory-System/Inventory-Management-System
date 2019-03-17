@@ -167,3 +167,24 @@ C:\Users\t.safari\Desktop\Git\Inventory-Management-System\exercise-object-orient
 C:\Users\t.safari\Desktop\Git\Inventory-Management-System\exercise-object-oriented\obj\Debug\exercise-object-oriented.csprojResolveAssemblyReference.cache
 C:\Users\t.safari\Desktop\Git\Inventory-Management-System\exercise-object-oriented\obj\Debug\exercise-object-oriented.exe
 C:\Users\t.safari\Desktop\Git\Inventory-Management-System\exercise-object-oriented\obj\Debug\exercise-object-oriented.pdb
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\exercise-object-oriented\bin\Debug\exercise-object-oriented.exe.config
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\exercise-object-oriented\bin\Debug\exercise-object-oriented.exe
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\exercise-object-oriented\bin\Debug\exercise-object-oriented.pdb
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\exercise-object-oriented\bin\Debug\FluentNHibernate.dll
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\exercise-object-oriented\bin\Debug\Iesi.Collections.dll
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\exercise-object-oriented\bin\Debug\Newtonsoft.Json.dll
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\exercise-object-oriented\bin\Debug\NHibernate.dll
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\exercise-object-oriented\bin\Debug\SharpArch.Domain.dll
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\exercise-object-oriented\bin\Debug\SharpArch.NHibernate.dll
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\exercise-object-oriented\bin\Debug\FluentNHibernate.pdb
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\exercise-object-oriented\bin\Debug\FluentNHibernate.xml
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\exercise-object-oriented\bin\Debug\Iesi.Collections.xml
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\exercise-object-oriented\bin\Debug\Newtonsoft.Json.xml
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\exercise-object-oriented\bin\Debug\NHibernate.xml
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\exercise-object-oriented\bin\Debug\SharpArch.Domain.pdb
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\exercise-object-oriented\bin\Debug\SharpArch.Domain.xml
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\exercise-object-oriented\bin\Debug\SharpArch.NHibernate.pdb
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\exercise-object-oriented\bin\Debug\SharpArch.NHibernate.xml
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\exercise-object-oriented\obj\Debug\exercise-object-oriented.csprojResolveAssemblyReference.cache
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\exercise-object-oriented\obj\Debug\exercise-object-oriented.exe
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\exercise-object-oriented\obj\Debug\exercise-object-oriented.pdb

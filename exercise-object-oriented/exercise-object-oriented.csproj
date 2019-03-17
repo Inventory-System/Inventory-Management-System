@@ -76,7 +76,7 @@
     <Compile Include="FNHClass\FluentNHibernateHelper.cs" />
     <Compile Include="FNHClass\MeasurementMap.cs" />
     <Compile Include="FNHClass\PartyMap.cs" />
-    <Compile Include="FNHClass\personMap.cs" />
+    <Compile Include="FNHClass\PersonMap.cs" />
     <Compile Include="Party.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Product.cs" />

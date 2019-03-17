@@ -14,7 +14,7 @@ namespace exercise_object_oriented.FNHFolder
         public void Override(FluentNHibernate.Automapping.AutoMapping<Document> mapping)
         {
             mapping.Map(x => x.CreateDate);
-            mapping.References(x => x.party);
+            mapping.References(x => x.Party);
 
         }
     }

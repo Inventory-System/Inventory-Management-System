@@ -14,7 +14,7 @@ namespace Sale
         {
             mapping.Map(x => x.OrginalPrice);
             mapping.Map(x => x.Piece);
-            mapping.Map(x => x.product);
+            mapping.Map(x => x.Product);
             mapping.HasOne(x => x.SellingPrice);
         }
 

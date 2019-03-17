@@ -136,3 +136,6 @@ C:\Users\t.safari\Desktop\Git\Inventory-Management-System\Purchase\bin\Debug\Sha
 C:\Users\t.safari\Desktop\Git\Inventory-Management-System\Purchase\bin\Debug\SharpArch.Domain.xml
 C:\Users\t.safari\Desktop\Git\Inventory-Management-System\Purchase\bin\Debug\SharpArch.NHibernate.pdb
 C:\Users\t.safari\Desktop\Git\Inventory-Management-System\Purchase\bin\Debug\SharpArch.NHibernate.xml
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\Purchase\bin\Debug\Purchase.exe.config
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\Purchase\obj\Debug\Purchase.exe
+C:\Users\p.pazhoheshi\Desktop\New folder (2)\Inventory-Management-System\Purchase\obj\Debug\Purchase.pdb
