@@ -12,8 +12,5 @@ namespace Inventory.InventoryCLass
         public virtual DateTime EpxDate { set; get; }
         public virtual DateTime DateIn { set; get; }
         public virtual DateTime DateOut { set; get; }
-        public virtual List<ProductDocument> ListOfPrdsuct { set; get; }
-
-
     }
 }

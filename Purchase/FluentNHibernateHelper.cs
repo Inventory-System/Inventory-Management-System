@@ -14,6 +14,7 @@ using exercise_object_oriented.Conventions;
 using exercise_object_oriented;
 
 
+
 namespace Purchase
 {
     public class StoreConfiguration : DefaultAutomappingConfiguration

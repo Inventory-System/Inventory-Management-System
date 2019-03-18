@@ -11,6 +11,5 @@ namespace Inventory.InventoryCLass
     {
         public virtual string InventoryName { set; get; }
         public virtual string InventoryCode { set; get; }
-        public virtual List<ProductDocument> DocumentsList { set; get; }
     }
 }

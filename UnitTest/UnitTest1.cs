@@ -19,10 +19,10 @@ namespace UnitTest
                 {
                     var measurmentKg = new Measurement { Code = 11111, Name = "Kg" };
                     var measurmentMeter = new Measurement { Code = 22222, Name = "Meter" };
-                    var product1 = new Product { Code = 33333, Name = "Meat", measuerment = measurmentKg };
-                    var product2 = new Product { Code = 44444, Name = "Rice", measuerment = measurmentKg };
-                    var product3 = new Product { Code = 55555, Name = "Textile", measuerment = measurmentMeter };
-                    var product4 = new Product { Code = 55555, Name = "Pipe", measuerment = measurmentMeter };
+                    var product1 = new Product { Code = 33333, Name = "Meat", Measuerment = measurmentKg };
+                    var product2 = new Product { Code = 44444, Name = "Rice", Measuerment = measurmentKg };
+                    var product3 = new Product { Code = 55555, Name = "Textile", Measuerment = measurmentMeter };
+                    var product4 = new Product { Code = 55555, Name = "Pipe", Measuerment = measurmentMeter };
 
                     session.SaveOrUpdate(measurmentKg);
                     session.SaveOrUpdate(measurmentMeter);

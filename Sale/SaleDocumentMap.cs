@@ -14,15 +14,12 @@ namespace Sale
     {
         public void Override(FluentNHibernate.Automapping.AutoMapping<SaleDocument> mapping)
         {
-           // mapping.Map(x => x.CreateDate).Length(20).Not.Nullable();
-          //  mapping.References(x => x.party);
+            mapping.Map(x => x.CreateDate).Length(20).Not.Nullable();
             mapping.Map(x => x.SaleDate).Length(20).Not.Nullable();
-            //mapping.References(x => x.ProductDocumentsList);
+            mapping.References(x => x.Party);
+            mapping.References(x => x.ProductDocumentsList);
+            
+            
         }
-
-     //   public void Override(FluentNHibernate.Automapping.AutoMapping<SaleDocument> mapping)
-     //   {
-         //   throw new NotImplementedException();
-      //  }
     }
 }

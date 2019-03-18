@@ -11,6 +11,6 @@ namespace exercise_object_oriented
         public Product() {
         }
         public virtual string Name { get; set; }
-        public virtual Measurement measuerment { get; set; }
+        public virtual Measurement Measuerment { get; set; }
     }
 }

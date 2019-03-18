@@ -19,7 +19,7 @@ namespace exercise_object_oriented
     {
         public Party() 
         {
-            posiontion = Position.None;
+            Posiontion = Position.None;
         }
 
         public virtual int RegistrationNumber { get; set; }
@@ -27,6 +27,6 @@ namespace exercise_object_oriented
         public virtual string Address { get; set; }
         public virtual int PhoneNumber { get; set; }
         public virtual string EmailAddress { get; set; }
-        public virtual Position posiontion { get; set; }
+        public virtual Position Posiontion { get; set; }
     }
 }

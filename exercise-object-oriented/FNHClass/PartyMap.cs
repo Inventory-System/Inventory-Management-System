@@ -16,7 +16,7 @@ namespace exercise_object_oriented.FNHClass
             mapping.Map(x => x.Address);
             mapping.Map(x => x.PhoneNumber).Not.Nullable();
             mapping.Map(x => x.EmailAddress);
-            mapping.Map(x => x.posiontion);
+            mapping.Map(x => x.Posiontion);
         }
     }
 }
