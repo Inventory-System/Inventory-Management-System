@@ -55,7 +55,7 @@ namespace Sale
             var configuration =
                 fluentConfiguration.Mappings(m => m.AutoMappings.Add(AutoMap.AssemblyOf<BaseClass>(cfgi).
                     //  IgnoreBase<Party>().
-                    UseOverridesFromAssemblyOf<BaseClass>().Conventions.Add(typeof(CustomIdConvention))).
+                    UseOverridesFromAssemblyOf<BaseClass>().Conventions.Add(typeof(CustomIdConvention)).Conventions.AddFromAssemblyOf<CustomForeignKeyConvention>).
                     Add(AutoMap.AssemblyOf<SaleProductDocument>(cfgi)));
             _sessionFactory = configuration.ExposeConfiguration(cfg =>
             {

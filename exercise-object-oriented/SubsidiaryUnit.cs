@@ -12,7 +12,7 @@ namespace exercise_object_oriented
         {
         }
         public virtual string SubsidiaryUnitName { set; get; }
-        public virtual int Cunt { get; set; }
+        public virtual Decimal Coefficient { get; set; }
         public virtual Measurement measurement { get; set; }
     }
 }
