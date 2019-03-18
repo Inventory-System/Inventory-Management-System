@@ -137,3 +137,6 @@ C:\Users\p.pazhoheshi\Desktop\New folder (3)\Inventory-Management-System\Invento
 C:\Users\p.pazhoheshi\Desktop\New folder (3)\Inventory-Management-System\Inventory\bin\Debug\SharpArch.NHibernate.pdb
 C:\Users\p.pazhoheshi\Desktop\New folder (3)\Inventory-Management-System\Inventory\bin\Debug\SharpArch.NHibernate.xml
 C:\Users\p.pazhoheshi\Desktop\New folder (3)\Inventory-Management-System\Inventory\obj\Debug\Inventory.csprojResolveAssemblyReference.cache
+C:\Users\h.moradi\Desktop\Inventory\Inventory-Management-System\Inventory\bin\Debug\Inventory.exe.config
+C:\Users\h.moradi\Desktop\Inventory\Inventory-Management-System\Inventory\obj\Debug\Inventory.exe
+C:\Users\h.moradi\Desktop\Inventory\Inventory-Management-System\Inventory\obj\Debug\Inventory.pdb

@@ -67,6 +67,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseClass.cs" />
+    <Compile Include="CalculateTax.cs" />
+    <Compile Include="Tax.cs" />
     <Compile Include="Company.cs" />
     <Compile Include="Conventions\CustomIdConvention.cs" />
     <Compile Include="Conventions\CustomForeignKeyConvention.cs" />

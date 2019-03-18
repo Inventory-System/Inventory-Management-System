@@ -15,8 +15,12 @@ namespace exercise_object_oriented
         public virtual int OrginalPrice { get; set; }
         public virtual int Piece { get; set; }
         public virtual int Profit { get; set; }
-        public virtual int SellingPrice { get; set; }
+        public virtual float SellingPrice { get; set; }
         public virtual Product product { get; set; }
+
+        public virtual Tax calculateTax { get; set; }
+
+      
 
       
     }
