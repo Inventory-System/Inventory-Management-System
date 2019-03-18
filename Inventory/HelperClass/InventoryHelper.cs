@@ -13,7 +13,6 @@ using exercise_object_oriented.Conventions;
 using Inventory.InventoryCLass;
 using exercise_object_oriented;
 
-
 namespace Inventory.HelperClass
 {
     public class InventoryConfiguration : DefaultAutomappingConfiguration
@@ -54,7 +53,7 @@ namespace Inventory.HelperClass
             var configuration =
                 fluentConfiguration.Mappings(m => m.AutoMappings.Add(AutoMap.AssemblyOf<BaseClass>(cfgi).
                     //  IgnoreBase<Party>().
-                    UseOverridesFromAssemblyOf<BaseClass>().Conventions.Add(typeof(CustomIdConvention))).
+                    UseOverridesFromAssemblyOf<BaseClass>().Conventions.Add(typeof(CustomIdConvention)).Conventions.AddFromAssemblyOf<CustomForeignKeyConvention>).
                     Add(AutoMap.AssemblyOf<InventoryDocument>(cfgi)));
             _sessionFactory = configuration.ExposeConfiguration(cfg =>
             {
@@ -71,4 +70,3 @@ namespace Inventory.HelperClass
         }
     }
 }
-//There is already an object named 'Party' in the database.

@@ -15,7 +15,8 @@ namespace exercise_object_oriented.Conventions
         {
             if (property == null)
                 return "Id";  // many-to-many, one-to-many, join
-            return  property.Name.Substring(0,1).ToUpper()+property.Name.Substring(1) + "_Id";
+            else return  property.Name.Substring(0,1).ToUpper()+property.Name.Substring(1) + "_Id";
         }
     }
+    
 }

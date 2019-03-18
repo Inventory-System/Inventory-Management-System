@@ -13,7 +13,7 @@ namespace exercise_object_oriented.FNHClass
         public void Override(FluentNHibernate.Automapping.AutoMapping<SubsidiaryUnit> mapping)
         {
             mapping.Map(c => c.SubsidiaryUnitName);
-            mapping.Map(c => c.Cunt);
+            mapping.Map(c => c.Coefficient);
             mapping.References(c => c.measurement).Not.Nullable().Column("Measurement");
         }
     }

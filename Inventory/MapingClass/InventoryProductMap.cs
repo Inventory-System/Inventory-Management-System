@@ -16,6 +16,7 @@ namespace Inventory.MapingClass
                 mapping.Map(c => c.DateIn).Column("DateIn");
                 mapping.Map(c => c.DateOut).Column("DateOut");
                 mapping.Table("Inventory");
+                //mapping.Map(c=>c.);
             }
         }
     }

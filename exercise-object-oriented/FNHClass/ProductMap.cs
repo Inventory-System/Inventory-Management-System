@@ -14,6 +14,10 @@ namespace exercise_object_oriented.Mapping
         {
             mapping.Map(x => x.Name).Not.Nullable().Length(50);
             mapping.References(x => x.subsidiaryUnit).Column("SubsidiaryUnit");
+            mapping.References(x => x.measurement).Column("Measurement");
+            mapping.Map(x => x.SubsidiaryUnitList);
+
+
         }
     }
 }
