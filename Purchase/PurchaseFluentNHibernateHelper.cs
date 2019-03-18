@@ -27,7 +27,7 @@ namespace Purchase
             return false;
         }
     }
-    public class FluentNHibernateHelper
+    public class PurchaseFluentNHibernateHelper
     {
 
         private static ISessionFactory _sessionFactory;
@@ -52,12 +52,10 @@ namespace Purchase
                     .ShowSql()
                 );
             var configuration =
-                fluentConfiguration.Mappings(m => m.AutoMappings.Add(AutoMap.AssemblyOf<Person>(cfgi).
+                fluentConfiguration.Mappings(m => m.AutoMappings.Add(AutoMap.AssemblyOf<BaseClass>(cfgi).
                   //  IgnoreBase<Party>().
-                    UseOverridesFromAssemblyOf<Person>()
-                    .Conventions.Add(typeof(CustomIdConvention))
-                    .Conventions.Add(typeof(CustomForeignKeyConvention)))
-                    .Add(AutoMap.AssemblyOf<PurchaseDocument>(cfgi)));
+                    UseOverridesFromAssemblyOf<BaseClass>().Conventions.Add(typeof(CustomIdConvention))).
+                    Add(AutoMap.AssemblyOf<PurchaseDocument>(cfgi)));
             _sessionFactory = configuration.ExposeConfiguration(cfg =>
             {
                 new SchemaUpdate(cfg).Execute(false, false);

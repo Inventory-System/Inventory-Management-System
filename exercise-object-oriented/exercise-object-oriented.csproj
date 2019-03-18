@@ -69,7 +69,7 @@
     <Compile Include="BaseClass.cs" />
     <Compile Include="Company.cs" />
     <Compile Include="Conventions\CustomIdConvention.cs" />
-    <Compile Include="Conventions\CustomPropertyConvention.cs" />
+    <Compile Include="Conventions\CustomForeignKeyConvention.cs" />
     <Compile Include="Document.cs" />
     <Compile Include="FNHClass\CompanyMap.cs" />
     <Compile Include="FNHClass\DocumentMap.cs" />

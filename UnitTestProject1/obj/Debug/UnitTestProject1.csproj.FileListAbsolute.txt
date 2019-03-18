@@ -1,0 +1,5 @@
+C:\Users\t.safari\Desktop\Git\Inventory-Management-System\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+C:\Users\t.safari\Desktop\Git\Inventory-Management-System\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+C:\Users\t.safari\Desktop\Git\Inventory-Management-System\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+C:\Users\t.safari\Desktop\Git\Inventory-Management-System\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
+C:\Users\t.safari\Desktop\Git\Inventory-Management-System\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache

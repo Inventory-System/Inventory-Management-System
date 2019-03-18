@@ -10,10 +10,11 @@ namespace exercise_object_oriented.Conventions
 {
     public class CustomIdConvention : IIdConvention
     {
-        public void Apply(IIdentityInstance instanse)
+        public void Apply(IIdentityInstance instance)
         {
-            instanse.Column("Id");
-            instanse.GeneratedBy.Guid();
+            instance.Column("Id");
+            instance.GeneratedBy.Guid();
+
         }
     }
 }
