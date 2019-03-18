@@ -13,7 +13,7 @@ namespace exercise_object_oriented.Mapping
         public void Override(FluentNHibernate.Automapping.AutoMapping<Product> mapping)
         {
             mapping.Map(x => x.Name).Not.Nullable().Length(50);
-            mapping.References(x => x.Measuerment).Not.Nullable();
+            mapping.References(x => x.subsidiaryUnit).Column("SubsidiaryUnit");
         }
     }
 }
