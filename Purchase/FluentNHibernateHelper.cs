@@ -14,11 +14,10 @@ using exercise_object_oriented.Conventions;
 using exercise_object_oriented;
 
 
-<<<<<<< HEAD
-namespace exercise_object_oriented
-=======
+/*<<<<<<< HEAD
+=======*/
 namespace Purchase
->>>>>>> 55566cc69b0e8d9cfa021262f57b7cc3c8748eb2
+//>>>>>>> 55566cc69b0e8d9cfa021262f57b7cc3c8748eb2
 {
     public class StoreConfiguration : DefaultAutomappingConfiguration
     {

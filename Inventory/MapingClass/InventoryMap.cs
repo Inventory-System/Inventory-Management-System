@@ -13,8 +13,7 @@ namespace Inventory.MapingClass
     {
         public void Override(FluentNHibernate.Automapping.AutoMapping<InventoryDocument> mapping)
         {
-           mapping.Map(c => c.CreateDate).Column("CreateDate");
-           mapping.Map(c => c.DocumentsList).Column("DocumentsList");
+            mapping.Map(c => c.InventoryCode).Column("InventoryCode");
            mapping.Map(c => c.InventoryName).Column("InventoryName");
            mapping.Table("Inventory");
         }
