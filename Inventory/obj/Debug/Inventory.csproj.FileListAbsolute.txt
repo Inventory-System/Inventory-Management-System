@@ -140,3 +140,25 @@ C:\Users\p.pazhoheshi\Desktop\New folder (3)\Inventory-Management-System\Invento
 C:\Users\h.moradi\Desktop\Inventory\Inventory-Management-System\Inventory\bin\Debug\Inventory.exe.config
 C:\Users\h.moradi\Desktop\Inventory\Inventory-Management-System\Inventory\obj\Debug\Inventory.exe
 C:\Users\h.moradi\Desktop\Inventory\Inventory-Management-System\Inventory\obj\Debug\Inventory.pdb
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\bin\Debug\Inventory.exe.config
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\obj\Debug\Inventory.exe
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\obj\Debug\Inventory.pdb
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\bin\Debug\Inventory.exe
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\bin\Debug\Inventory.pdb
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\bin\Debug\exercise-object-oriented.exe
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\bin\Debug\FluentNHibernate.dll
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\bin\Debug\Iesi.Collections.dll
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\bin\Debug\Newtonsoft.Json.dll
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\bin\Debug\NHibernate.dll
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\bin\Debug\SharpArch.Domain.dll
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\bin\Debug\SharpArch.NHibernate.dll
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\bin\Debug\exercise-object-oriented.pdb
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\bin\Debug\FluentNHibernate.pdb
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\bin\Debug\FluentNHibernate.xml
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\bin\Debug\Iesi.Collections.xml
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\bin\Debug\Newtonsoft.Json.xml
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\bin\Debug\NHibernate.xml
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\bin\Debug\SharpArch.Domain.pdb
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\bin\Debug\SharpArch.Domain.xml
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\bin\Debug\SharpArch.NHibernate.pdb
+C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\bin\Debug\SharpArch.NHibernate.xml

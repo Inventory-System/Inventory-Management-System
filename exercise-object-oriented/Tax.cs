@@ -12,12 +12,9 @@ namespace exercise_object_oriented
     }
     public class Tax:BaseClass
     {
-        
         public string Name { get; set; }
         public bool Increasing{ get; set; }
         public Operation operation { get; set; }
         public float Quantity { get; set; }
-
     }
-    
 }

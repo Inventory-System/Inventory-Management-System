@@ -21,14 +21,35 @@ namespace exercise_object_oriented
                    tmp = ((tax.Quantity / 100) * Price);
                    if (tax.Increasing == true)
                    {
-                       Price = Price + (tmp * Price);  
+                       Price += (tmp * Price);  
                    }
                    else
                    {
-                       Price = Price - (tmp * Price);
+                       Price -= (tmp * Price);
+                   }
+                   break;
+               case Operation.Unit:
+                   if (tax.Increasing == true)
+                   {
+                       Price += tax.Quantity;
+                   }
+                   else 
+                   {
+                       Price -= tax.Quantity;
+                   }
+                   break;
+               case Operation.Amount:
+                   if (tax.Increasing == true) 
+                   {
+                       /****************************************************************************************************/
+                   }
+                   else 
+                   {
+                       /****************************************************************************************************/
                    }
                    break;
            }
+          
            return  Price;
        }
     }
