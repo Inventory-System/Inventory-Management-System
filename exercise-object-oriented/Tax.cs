@@ -15,6 +15,6 @@ namespace exercise_object_oriented
         public string Name { get; set; }
         public bool Increasing{ get; set; }
         public Operation operation { get; set; }
-        public float Quantity { get; set; }
+        public decimal Quantity { get; set; }
     }
 }

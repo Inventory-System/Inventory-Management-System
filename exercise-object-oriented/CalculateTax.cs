@@ -9,10 +9,10 @@ namespace exercise_object_oriented
    public class CalculateTax
     {
        List<Tax> TaxList { get; set; }
-       public float Calculate(float Price, Tax tax)
+       public decimal Calculate(decimal Price, Tax tax)
        {
            
-           float tmp;
+           decimal tmp;
 
            switch (tax.operation)
            {
