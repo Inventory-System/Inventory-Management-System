@@ -21,11 +21,11 @@ namespace exercise_object_oriented
                    tmp = ((tax.Quantity / 100) * Price);
                    if (tax.Increasing == true)
                    {
-                       Price += (tmp * Price);  
+                       Price += tmp;  
                    }
                    else
                    {
-                       Price -= (tmp * Price);
+                       Price -= tmp;
                    }
                    break;
                case Operation.Unit:
