@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace exercise_object_oriented
 {
-   public class CalculateTax
+   public class FactorsList
     {
        List<Tax> TaxList { get; set; }
        public decimal Calculate(decimal Price, Tax tax)
