@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace exercise_object_oriented
 {
-   public class CalculateTax
+   public class FactorList
     {
-       List<Tax> TaxList { get; set; }
-       public decimal Calculate(decimal Price, Tax tax)
+       List<Factor> TaxList { get; set; }
+       public decimal Calculate(decimal Price, Factor tax)
        {
            
            decimal tmp;
