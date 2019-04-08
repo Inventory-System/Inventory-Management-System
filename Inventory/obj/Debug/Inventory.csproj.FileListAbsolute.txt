@@ -162,3 +162,6 @@ C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management
 C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\bin\Debug\SharpArch.Domain.xml
 C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\bin\Debug\SharpArch.NHibernate.pdb
 C:\Users\t.safari\Documents\Visual Studio 2013\Projects\Git\Inventory-Management-System\Inventory\bin\Debug\SharpArch.NHibernate.xml
+C:\Users\h.moradi\Desktop\inv\Inventory-Management-System\Inventory\bin\Debug\Inventory.exe.config
+C:\Users\h.moradi\Desktop\inv\Inventory-Management-System\Inventory\obj\Debug\Inventory.exe
+C:\Users\h.moradi\Desktop\inv\Inventory-Management-System\Inventory\obj\Debug\Inventory.pdb
