@@ -10,7 +10,7 @@ namespace exercise_object_oriented
     {
         Percentage, Amount,Unit
     }
-    public class Tax:BaseClass
+    public class Factor:BaseClass
     {
         public string Name { get; set; }
         public int Priority { get; set; }

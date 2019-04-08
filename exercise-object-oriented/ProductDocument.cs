@@ -18,7 +18,7 @@ namespace exercise_object_oriented
         public virtual float SellingPrice { get; set; }
         public virtual Product product { get; set; }
 
-        public virtual Tax calculateTax { get; set; }
+        public virtual Factor calculateTax { get; set; }
 
       
 
