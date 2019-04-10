@@ -17,7 +17,7 @@ namespace exercise_object_oriented
 
 
 
-        public decimal CalculatePrice()
+        public virtual decimal CalculatePrice()
         {
             int tmpPriority = 0;
             decimal tmpPrice = 0;
