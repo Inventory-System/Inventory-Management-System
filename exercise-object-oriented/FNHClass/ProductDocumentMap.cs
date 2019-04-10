@@ -12,6 +12,7 @@ namespace exercise_object_oriented.FNHFolder
             mapping.Map(x => x.Profit);
             mapping.Map(x => x.SellingPrice);
             mapping.References(x => x.product).Not.Nullable().Column("Product");
+            mapping.HasMany(x => x.CalculationFactorsList);
           
         }
     }
@@ -21,7 +22,7 @@ namespace exercise_object_oriented.FNHFolder
         public void Override(AutoMapping<ProductDocument<Document>> mapping)
         {
             mapping.HasOne(x => x.Document);
-            mapping.HasMany(x => x.CalculationFactorsList);
+            
         }
     }
 }

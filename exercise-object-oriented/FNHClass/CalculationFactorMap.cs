@@ -14,7 +14,7 @@ namespace exercise_object_oriented.FNHClass
         {
             mapping.Map(x => x.CalculatedPrice);
             mapping.References(x => x.Factor).Not.Nullable();
-            mapping.HasOne(x => x.ProductDocument);
+          //  mapping.HasOne(x => x.ProductDocument);
         }
     }
 }

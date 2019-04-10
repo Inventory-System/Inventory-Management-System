@@ -67,7 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseClass.cs" />
-    <Compile Include="FactorsList.cs" />
+    <Compile Include="CalculationFactor.cs" />
     <Compile Include="Factor.cs" />
     <Compile Include="Company.cs" />
     <Compile Include="Conventions\CustomIdConvention.cs" />
@@ -79,7 +79,7 @@
     <Compile Include="FNHClass\MeasurementMap.cs" />
     <Compile Include="FNHClass\PartyMap.cs" />
     <Compile Include="FNHClass\PersonMap.cs" />
-    <Compile Include="FNHClass\SubsidiaryUnitMapin.cs" />
+    <Compile Include="FNHClass\SubsidiaryUnitMaping.cs" />
     <Compile Include="Party.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Product.cs" />
