@@ -1,20 +1,16 @@
-﻿using FluentNHibernate.Automapping.Alterations;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FluentNHibernate.Automapping;
+using FluentNHibernate.Automapping.Alterations;
 
 namespace exercise_object_oriented.FNHClass
 {
-    public class CompanyMap:IAutoMappingOverride<Company>
+    public class CompanyMap : IAutoMappingOverride<Company>
     {
-        public void Override(FluentNHibernate.Automapping.AutoMapping<Company> mapping)
+        public void Override(AutoMapping<Company> mapping)
         {
             mapping.Map(x => x.CompanyID).Not.Nullable().Column("Company_Id");
-            mapping.Map(x => x.CompanyName ).Not.Nullable().Length(50);
-            mapping.Map(x => x.Industry ).Length(50);
-            mapping.Map(x => x.FaxNumber );
+            mapping.Map(x => x.CompanyName).Not.Nullable().Length(50);
+            mapping.Map(x => x.Industry).Length(50);
+            mapping.Map(x => x.FaxNumber);
             mapping.Map(x => x.Website).Length(100);
         }
     }

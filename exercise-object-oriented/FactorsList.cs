@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace exercise_object_oriented
 {
-   public class FactorsList
+    public class FactorsList
     {
-       public List<Factor> factorsList { get; set; }
-     
+        public virtual decimal CalculatedPrice { get; set; }
     }
 }

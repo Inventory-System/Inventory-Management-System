@@ -1,23 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FluentNHibernate.Mapping;
+﻿using FluentNHibernate.Automapping;
 using FluentNHibernate.Automapping.Alterations;
 
 namespace exercise_object_oriented.Mapping
 {
     public class ProductMap : IAutoMappingOverride<Product>
     {
-        public void Override(FluentNHibernate.Automapping.AutoMapping<Product> mapping)
+        public void Override(AutoMapping<Product> mapping)
         {
             mapping.Map(x => x.Name).Not.Nullable().Length(50);
-            mapping.References(x => x.subsidiaryUnit).Column("SubsidiaryUnit");
+            mapping.HasMany(x => x.SubsidiaryUnitList);
             mapping.References(x => x.measurement).Column("Measurement");
-            mapping.Map(x => x.SubsidiaryUnitList);
-
-
         }
     }
 }

@@ -1,21 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace exercise_object_oriented
+﻿namespace exercise_object_oriented
 {
-  public enum Operation 
+    public enum Operation
     {
-        Percentage, Amount,Unit
+        Percentage,
+        Amount,
+        Unit
     }
-    public class Factor:BaseClass
+
+    public class Factor : BaseClass
     {
-        public string Name { get; set; }
-        public int Priority { get; set; }
-        public bool Increasing{ get; set; }
-        public Operation operation { get; set; }
-        public decimal Quantity { get; set; }
+        public virtual string Name { get; set; }
+        public virtual int Priority { get; set; }
+        public virtual bool Increasing { get; set; }
+        public virtual Operation operation { get; set; }
+        public virtual decimal Quantity { get; set; }
     }
 }

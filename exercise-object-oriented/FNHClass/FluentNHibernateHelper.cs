@@ -1,20 +1,4 @@
-﻿using FluentNHibernate.Cfg;
-using NHibernate;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using FluentNHibernate;
-using FluentNHibernate.Automapping;
-using FluentNHibernate.Cfg.Db;
-using NHibernate.Tool.hbm2ddl;
-using exercise_object_oriented.Conventions;
-using exercise_object_oriented.FNHFolder;
-
-
-namespace exercise_object_oriented.FNHFolder
+﻿namespace exercise_object_oriented.FNHFolder
 {
     //public class StoreConfiguration : DefaultAutomappingConfiguration
     //{

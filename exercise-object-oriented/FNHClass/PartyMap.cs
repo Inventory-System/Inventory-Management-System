@@ -1,15 +1,11 @@
-﻿using FluentNHibernate.Automapping.Alterations;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FluentNHibernate.Automapping;
+using FluentNHibernate.Automapping.Alterations;
 
 namespace exercise_object_oriented.FNHClass
 {
-    public class PartyMap:IAutoMappingOverride<Party>
+    public class PartyMap : IAutoMappingOverride<Party>
     {
-        public void Override(FluentNHibernate.Automapping.AutoMapping<Party> mapping)
+        public void Override(AutoMapping<Party> mapping)
         {
             mapping.Map(x => x.RegistrationNumber).Not.Nullable();
             mapping.Map(x => x.RegistrationDate);
