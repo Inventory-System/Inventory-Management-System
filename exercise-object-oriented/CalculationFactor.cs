@@ -9,7 +9,7 @@ namespace exercise_object_oriented
         public virtual Factor Factor { get; set; }
         // public virtual ProductDocument ProductDocument { get; set; }
 
-        public decimal CalculateFactor(decimal Price)
+        public virtual decimal CalculateFactor(decimal Price)
         {
             switch (Factor.operation)
             {
