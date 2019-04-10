@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace exercise_object_oriented
 {
@@ -9,7 +10,7 @@ namespace exercise_object_oriented
         public virtual int Profit { get; set; }
         public virtual float SellingPrice { get; set; }
         public virtual Product product { get; set; }
-       // public virtual FactorsList FactorsList { get; set; }
+      
 
 
         //public decimal Calculate(decimal Price)
@@ -57,5 +58,6 @@ namespace exercise_object_oriented
     public abstract class ProductDocument<T> : ProductDocument where T : Document
     {
         public virtual T Document { get; set; }
+        public virtual List<CalculationFactor> CalculationFactorsList { get; set; }
     }
 }
