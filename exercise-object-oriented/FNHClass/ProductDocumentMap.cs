@@ -10,7 +10,7 @@ namespace exercise_object_oriented.FNHFolder
             mapping.Map(x => x.OrginalPrice);
             mapping.Map(x => x.Piece);
             mapping.Map(x => x.Profit);
-            mapping.Map(x => x.SellingPrice);
+            mapping.Map(x => x.Price);
             mapping.References(x => x.product).Not.Nullable().Column("Product");
             mapping.HasMany(x => x.CalculationFactorsList);
           

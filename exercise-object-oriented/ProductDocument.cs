@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using NHibernate.Criterion;
+using NHibernate.Hql.Ast.ANTLR.Tree;
 
 namespace exercise_object_oriented
 {
@@ -8,54 +10,39 @@ namespace exercise_object_oriented
         public virtual int OrginalPrice { get; set; }
         public virtual int Piece { get; set; }
         public virtual int Profit { get; set; }
-        public virtual float SellingPrice { get; set; }
+        public virtual decimal Price { get; set; }
         public virtual Product product { get; set; }
 
         public virtual List<CalculationFactor> CalculationFactorsList { get; set; }
-      
 
 
-        //public decimal Calculate(decimal Price)
-        //{
-            //Factor factor;
-            //for (var i = 1; i <= FactorsList.factorsList.Count(); i++)
-            //{
-            //    factor = FactorsList.factorsList.Find(x => x.Priority == i);
-            //    var QuantityFactor = CalculateFactor(factor, Price);
-            //    Price += QuantityFactor;
-            //}
 
-            //return Price;
-        //}
+        public decimal CalculatePrice()
+        {
+            int tmpPriority = 0;
+            decimal tmpPrice = 0;
+            decimal CurrentPrice = Price;
+            List<CalculationFactor> SortedList = CalculationFactorsList.OrderBy(o => o.Factor.Priority).ToList();
+            
+            for (var i = 1; i <= SortedList.Count(); i++)
+            {
+                if (tmpPriority != SortedList[i].Factor.Priority)
+                {
+                    tmpPriority = SortedList[i].Factor.Priority;
+                    tmpPrice = CurrentPrice;
+                }
+                decimal QuantityFactor = SortedList[i].CalculateFactor(tmpPrice);
+                if (SortedList[i].Factor.Increasing)
+                    CurrentPrice += QuantityFactor;
+                else
+                    CurrentPrice -= QuantityFactor;
+            }
 
-        //public decimal CalculateFactor(Factor factor, decimal Price)
-        //{
-        //    decimal tmp = 0;
-        //    switch (factor.operation)
-        //    {
-        //        case Operation.Percentage:
-        //            tmp = factor.Quantity / 100 * Price;
-        //            if (factor.Increasing == false)
-        //                tmp = -tmp;
-        //            break;
-        //        case Operation.Unit:
-        //            tmp = factor.Quantity;
-        //            if (factor.Increasing == false)
-        //                tmp = -tmp;
-        //            break;
-        //        case Operation.Amount:
-        //            if (factor.Increasing)
-        //            {
-        //                /****************************************************************************************************/
-        //                //
-        //            }
-        //            break;
-        //        default:
-        //            break;
-        //    }
-        //    return tmp;
-        //}
+            return CurrentPrice;
+        }
     }
+
+
 
     public abstract class ProductDocument<T> : ProductDocument where T : Document
     {
