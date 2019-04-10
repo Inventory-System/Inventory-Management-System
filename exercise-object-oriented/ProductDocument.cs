@@ -10,6 +10,8 @@ namespace exercise_object_oriented
         public virtual int Profit { get; set; }
         public virtual float SellingPrice { get; set; }
         public virtual Product product { get; set; }
+
+        public virtual List<CalculationFactor> CalculationFactorsList { get; set; }
       
 
 
@@ -58,6 +60,5 @@ namespace exercise_object_oriented
     public abstract class ProductDocument<T> : ProductDocument where T : Document
     {
         public virtual T Document { get; set; }
-        public virtual List<CalculationFactor> CalculationFactorsList { get; set; }
     }
 }
