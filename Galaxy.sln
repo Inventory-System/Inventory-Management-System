@@ -3,13 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.Base.Domain", "Galaxy\Galaxy.Base.Domain.csproj", "{8F7C52E6-965C-4C02-BDA3-9E81C73A9A6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Base.Domain", "Galaxy\Galaxy.Base.Domain.csproj", "{8F7C52E6-965C-4C02-BDA3-9E81C73A9A6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.Base.Data", "Galaxy.Base.Data\Galaxy.Base.Data.csproj", "{2365C9EB-CA39-43D7-83FE-A8A7064B0168}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Base.Data", "Galaxy.Base.Data\Galaxy.Base.Data.csproj", "{2365C9EB-CA39-43D7-83FE-A8A7064B0168}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Purchase.Domain", "Purchase.Domain\Purchase.Domain.csproj", "{B9AB779D-3DF3-4685-86C2-F21D9943FDA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Purchase.Domain", "Purchase.Domain\Purchase.Domain.csproj", "{B9AB779D-3DF3-4685-86C2-F21D9943FDA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Purchase.Data", "Purchase.Data\Purchase.Data.csproj", "{573A2D16-9994-4140-9935-CFD662D9BE9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Purchase.Data", "Purchase.Data\Purchase.Data.csproj", "{573A2D16-9994-4140-9935-CFD662D9BE9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sale.Domain", "Sale.Domain\Sale.Domain.csproj", "{8F2BF383-F1B1-4438-A99D-44E51BF3E484}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sale.Data", "Sale.Data\Sale.Data.csproj", "{18BB417D-9312-421C-A52B-2CB7F99FE3CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.Data", "Inventory.Data\Inventory.Data.csproj", "{CCBC46B3-0527-43D9-A12C-7138B033979A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.Domain", "Inventory.Domain\Inventory.Domain.csproj", "{AA96CBF6-E5E9-4571-A217-7AC691D4206B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,22 @@ Global
 		{573A2D16-9994-4140-9935-CFD662D9BE9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{573A2D16-9994-4140-9935-CFD662D9BE9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{573A2D16-9994-4140-9935-CFD662D9BE9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F2BF383-F1B1-4438-A99D-44E51BF3E484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F2BF383-F1B1-4438-A99D-44E51BF3E484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F2BF383-F1B1-4438-A99D-44E51BF3E484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F2BF383-F1B1-4438-A99D-44E51BF3E484}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18BB417D-9312-421C-A52B-2CB7F99FE3CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18BB417D-9312-421C-A52B-2CB7F99FE3CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18BB417D-9312-421C-A52B-2CB7F99FE3CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18BB417D-9312-421C-A52B-2CB7F99FE3CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCBC46B3-0527-43D9-A12C-7138B033979A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCBC46B3-0527-43D9-A12C-7138B033979A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCBC46B3-0527-43D9-A12C-7138B033979A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCBC46B3-0527-43D9-A12C-7138B033979A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA96CBF6-E5E9-4571-A217-7AC691D4206B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA96CBF6-E5E9-4571-A217-7AC691D4206B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA96CBF6-E5E9-4571-A217-7AC691D4206B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA96CBF6-E5E9-4571-A217-7AC691D4206B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
