@@ -10,12 +10,13 @@ using FluentNHibernate;
 using FluentNHibernate.Automapping;
 using FluentNHibernate.Cfg.Db;
 using NHibernate.Tool.hbm2ddl;
-using exercise_object_oriented.Conventions;
-using exercise_object_oriented;
-using exercise_object_oriented.FNHClass;
+
+using Galaxy;
+using Sale.Domain;
+using Galaxy.Conventions;
 
 
-namespace Sale
+namespace Sale.Data
 {
     public class StoreConfiguration : DefaultAutomappingConfiguration
     {

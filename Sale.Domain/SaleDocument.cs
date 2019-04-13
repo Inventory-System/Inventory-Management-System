@@ -1,4 +1,6 @@
-﻿using exercise_object_oriented;
+﻿
+using Galaxy;
+using Sale.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;

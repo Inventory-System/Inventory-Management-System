@@ -52,5 +52,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Galaxy.Base.Domain\Galaxy.Base.Domain.csproj">
+      <Project>{7b96ae5b-2dc7-4fa3-b32e-381ed2f7e339}</Project>
+      <Name>Galaxy.Base.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
