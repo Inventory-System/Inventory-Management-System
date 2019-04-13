@@ -1,19 +1,13 @@
-﻿using FluentNHibernate.Cfg;
-using NHibernate;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using FluentNHibernate;
+﻿using System;
 using FluentNHibernate.Automapping;
+using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
+using Galaxy.Base.Data.Convertions;
+using Galaxy.Base.Domain;
+using NHibernate;
 using NHibernate.Tool.hbm2ddl;
-using Galaxy;
-using Galaxy.Conventions;
 
-namespace Purchase
+namespace Purchase.Data
 {
     public class StoreConfiguration : DefaultAutomappingConfiguration
     {
