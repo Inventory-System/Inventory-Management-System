@@ -55,7 +55,6 @@
   <ItemGroup>
     <Compile Include="Convertions\CustomForeignKeyConvention.cs" />
     <Compile Include="Convertions\CustomIdConvention.cs" />
-    <Compile Include="FluentNHibernateHelper.cs" />
     <Compile Include="Mapping\CalculationFactorMap.cs" />
     <Compile Include="Mapping\CompanyMap.cs" />
     <Compile Include="Mapping\DocumentMap.cs" />
@@ -72,6 +71,12 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Galaxy.Base.Domain\Galaxy.Base.Domain.csproj">
+      <Project>{7b96ae5b-2dc7-4fa3-b32e-381ed2f7e339}</Project>
+      <Name>Galaxy.Base.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

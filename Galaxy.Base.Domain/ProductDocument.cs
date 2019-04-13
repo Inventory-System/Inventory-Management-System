@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Galaxy
+namespace Galaxy.Base.Domain
 {
     public abstract class ProductDocument : BaseClass
     {

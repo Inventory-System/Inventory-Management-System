@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Galaxy
+namespace Galaxy.Base.Domain
 {
     public abstract class Document : BaseClass
     {

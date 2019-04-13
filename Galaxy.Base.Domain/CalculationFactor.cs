@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Net.NetworkInformation;
-
-namespace Galaxy
+﻿namespace Galaxy.Base.Domain
 {
     public class CalculationFactor:BaseClass
     {
@@ -11,7 +8,7 @@ namespace Galaxy
 
         public virtual decimal CalculateFactor(decimal Price)
         {
-            switch (Factor.operation)
+            switch (Factor.Operation)
             {
                 case Operation.Percentage:
                     CalculatedPrice = Factor.Quantity / 100 * Price;
