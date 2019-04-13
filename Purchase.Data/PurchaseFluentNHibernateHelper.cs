@@ -35,7 +35,7 @@ namespace Purchase.Data
         }
         public static ISessionFactory CreatSessionFactory()
         {
-            string ConnectionString = "Data Source=T-SAFARI;Initial Catalog=testInventoryDB;User ID=sa;Password=s@123456";
+            string ConnectionString = "Data Source=T-SAFARI;Initial Catalog=testInventoryDB2;User ID=sa;Password=s@123456";
 
             var cfgi = new StoreConfiguration();
 
