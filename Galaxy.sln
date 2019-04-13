@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Purchase.Domain", "Purchase
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.Base.Service", "Galaxy.Base.Service\Galaxy.Base.Service.csproj", "{049FA735-34FC-4E64-B97A-A20BED3184DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Purchase.Base.Service", "Purchase.Base.Service\Purchase.Base.Service.csproj", "{DE7D75FD-52D5-4EA0-8214-ECE7E84FF8DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Purchase.Service", "Purchase.Base.Service\Purchase.Service.csproj", "{DE7D75FD-52D5-4EA0-8214-ECE7E84FF8DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
