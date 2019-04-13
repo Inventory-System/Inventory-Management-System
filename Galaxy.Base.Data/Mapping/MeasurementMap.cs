@@ -1,7 +1,8 @@
 ﻿using FluentNHibernate.Automapping;
 using FluentNHibernate.Automapping.Alterations;
+using Galaxy.Base.Domain;
 
-namespace Galaxy.Mapping
+namespace Galaxy.Base.Data.Mapping
 {
     public class MeasurementMap : IAutoMappingOverride<Measurement>
     {

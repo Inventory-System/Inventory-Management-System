@@ -1,4 +1,4 @@
-﻿namespace Galaxy
+﻿namespace Galaxy.Base.Domain
 {
     public class SubsidiaryUnit : BaseClass
     {

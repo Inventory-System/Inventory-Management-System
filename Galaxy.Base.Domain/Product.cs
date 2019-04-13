@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace Galaxy
+namespace Galaxy.Base.Domain
 {
     public class Product : BaseClass
     {

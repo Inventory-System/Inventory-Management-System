@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FluentNHibernate.Automapping;
+﻿using FluentNHibernate.Automapping;
 using FluentNHibernate.Automapping.Alterations;
+using Galaxy.Base.Domain;
 
-namespace Galaxy.Mapping
+namespace Galaxy.Base.Data.Mapping
 {
     class CalculationFactorMap:IAutoMappingOverride<CalculationFactor>
     {
