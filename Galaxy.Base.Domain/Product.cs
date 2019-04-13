@@ -8,9 +8,7 @@ namespace Galaxy.Base.Domain
         {
         }
         public virtual string Name { get; set; }
-        public virtual SubsidiaryUnit subsidiaryUnit { get; set; }
         public virtual Measurement measurement { get; set; }
-
-        public virtual List<SubsidiaryUnit> SubsidiaryUnitList { get; set; }
+        public virtual SubsidiaryMeasurement SubsidiaryMeasurement { get; set; }
     }
 }

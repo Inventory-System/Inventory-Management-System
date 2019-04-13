@@ -1,11 +1,11 @@
-﻿using exercise_object_oriented;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Inventory.InventoryCLass;
-namespace Inventory.InventoryCLass
+using Galaxy;
+using Galaxy.Base.Domain;
+namespace Inventory.Domain
 {
     public class InventoryDocument : Document<InventoryProductDocument>
     {
