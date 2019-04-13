@@ -1,4 +1,5 @@
-﻿using exercise_object_oriented;
+﻿
+using Galaxy.Base.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;

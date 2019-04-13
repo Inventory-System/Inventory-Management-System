@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using FluentNHibernate.Mapping;
 using FluentNHibernate.Automapping.Alterations;
-using exercise_object_oriented;
+
 
 namespace Sale
 {
