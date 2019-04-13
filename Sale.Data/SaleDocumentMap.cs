@@ -19,7 +19,6 @@ namespace Sale
             mapping.References(x => x.Party);
             mapping.References(x => x.ProductDocumentsList);
             
-            
         }
     }
 }

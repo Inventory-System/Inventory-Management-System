@@ -10,6 +10,7 @@ namespace Sale.Domain
     {
         static void Main(string[] args)
         {
+
         }
     }
 }

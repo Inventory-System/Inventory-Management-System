@@ -15,7 +15,7 @@ using Galaxy.Base.Domain;
 using Galaxy.Base.Data.Convertions;
 
 
-namespace Sale
+namespace Sale.Data
 {
     public class StoreConfiguration : DefaultAutomappingConfiguration
     {

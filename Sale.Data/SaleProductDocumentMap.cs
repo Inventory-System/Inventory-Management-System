@@ -16,6 +16,7 @@ namespace Sale.Data
             mapping.Map(x => x.Piece);
             mapping.Map(x => x.product);
            // mapping.HasOne(x => x.SellingPrice);
+
         }
     }
 }

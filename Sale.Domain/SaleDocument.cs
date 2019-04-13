@@ -16,5 +16,6 @@ using System.Threading.Tasks;
         }
         public virtual DateTime SaleDate { get; set; }
         Party  customer;
+
     }
 }

@@ -12,6 +12,7 @@ namespace Sale.Data
         {
             using (var session = FluentNHibernateHelper.OpenSesseion())
             {
+
             }
         }
     }
