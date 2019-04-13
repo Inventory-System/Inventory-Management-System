@@ -1,12 +1,12 @@
-﻿using exercise_object_oriented;
-using FluentNHibernate.Automapping.Alterations;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FluentNHibernate.Automapping.Alterations;
 
-namespace Purchase
+namespace Purchase.Data
 {
     public class PurchaseDocumentMap:IAutoMappingOverride<PurchaseDocument>
     {

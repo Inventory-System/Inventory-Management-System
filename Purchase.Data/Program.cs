@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Galaxy.Base.Domain;
 
 namespace Purchase.Data
 {
@@ -10,16 +11,16 @@ namespace Purchase.Data
     {
         static void Main(string[] args)
         {
-            using (var session = FluentNHibernateHelper.OpenSesseion())
+            using (var session = PurchaseFluentNHibernateHelper.OpenSesseion())
             {
                 using (var transaction = session.BeginTransaction())
                 {
                     var measurmentKg = new Measurement { Code = 11111, Name = "Kg" };
                     var measurmentMeter = new Measurement { Code = 22222, Name = "Meter" };
-                    var product1 = new Product { Code = 33333, Name = "Meat", measuerment = measurmentKg };
-                    var product2 = new Product { Code = 44444, Name = "Rice", measuerment = measurmentKg };
-                    var product3 = new Product { Code = 55555, Name = "Textile", measuerment = measurmentMeter };
-                    var product4 = new Product { Code = 55555, Name = "Pipe", measuerment = measurmentMeter };
+                    var product1 = new Product { Code = 33333, Name = "Meat", measurement = measurmentKg };
+                    var product2 = new Product { Code = 44444, Name = "Rice", measurement = measurmentKg };
+                    var product3 = new Product { Code = 55555, Name = "Textile", measurement = measurmentMeter };
+                    var product4 = new Product { Code = 55555, Name = "Pipe", measurement = measurmentMeter };
 
                     session.SaveOrUpdate(measurmentKg);
                     session.SaveOrUpdate(measurmentMeter);
