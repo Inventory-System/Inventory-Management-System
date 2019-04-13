@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{18BB417D-9312-421C-A52B-2CB7F99FE3CC}</ProjectGuid>
+    <ProjectGuid>{CCBC46B3-0527-43D9-A12C-7138B033979A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Sale.Data</RootNamespace>
-    <AssemblyName>Sale.Data</AssemblyName>
+    <RootNamespace>Inventory.Data</RootNamespace>
+    <AssemblyName>Inventory.Data</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,11 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FluentNHibernateHelper.cs" />
+    <Compile Include="InventoryHelper.cs" />
+    <Compile Include="InventoryMap.cs" />
+    <Compile Include="InventoryProductMap.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SaleDocumentMap.cs" />
-    <Compile Include="SaleProductDocumentMap.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

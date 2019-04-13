@@ -4,15 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sale.Data
+namespace Inventory.Data
 {
     class Program
     {
         static void Main(string[] args)
         {
-            using (var session = FluentNHibernateHelper.OpenSesseion())
-            {
-            }
+            using (var session = FluentNHibernateHelper.OpenSesseion()) ;
         }
     }
 }

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{18BB417D-9312-421C-A52B-2CB7F99FE3CC}</ProjectGuid>
+    <ProjectGuid>{8F2BF383-F1B1-4438-A99D-44E51BF3E484}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Sale.Data</RootNamespace>
-    <AssemblyName>Sale.Data</AssemblyName>
+    <RootNamespace>Sale.Domain</RootNamespace>
+    <AssemblyName>Sale.Domain</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,11 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FluentNHibernateHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SaleDocumentMap.cs" />
-    <Compile Include="SaleProductDocumentMap.cs" />
+    <Compile Include="SaleDocument.cs" />
+    <Compile Include="SaleProductDocument.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

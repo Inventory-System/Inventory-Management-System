@@ -4,15 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sale.Data
+namespace Purchase.Domain
 {
     class Program
     {
         static void Main(string[] args)
         {
-            using (var session = FluentNHibernateHelper.OpenSesseion())
-            {
-            }
         }
     }
 }
