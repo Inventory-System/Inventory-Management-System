@@ -9,11 +9,12 @@ using FluentNHibernate;
 using FluentNHibernate.Automapping;
 using FluentNHibernate.Cfg.Db;
 using NHibernate.Tool.hbm2ddl;
-using exercise_object_oriented.Conventions;
-using Inventory.InventoryCLass;
-using exercise_object_oriented;
+using Galaxy.Base.Data.Convertions;
+using Inventory.Domain;
+using Galaxy;
+using Galaxy.Base.Domain;
 
-namespace Inventory.HelperClass
+namespace Inventory.Data
 {
     public class InventoryConfiguration : DefaultAutomappingConfiguration
     {
@@ -41,7 +42,7 @@ namespace Inventory.HelperClass
         }
         public static ISessionFactory CreatSessionFactory()
         {
-            string ConnectionString = "Data Source=P-PAZHOHESHI ;Initial Catalog=Inventory;User ID=sa;Password=sa123";
+            string ConnectionString = "Data Source=P-PAZHOHESHI ;Initial Catalog=FileManager;User ID=sa;Password=sa123";
 
             var cfgi = new InventoryConfiguration();
 
@@ -54,7 +55,7 @@ namespace Inventory.HelperClass
                 fluentConfiguration.Mappings(m => m.AutoMappings.Add(AutoMap.AssemblyOf<BaseClass>(cfgi).
                     //  IgnoreBase<Party>().
                     UseOverridesFromAssemblyOf<BaseClass>().Conventions.Add(typeof(CustomIdConvention)).Conventions.AddFromAssemblyOf<CustomForeignKeyConvention>).
-                    Add(AutoMap.AssemblyOf<InventoryDocument>(cfgi)));
+                    Add(AutoMap.AssemblyOf<InventoryDocumentMap>(cfgi)));
             _sessionFactory = configuration.ExposeConfiguration(cfg =>
             {
                 new SchemaUpdate(cfg).Execute(false, false);

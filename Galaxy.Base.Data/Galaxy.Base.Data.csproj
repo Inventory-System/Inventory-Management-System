@@ -64,7 +64,7 @@
     <Compile Include="Mapping\personMap.cs" />
     <Compile Include="Mapping\ProductDocumentMap.cs" />
     <Compile Include="Mapping\ProductMap.cs" />
-    <Compile Include="Mapping\SubsidiaryUnitMaping.cs" />
+    <Compile Include="Mapping\SubsidiaryUnitMap.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
