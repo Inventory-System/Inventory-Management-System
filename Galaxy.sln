@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.Base.Service", "Gala
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Purchase.Service", "Purchase.Base.Service\Purchase.Service.csproj", "{DE7D75FD-52D5-4EA0-8214-ECE7E84FF8DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.Service", "InventoryServis\Inventory.Service.csproj", "{BCC4F4E3-33B1-4DF2-9077-2F0BF07652C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{DE7D75FD-52D5-4EA0-8214-ECE7E84FF8DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE7D75FD-52D5-4EA0-8214-ECE7E84FF8DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE7D75FD-52D5-4EA0-8214-ECE7E84FF8DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCC4F4E3-33B1-4DF2-9077-2F0BF07652C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCC4F4E3-33B1-4DF2-9077-2F0BF07652C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCC4F4E3-33B1-4DF2-9077-2F0BF07652C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCC4F4E3-33B1-4DF2-9077-2F0BF07652C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
