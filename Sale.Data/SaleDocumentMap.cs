@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using FluentNHibernate.Mapping;
 using FluentNHibernate.Automapping.Alterations;
-using exercise_object_oriented;
+
 
 namespace Sale
 {
@@ -18,7 +18,6 @@ namespace Sale
             mapping.Map(x => x.SaleDate).Length(20).Not.Nullable();
             mapping.References(x => x.Party);
             mapping.References(x => x.ProductDocumentsList);
-            
             
         }
     }

@@ -1,4 +1,5 @@
-﻿using exercise_object_oriented;
+﻿
+using Galaxy.Base.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,5 +16,6 @@ using System.Threading.Tasks;
         }
         public virtual DateTime SaleDate { get; set; }
         Party  customer;
+
     }
 }

@@ -4,9 +4,9 @@ using Galaxy.Base.Domain;
 
 namespace Galaxy.Base.Data.Mapping
 {
-    public class SubsidiaryUnitMaping : IAutoMappingOverride<SubsidiaryUnit>
+    public class SubsidiaryUnitMap : IAutoMappingOverride<SubsidiaryMeasurement>
     {
-        public void Override(AutoMapping<SubsidiaryUnit> mapping)
+        public void Override(AutoMapping<SubsidiaryMeasurement> mapping)
         {
             mapping.Map(c => c.SubsidiaryUnitName);
             mapping.Map(c => c.Coefficient);

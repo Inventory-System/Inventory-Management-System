@@ -1,18 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{18BB417D-9312-421C-A52B-2CB7F99FE3CC}</ProjectGuid>
+    <ProjectGuid>{1F0BF19B-8255-4728-9BCF-C6810CD9E4BB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Sale.Data</RootNamespace>
-    <AssemblyName>Sale.Data</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sale.Service</RootNamespace>
+    <AssemblyName>Sale.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -65,15 +64,13 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FluentNHibernateHelper.cs" />
+    <Compile Include="DAL\ISaleRepository.cs" />
+    <Compile Include="DAL\SaleRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SaleDocumentMap.cs" />
-    <Compile Include="SaleProductDocumentMap.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -88,10 +85,21 @@
       <Project>{7b96ae5b-2dc7-4fa3-b32e-381ed2f7e339}</Project>
       <Name>Galaxy.Base.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Sale.Data\Sale.Data.csproj">
+      <Project>{18bb417d-9312-421c-a52b-2cb7f99fe3cc}</Project>
+      <Name>Sale.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Sale.Domain\Sale.Domain.csproj">
       <Project>{8f2bf383-f1b1-4438-a99d-44e51bf3e484}</Project>
       <Name>Sale.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
 </Project>
