@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Galaxy.Base.Domain
+namespace Inventory.Domain
 {
-    interface IDocument
+    interface IInventoryDocumentRepository
     {
-
     }
 }

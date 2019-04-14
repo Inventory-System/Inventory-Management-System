@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Galaxy.Base.Domain;
+using NHibernate;
 using Purchase.Data;
 
 namespace Purchase.Service
 {
     class Program
     {
+      
         static void Main(string[] args)
         {
 
@@ -33,6 +35,7 @@ namespace Purchase.Service
             Console.ReadLine();
         }
 
+     
         static void InsertProduct(Product product)
         {
             using (var session = PurchaseFluentNHibernateHelper.OpenSesseion())
@@ -59,6 +62,7 @@ namespace Purchase.Service
 
         static List<Product> GetProducts()
         {
+            
 
             List<Product> products = new List<Product>();
             // var products;
