@@ -12,7 +12,7 @@ using NHibernate.Linq;
 
 namespace Galaxy.Base.Data.DAL
 {
-    class Repository<T> : IRepository<T> where T : BaseClass
+    public class Repository<T> : IRepository<T> where T : BaseClass
     {
         protected readonly ISession Session = null;
         protected readonly ITransaction Transaction = null;
@@ -28,7 +28,7 @@ namespace Galaxy.Base.Data.DAL
             return Session.Query<T>().ToList();
         }
 
-        public T GetById(int id )
+        public T GetById(Guid id )
         {
             return Session.Get<T>(id);
         }
