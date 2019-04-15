@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Inventory.Domain
 {
-    interface IInventoryDocumentRepository
+    public interface IInventoryDocumentRepository
     {
+        void Update(InventoryDocument document);
     }
 }

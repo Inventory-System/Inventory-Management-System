@@ -53,10 +53,6 @@
       <HintPath>..\packages\SharpArch.Domain.4.0.2\lib\net45\SharpArch.Domain.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="SharpArch.NHibernate, Version=4.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SharpArch.NHibernate.4.0.2\lib\net45\SharpArch.NHibernate.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Galaxy.Base.Domain
 {
@@ -11,4 +12,6 @@ namespace Galaxy.Base.Domain
         public virtual Measurement measurement { get; set; }
         public virtual SubsidiaryMeasurement SubsidiaryMeasurement { get; set; }
     }
+
+    
 }

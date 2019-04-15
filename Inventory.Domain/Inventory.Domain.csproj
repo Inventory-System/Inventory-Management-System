@@ -69,6 +69,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IInventoryDocumentRepository.cs" />
     <Compile Include="InventoryDocument.cs" />
     <Compile Include="InventoryProductDocument.cs" />
     <Compile Include="Program.cs" />

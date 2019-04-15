@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Galaxy.Base.Domain
 {
-    interface IProduct
+    public interface IProduct<T> where T : BaseClass
     {
+        
     }
 }
