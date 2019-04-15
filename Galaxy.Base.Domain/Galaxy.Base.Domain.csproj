@@ -46,7 +46,8 @@
     <Compile Include="Company.cs" />
     <Compile Include="Document.cs" />
     <Compile Include="Factor.cs" />
-    <Compile Include="IDocument.cs" />
+    <Compile Include="DAL\IProduct.cs" />
+    <Compile Include="DAL\IRepository.cs" />
     <Compile Include="Measurement.cs" />
     <Compile Include="Party.cs" />
     <Compile Include="Person.cs" />
