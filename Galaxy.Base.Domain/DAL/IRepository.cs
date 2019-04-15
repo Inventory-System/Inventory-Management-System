@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Linq.Expressions;
 
-namespace Galaxy.Base.Domain
+
+namespace Galaxy.Base.Domain.DAL
 {
-    interface IRepository<T> where T : BaseClass
+    public interface IRepository<T> where T : BaseClass
     {
         List<T> GetAll();
         T GetById(int id);
-        List<T> Find(T entity);
+        object Find(Expression<Func<T, bool>> expression);
 
         void Add(T entity);
         void AddRange(List<T> entities);
