@@ -9,7 +9,7 @@ namespace Galaxy.Base.Domain.DAL
     public interface IRepository<T> where T : BaseClass
     {
         List<T> GetAll();
-        T GetById(int id);
+        T GetById(Guid id);
         object Find(Expression<Func<T, bool>> expression);
 
         void Add(T entity);

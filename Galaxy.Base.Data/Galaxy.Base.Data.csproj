@@ -65,11 +65,15 @@
   <ItemGroup>
     <Compile Include="Convertions\CustomForeignKeyConvention.cs" />
     <Compile Include="Convertions\CustomIdConvention.cs" />
+    <Compile Include="DAL\UnitOfWork.cs" />
+    <Compile Include="DAL\MeasurementRepository.cs" />
+    <Compile Include="DAL\ProductRepository.cs" />
     <Compile Include="DAL\Repository.cs" />
     <Compile Include="Mapping\CalculationFactorMap.cs" />
     <Compile Include="Mapping\CompanyMap.cs" />
     <Compile Include="Mapping\DocumentMap.cs" />
     <Compile Include="Mapping\FactorMap.cs" />
+    <Compile Include="Mapping\FluentNhibernate.cs" />
     <Compile Include="Mapping\MeasurementMap.cs" />
     <Compile Include="Mapping\PartyMap.cs" />
     <Compile Include="Mapping\personMap.cs" />

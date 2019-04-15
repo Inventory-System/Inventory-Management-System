@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Galaxy.Base.Domain.DAL
 {
-    interface IMeasurementRepository:IRepository<Measurement>
+    public interface IMeasurementRepository:IRepository<Measurement>
     {
     }
 }
