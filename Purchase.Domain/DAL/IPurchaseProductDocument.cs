@@ -7,7 +7,7 @@ using Galaxy.Base.Domain.DAL;
 
 namespace Purchase.Domain.DAL
 {
-    interface IPurchaseProductDocument:IRepository<PurchaseProductDocument>
+    interface IPurchaseProductDocument : IRepository<PurchaseProductDocument>
     {
     }
 }
