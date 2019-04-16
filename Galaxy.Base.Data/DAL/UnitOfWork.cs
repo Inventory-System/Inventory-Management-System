@@ -16,12 +16,20 @@ namespace Galaxy.Base.Data.DAL
         public ITransaction Transaction { get; private set; }
         public IProductRepository ProductRepository { get; private set; }
         public IMeasurementRepository MeasurementRepository { get; private set; }
+        public IFactorRepository FactorRepository { get;private set; }
+        public IDocumentRepository DocumentRepository { get;private set; }
+        public IPartyRepository PartyRepository { get; private set; }
+
         public UnitOfWork()
         {
+
             Session = FluentNHibernateHelper.OpenSesseion();
             BeginTransaction();
             ProductRepository = new ProductRepository(Session, Transaction);
             MeasurementRepository = new MeasurementRepository(Session, Transaction);
+            FactorRepository = new FoctorRepository(Session, Transaction);
+            DocumentRepository=new DocumentRepository(Session,Transaction);
+            PartyRepository=new PartyRepository(Session,Transaction);
         }
 
 
