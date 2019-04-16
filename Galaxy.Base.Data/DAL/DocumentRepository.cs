@@ -7,12 +7,15 @@ using Galaxy.Base.Domain;
 using Galaxy.Base.Domain.DAL;
 using NHibernate;
 
+
 namespace Galaxy.Base.Data.DAL
 {
-   public class MeasurementRepository : Repository<Measurement>, IMeasurementRepository
+   public class DocumentRepository:Repository<Document>
     {
-        public MeasurementRepository(ISession session, ITransaction transaction) : base(session, transaction)
-        {
-        }
+       public DocumentRepository(ISession session, ITransaction transaction) : base(session, transaction)
+       {
+           
+       }
+
     }
 }
