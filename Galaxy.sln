@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sale.Domain", "Sale.Domain\Sale.Domain.csproj", "{8F2BF383-F1B1-4438-A99D-44E51BF3E484}"
 EndProject
@@ -25,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Purchase.Service", "Purchas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.Service", "InventoryServis\Inventory.Service.csproj", "{BCC4F4E3-33B1-4DF2-9077-2F0BF07652C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.Base.UnitTest", "Galaxy.Base.UnitTest\Galaxy.Base.UnitTest.csproj", "{5FBC71E8-1230-454E-8C3D-6ADE0D71C915}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sale.Service", "Sale.Service\Sale.Service.csproj", "{1F0BF19B-8255-4728-9BCF-C6810CD9E4BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +81,7 @@ Global
 		{5FBC71E8-1230-454E-8C3D-6ADE0D71C915}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FBC71E8-1230-454E-8C3D-6ADE0D71C915}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FBC71E8-1230-454E-8C3D-6ADE0D71C915}.Release|Any CPU.Build.0 = Release|Any CPU
+
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
