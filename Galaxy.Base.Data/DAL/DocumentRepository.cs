@@ -10,7 +10,7 @@ using NHibernate;
 
 namespace Galaxy.Base.Data.DAL
 {
-   public class DocumentRepository:Repository<Document>
+   public class DocumentRepository:Repository<Document>,IDocumentRepository
     {
        public DocumentRepository(ISession session, ITransaction transaction) : base(session, transaction)
        {
