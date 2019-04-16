@@ -9,9 +9,9 @@ using Purchase.Domain.DAL;
 
 namespace Purchase.Data.DAL
 {
-    class PurchaseProductDocumentRepository : Repository<PurchaseProductDocument>, IPurchaseProductDocumentRepository
+    class PurchaseDocumentRepository : Repository<PurchaseDocument> , IPurchaseDocumentRepository
     {
-        public PurchaseProductDocumentRepository(ISession session, ITransaction transaction) : base(session, transaction)
+        public PurchaseDocumentRepository(ISession session, ITransaction transaction) : base(session, transaction)
         {
         }
     }
