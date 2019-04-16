@@ -44,8 +44,10 @@
     <Compile Include="BaseClass.cs" />
     <Compile Include="CalculationFactor.cs" />
     <Compile Include="Company.cs" />
+    <Compile Include="DAL\IDocumentRepository.cs" />
     <Compile Include="DAL\IFactorRepository.cs" />
     <Compile Include="DAL\IMeasurementRepository.cs" />
+    <Compile Include="DAL\IPartyRepository.cs" />
     <Compile Include="DAL\IUnitOfWork.cs" />
     <Compile Include="Document.cs" />
     <Compile Include="Factor.cs" />
