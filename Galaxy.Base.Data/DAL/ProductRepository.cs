@@ -15,23 +15,5 @@ namespace Galaxy.Base.Data.DAL
         {
             
         }
-
-        public void Update(Product product2)
-        {
-            Product product = GetById(product2.Id);
-            if (product == null)
-            {
-                Add(product2);
-            }
-            else
-            {
-                product.Id = product2.Id;
-                product.Name = product2.Name;
-               // product.measurement = product2.measurement;
-              //  product.SubsidiaryMeasurement = product2.SubsidiaryMeasurement;
-                product.Code = product2.Code;
-
-            }
-        }
     }
 }
