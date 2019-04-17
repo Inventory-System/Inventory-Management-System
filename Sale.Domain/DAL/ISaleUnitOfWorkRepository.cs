@@ -12,5 +12,6 @@ namespace Sale.Domain.DAL
         
         ISaleDocumentRepository SaleDocumentRepository { get; }
         ISaleProductDucumentRepository ProductDucumentRepository { get; }
+        
     }
 }

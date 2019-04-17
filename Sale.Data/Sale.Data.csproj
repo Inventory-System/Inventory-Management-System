@@ -69,10 +69,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAL\Repository.cs" />
-    <Compile Include="DAL\SaleDocumentMapRepository.cs" />
+    <Compile Include="DAL\SaleDocumentRepository.cs" />
     <Compile Include="DAL\SaleProductDocumentRepository.cs" />
-    <Compile Include="DAL\UnitOfWork.cs" />
+    <Compile Include="DAL\SaleUnitOfWorkRepository.cs" />
     <Compile Include="FluentNHibernateHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
