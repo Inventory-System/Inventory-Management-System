@@ -8,7 +8,7 @@ namespace Galaxy.Base.Data.Convertions
         public void Apply(IIdentityInstance instance)
         {
             instance.Column("Id");
-            instance.GeneratedBy.Guid();
+            instance.GeneratedBy.Assigned();
 
         }
     }
