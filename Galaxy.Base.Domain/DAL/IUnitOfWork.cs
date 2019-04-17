@@ -10,6 +10,10 @@ namespace Galaxy.Base.Domain.DAL
     {
         IProductRepository ProductRepository { get; }
         IMeasurementRepository MeasurementRepository { get; }
+        IFactorRepository FactorRepository { get; }
+        IPartyRepository PartyRepository { get; }
+        IDocumentRepository DocumentRepository { get; }
+        
 
         void BeginTransaction();
         void CommitTransaction();
