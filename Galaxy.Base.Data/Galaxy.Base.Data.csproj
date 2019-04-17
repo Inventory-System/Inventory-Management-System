@@ -76,7 +76,7 @@
     <Compile Include="Mapping\CompanyMap.cs" />
     <Compile Include="Mapping\DocumentMap.cs" />
     <Compile Include="Mapping\FactorMap.cs" />
-    <Compile Include="Mapping\FluentNhibernate.cs" />
+    <Compile Include="Mapping\FluentNhibernateHelper.cs" />
     <Compile Include="Mapping\MeasurementMap.cs" />
     <Compile Include="Mapping\PartyMap.cs" />
     <Compile Include="Mapping\personMap.cs" />
