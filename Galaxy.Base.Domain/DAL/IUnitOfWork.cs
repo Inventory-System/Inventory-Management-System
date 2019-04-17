@@ -16,7 +16,7 @@ namespace Galaxy.Base.Domain.DAL
         
 
         void BeginTransaction();
-        void CommitTransaction();
+        void Complete();
         void RollbackTransaction();
         void CloseTransaction();
         void CloseSession();

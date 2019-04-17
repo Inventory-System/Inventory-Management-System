@@ -38,7 +38,7 @@ namespace Galaxy.Base.Data.DAL
             Transaction = Session.BeginTransaction();
         }
 
-        public void CommitTransaction()
+        public void Complete()
         {
             Transaction.Commit();
         }

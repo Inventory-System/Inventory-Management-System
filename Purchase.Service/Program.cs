@@ -62,8 +62,6 @@ namespace Purchase.Service
 
         static List<Product> GetProducts()
         {
-            
-
             List<Product> products = new List<Product>();
             // var products;
             using (var session = PurchaseFluentNHibernateHelper.OpenSesseion())
