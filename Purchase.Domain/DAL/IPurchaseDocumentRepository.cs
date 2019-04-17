@@ -9,5 +9,6 @@ namespace Purchase.Domain.DAL
 {
     public interface IPurchaseDocumentRepository : IRepository<PurchaseDocument>
     {
+
     }
 }
