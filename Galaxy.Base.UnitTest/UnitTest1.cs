@@ -1,16 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Galaxy.Base.Data.DAL;
 using Galaxy.Base.Domain;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Galaxy.Base.Service
+namespace Galaxy.Base.UnitTest
 {
-    class Program
+    [TestClass]
+    public class UnitTest1
     {
-        static void Main(string[] args)
+        [TestMethod]
+        public void TestMethod1()
         {
             using (var UnitOfWork = new UnitOfWork())
             {
@@ -24,11 +23,12 @@ namespace Galaxy.Base.Service
                 UnitOfWork.MeasurementRepository.Add(measurmentMeter);
                 UnitOfWork.ProductRepository.Add(product1);
                 UnitOfWork.ProductRepository.Add(product4);
-              //  Guid x = new Guid("0893CAAF-8F61-47EC-8D9A-F06282FCCB5E");
-              //  var product5 = new Product { Code = 77777, Name = "Textilenew", measurement = measurmentMeter };
-               // var product6 = new Product { Id = x,Code = 66666, Name = "PipeChanged", measurement = measurmentMeter };
-
-                UnitOfWork.CommitTransaction();
+                //Guid x = new Guid("0893CAAF-8F61-47EC-8D9A-F06282FCCB5E");
+                //var product5 = new Product { Code = 77777, Name = "Textilenew", measurement = measurmentMeter };
+                //var product6 = new Product { Id = x, Code = 66666, Name = "PipeChanged2", measurement = measurmentMeter };
+                //UnitOfWork.ProductRepository.Update(product5);
+                //UnitOfWork.ProductRepository.Update(product6);
+                //UnitOfWork.CommitTransaction();
             }
         }
     }
