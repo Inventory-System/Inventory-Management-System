@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 using FluentNHibernate.Utils;
 using Galaxy.Base.Data.Mapping;
 using Galaxy.Base.Domain.DAL;
+using Galaxy.Base.Domain;
 using NHibernate;
 
 namespace Galaxy.Base.Data.DAL
 {
-    public class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork 
     {
         public ISession Session { get; private set; }
         public ITransaction Transaction { get; private set; }
@@ -19,6 +20,8 @@ namespace Galaxy.Base.Data.DAL
         public IFactorRepository FactorRepository { get;private set; }
         public IDocumentRepository DocumentRepository { get;private set; }
         public IPartyRepository PartyRepository { get; private set; }
+        public IPersonRepository PersonRepository { get; private set; }
+        public ICompanyRepository CompanyRepository { get; private set; }
 
         public UnitOfWork()
         {
@@ -30,6 +33,9 @@ namespace Galaxy.Base.Data.DAL
             FactorRepository = new FoctorRepository(Session, Transaction);
             DocumentRepository=new DocumentRepository(Session,Transaction);
             PartyRepository=new PartyRepository(Session,Transaction);
+            CompanyRepository = new CompanyRepository(Session, Transaction);
+            PersonRepository=new PersonRepository(Session,Transaction);
+
         }
 
 

@@ -65,9 +65,11 @@
   <ItemGroup>
     <Compile Include="Convertions\CustomForeignKeyConvention.cs" />
     <Compile Include="Convertions\CustomIdConvention.cs" />
+    <Compile Include="DAL\CompanyRepository.cs" />
     <Compile Include="DAL\DocumentRepository.cs" />
     <Compile Include="DAL\FoctorRepository.cs" />
     <Compile Include="DAL\PartyRepository.cs" />
+    <Compile Include="DAL\PersonRepository.cs" />
     <Compile Include="DAL\UnitOfWork.cs" />
     <Compile Include="DAL\MeasurementRepository.cs" />
     <Compile Include="DAL\ProductRepository.cs" />

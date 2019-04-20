@@ -13,6 +13,9 @@ namespace Galaxy.Base.Domain.DAL
         IFactorRepository FactorRepository { get; }
         IPartyRepository PartyRepository { get; }
         IDocumentRepository DocumentRepository { get; }
+        ICompanyRepository CompanyRepository { get; }
+        IPersonRepository PersonRepository { get; }
+        
         
 
         void BeginTransaction();
