@@ -71,7 +71,7 @@
   <ItemGroup>
     <Compile Include="DAL\IInventoryProductDocumentRepository.cs" />
     <Compile Include="DAL\IInventorytDocumentRepository.cs" />
-    <Compile Include="IInventoryDocumentRepository.cs" />
+    <Compile Include="DAL\IInventoryUnitOfWorkRepository.cs" />
     <Compile Include="InventoryDocument.cs" />
     <Compile Include="InventoryProductDocument.cs" />
     <Compile Include="Program.cs" />

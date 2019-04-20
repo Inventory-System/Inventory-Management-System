@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Inventory.Domain.DAL
 {
-    interface IInventoryProductDocumentRepository:IRepository<InventoryProductDocument>
+    public interface IInventoryProductDocumentRepository : IRepository<InventoryProductDocument>
     {
     }
 }
