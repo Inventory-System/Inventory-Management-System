@@ -1,14 +1,14 @@
 ﻿using System;
-using Galaxy.Base.Data.DAL;
 using Galaxy.Base.Domain;
+using Galaxy.Base.Domain.DAL;
 
 namespace Galaxy.Base.Service
 {
     public class Service<T> where T : BaseClass
     {
-        private Repository<T> repository;
+        private IRepository<T> repository;
 
-        public Service(Repository<T> repository)
+        public Service(IRepository<T> repository)
         {
             this.repository = repository;
         }
