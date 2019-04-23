@@ -8,14 +8,13 @@ namespace Galaxy.Base.Domain.DAL
 {
     public interface IRepository<T> where T : BaseClass
     {
-        List<T> GetAll();
-        T GetById(Guid id);
-        object Find(Expression<Func<T, bool>> expression);
+        void Create(T entity);
+        List<T> ReadAll();
+        T Read(Guid id); 
+        void Delete(Guid id); 
 
-        void Add(T entity);
-        void AddRange(List<T> entities);
-
-        void Remove(T entity);
-        void RemoveRange(List<T> entities);
+        //   object Find(Expression<Func<T, bool>> expression);
+        //  void AddRange(List<T> entities);
+        //   void RemoveRange(List<T> entities);
     }
 }

@@ -23,46 +23,49 @@ namespace Galaxy.Base.Data.DAL
             Transaction = transaction;
         }
 
-        public List<T> GetAll()
-        {
-            return Session.Query<T>().ToList();
-        }
-
-        public T GetById(Guid id )
-        {
-            return Session.Get<T>(id);
-        }
-
-        public object Find(Expression<Func<T, bool>> expression)
-        {
-            return Session.Query<T>().Where(expression).AsQueryable().ToList();
-        }
-
-
-        public void Add(T entity)
+        public void Create(T entity)
         {
             Session.Save(entity);
         }
 
-        public void AddRange(List<T> entities)
+        public List<T> ReadAll()
         {
-            foreach (T entity in entities)
-            {
-                Session.Save(entity);
-            }
+            return Session.Query<T>().ToList();
         }
 
-        public void Remove(T entity)
+        public T Read(Guid id )
         {
-            Session.Delete(entity);
+            return Session.Get<T>(id);
         }
 
-        public void RemoveRange(List<T> entities)
+        public void Delete(Guid id)
         {
-            foreach (T entity in entities)
-            {
-                Session.Delete(entity);
-            }
+            Session.Delete(id);
         }
+
+
+        //public object Find(Expression<Func<T, bool>> expression)
+        //{
+        //    return Session.Query<T>().Where(expression).AsQueryable().ToList();
+        //}
+
+
+ 
+        //public void AddRange(List<T> entities)
+        //{
+        //    foreach (T entity in entities)
+        //    {
+        //        Session.Save(entity);
+        //    }
+        //}
+
+       
+        //public void DeleteRange(List<T> entities)
+        //{
+        //    foreach (T entity in entities)
+        //    {
+        //        Session.Delete(entity);
+        //    }
+        //}
     }
 }
