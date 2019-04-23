@@ -96,9 +96,6 @@ namespace Purchase.Service
             foreach (var product in products)
             {
                 Console.WriteLine("\tName: " + product.Name);
-                //Console.WriteLine("\tName: " + Product.);
-                //Console.WriteLine("\tName: " + Product.Name);
-                //Console.WriteLine("\tName: " + Product.Name);
             }
         }
 
@@ -153,9 +150,6 @@ namespace Purchase.Service
             foreach (var measurement in measurements)
             {
                 Console.WriteLine("\tName: " + measurement.Name);
-                //Console.WriteLine("\tName: " + Product.);
-                //Console.WriteLine("\tName: " + Product.Name);
-                //Console.WriteLine("\tName: " + Product.Name);
             }
         }
     }
