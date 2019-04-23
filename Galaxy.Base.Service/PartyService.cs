@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Purchase.Service
+namespace Galaxy.Base.Service
 {
-    class Controller
+    class PartyService
     {
     }
 }

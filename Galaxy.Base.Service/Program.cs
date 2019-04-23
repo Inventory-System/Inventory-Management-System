@@ -46,7 +46,7 @@ namespace Galaxy.Base.Service
 
         public static void InsertProduct(Product product)
         {
-            unitOfWork.ProductRepository.Add(product);
+            unitOfWork.ProductRepository.Create(product);
         }
         public static void InsertListOfProducts(List<Product> products)
         {
@@ -55,13 +55,13 @@ namespace Galaxy.Base.Service
 
         public static Product GetProduct(Guid id)
         {
-            unitOfWork.ProductRepository.GetById(id);
+            unitOfWork.ProductRepository.Read(id);
         }
 
 
         public static void InsertMeasurement(Measurement measurement)
         {
-            unitOfWork.MeasurementRepository.Add(measurement);
+            unitOfWork.MeasurementRepository.Create(measurement);
         }
         public static void InsertListOfMeasurement(List<Measurement> measurements)
         {
