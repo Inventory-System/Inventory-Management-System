@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Controller.Sale
 {
-    class SaleDocumentController
+   public class SaleDocumentController
     {
     }
 }
