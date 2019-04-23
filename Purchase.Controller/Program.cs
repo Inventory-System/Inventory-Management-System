@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Purchase.Controller
@@ -10,6 +11,7 @@ namespace Purchase.Controller
     {
         static void Main(string[] args)
         {
+            
         }
     }
 }
