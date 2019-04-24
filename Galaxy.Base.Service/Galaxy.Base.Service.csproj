@@ -57,10 +57,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Galaxy.Base.Data\Galaxy.Base.Data.csproj">
-      <Project>{28FF5FFB-1D67-4A3F-B32F-8E36F9A09ABD}</Project>
-      <Name>Galaxy.Base.Data</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Galaxy.Base.Domain\Galaxy.Base.Domain.csproj">
       <Project>{7B96AE5B-2DC7-4FA3-B32E-381ED2F7E339}</Project>
       <Name>Galaxy.Base.Domain</Name>
