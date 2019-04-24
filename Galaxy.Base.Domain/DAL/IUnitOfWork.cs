@@ -8,13 +8,13 @@ namespace Galaxy.Base.Domain.DAL
 {
     public interface IUnitOfWork:IDisposable
     {
-        IProductRepository ProductRepository { get; }
-        IMeasurementRepository MeasurementRepository { get; }
-        IFactorRepository FactorRepository { get; }
-        IPartyRepository PartyRepository { get; }
-        IDocumentRepository DocumentRepository { get; }
-        ICompanyRepository CompanyRepository { get; }
-        IPersonRepository PersonRepository { get; }
+        //IProductRepository ProductRepository { get; }
+        //IMeasurementRepository MeasurementRepository { get; }
+        //IFactorRepository FactorRepository { get; }
+        //IPartyRepository PartyRepository { get; }
+        //IDocumentRepository DocumentRepository { get; }
+        //ICompanyRepository CompanyRepository { get; }
+        //IPersonRepository PersonRepository { get; }
         
         
 
