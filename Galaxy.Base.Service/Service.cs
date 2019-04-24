@@ -1,10 +1,11 @@
 ﻿using System;
 using Galaxy.Base.Domain;
 using Galaxy.Base.Domain.DAL;
+using Galaxy.Base.Domain.ServiceInterfaces;
 
 namespace Galaxy.Base.Service
 {
-    public class Service<T> where T : BaseClass
+    public class Service<T> :IService<T> where T : BaseClass
     {
         private IRepository<T> repository;
 
@@ -16,6 +17,8 @@ namespace Galaxy.Base.Service
         {
             repository.Create(entity);
         }
+
+
         public T Read(Guid id)
         {
             return repository.Read(id);
