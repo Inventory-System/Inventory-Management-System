@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 using Galaxy.Base.Data.DAL;
 using Galaxy.Base.Domain;
 using Galaxy.Base.Domain.DAL;
+using Galaxy.Base.Domain.ServiceInterface;
 
 namespace Galaxy.Base.Service
 {
-    class ProductService : Service<Product>
+    public class ProductService : Service<Product>, IProductService
     {
         public ProductService(IRepository<Product> repository) : base(repository)
         {
