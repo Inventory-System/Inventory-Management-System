@@ -6,10 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Galaxy.Base.Domain.DAL;
 using Galaxy.Base.Service;
+using Inventory.Domain.InventoryServiceInterface;
 
 namespace InventoryServis
 {
-    public class InventoryDocumentServic : Service<InventoryDocument>
+    public class InventoryDocumentServic : Service<InventoryDocument> , IInventoryDocumentService
     {
         public InventoryDocumentServic(IRepository<InventoryDocument> repository): base(repository)
         {
