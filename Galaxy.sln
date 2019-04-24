@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.Service", "Invent
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sale.Service", "Sale.Service\Sale.Service.csproj", "{1F0BF19B-8255-4728-9BCF-C6810CD9E4BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.Base.Controller", "Galaxy.Base.Controller\Galaxy.Base.Controller.csproj", "{121AD2CB-4F92-4B85-AFCE-FEF354E9896B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Purchase.Controller", "Purchase.Controller\Purchase.Controller.csproj", "{C14BCEB1-1B6F-408B-8631-E16C927E6792}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{1F0BF19B-8255-4728-9BCF-C6810CD9E4BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F0BF19B-8255-4728-9BCF-C6810CD9E4BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F0BF19B-8255-4728-9BCF-C6810CD9E4BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{121AD2CB-4F92-4B85-AFCE-FEF354E9896B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{121AD2CB-4F92-4B85-AFCE-FEF354E9896B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{121AD2CB-4F92-4B85-AFCE-FEF354E9896B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{121AD2CB-4F92-4B85-AFCE-FEF354E9896B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C14BCEB1-1B6F-408B-8631-E16C927E6792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C14BCEB1-1B6F-408B-8631-E16C927E6792}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C14BCEB1-1B6F-408B-8631-E16C927E6792}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C14BCEB1-1B6F-408B-8631-E16C927E6792}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

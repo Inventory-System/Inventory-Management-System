@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>eed5dd51-a09f-4f97-b703-3ddf6ce0cd2b</ProjectGuid>
+    <ProjectGuid>{121AD2CB-4F92-4B85-AFCE-FEF354E9896B}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Galaxy.Base.Controller</RootNamespace>
