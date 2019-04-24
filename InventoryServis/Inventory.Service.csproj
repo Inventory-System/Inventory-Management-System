@@ -63,6 +63,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InventoryDocumentServic.cs" />
+    <Compile Include="InventoryProductDocumentservice.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -74,6 +76,10 @@
     <ProjectReference Include="..\Galaxy.Base.Domain\Galaxy.Base.Domain.csproj">
       <Project>{7b96ae5b-2dc7-4fa3-b32e-381ed2f7e339}</Project>
       <Name>Galaxy.Base.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Galaxy.Base.Service\Galaxy.Base.Service.csproj">
+      <Project>{049fa735-34fc-4e64-b97a-a20bed3184da}</Project>
+      <Name>Galaxy.Base.Service</Name>
     </ProjectReference>
     <ProjectReference Include="..\Inventory.Data\Inventory.Data.csproj">
       <Project>{ccbc46b3-0527-43d9-a12c-7138b033979a}</Project>
