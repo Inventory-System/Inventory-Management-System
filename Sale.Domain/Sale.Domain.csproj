@@ -51,6 +51,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SaleDocument.cs" />
     <Compile Include="SaleProductDocument.cs" />
+    <Compile Include="ServiceInterface\ISaleDocumentService.cs" />
+    <Compile Include="ServiceInterface\ISaleProductDocumentService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
