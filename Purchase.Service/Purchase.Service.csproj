@@ -60,6 +60,8 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseDocumentService.cs" />
+    <Compile Include="PurchaseProductDocumentService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -69,6 +71,14 @@
     <ProjectReference Include="..\Galaxy.Base.Domain\Galaxy.Base.Domain.csproj">
       <Project>{7b96ae5b-2dc7-4fa3-b32e-381ed2f7e339}</Project>
       <Name>Galaxy.Base.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Galaxy.Base.Service\Galaxy.Base.Service.csproj">
+      <Project>{049fa735-34fc-4e64-b97a-a20bed3184da}</Project>
+      <Name>Galaxy.Base.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Purchase.Domain\Purchase.Domain.csproj">
+      <Project>{32037A8A-C49D-42D9-921B-E038A52953E1}</Project>
+      <Name>Purchase.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
