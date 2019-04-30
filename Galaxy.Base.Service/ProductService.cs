@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Galaxy.Base.Data.DAL;
 using Galaxy.Base.Domain;
 using Galaxy.Base.Domain.DAL;
 using Galaxy.Base.Domain.ServiceInterface;

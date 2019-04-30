@@ -61,10 +61,6 @@
       <Project>{7B96AE5B-2DC7-4FA3-B32E-381ED2F7E339}</Project>
       <Name>Galaxy.Base.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Purchase.Service\Purchase.Service.csproj">
-      <Project>{a6f6bc77-7a49-4124-b4ae-977fe7d87563}</Project>
-      <Name>Purchase.Service</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
