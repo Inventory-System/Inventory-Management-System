@@ -9,5 +9,6 @@ namespace Sale.Domain.DAL
 {
    public interface ISaleProductDucumentRepository:IRepository<SaleProductDocument>
     {
+
     }
 }
