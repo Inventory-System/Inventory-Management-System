@@ -12,7 +12,7 @@ using Sale.Domain.DAL;
 
 namespace Sale.Data.DAL
 {
-    public class SaleUnitOfWorkRepository : UnitOfWork, IDisposable
+    public class SaleUnitOfWorkRepository : UnitOfWork
     {
         public ISaleDocumentRepository SaleDocumentRepository { get; private set; }
         public ISaleProductDucumentRepository SaleProductDucumentRepository { get;private set ;}

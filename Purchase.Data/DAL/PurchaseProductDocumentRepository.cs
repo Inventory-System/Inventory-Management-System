@@ -11,7 +11,7 @@ namespace Purchase.Data.DAL
 {
     class PurchaseProductDocumentRepository : Repository<PurchaseProductDocument>, IPurchaseProductDocumentRepository
     {
-        public PurchaseProductDocumentRepository(ISession session, ITransaction transaction) : base(session, transaction)
+        public PurchaseProductDocumentRepository(ISession session, ITransaction transaction) 
         {
         }
     }

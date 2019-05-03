@@ -12,9 +12,5 @@ namespace Sale.Data.DAL
 {
    public class SaleProductDocumentRepository:Repository<SaleProductDocument>,ISaleProductDucumentRepository
     {
-        public SaleProductDocumentRepository(ISession session, ITransaction transaction):base(session,transaction)
-       {
-           
-       }
     }
 }

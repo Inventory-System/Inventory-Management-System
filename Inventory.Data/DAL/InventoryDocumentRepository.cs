@@ -12,9 +12,6 @@ namespace Inventory.Data.DAL
 {
    public  class InventoryDocumentRepository:Repository<InventoryDocument> , IInventorytDocumentRepository
     {
-        public InventoryDocumentRepository(ISession session , ITransaction transaction) : base(session , transaction)
-        {
-
-        }
+       
     }
 }

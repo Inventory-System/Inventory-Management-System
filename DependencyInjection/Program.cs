@@ -25,7 +25,7 @@ namespace DependencyInjection
             _windsorContainer.Register(Component.For(typeof(IRepository<>)).ImplementedBy(typeof(Repository<>)));
 
             _windsorContainer.Register(Component.For(typeof(IUnitOfWork)).ImplementedBy(typeof(UnitOfWork)));
-            _windsorContainer.Resolve<ProductService>();
+          //  _windsorContainer.Resolve<ProductService>();
 
             
 

@@ -7,9 +7,6 @@ namespace Inventory.Data.DAL
 {
     public class InventoryProductDocumentRepository:Repository<InventoryProductDocument> , IInventoryProductDocumentRepository
     {
-        InventoryProductDocumentRepository(ISession session , ITransaction transaction):base(session , transaction)
-        {
-
-        }
+       
     }
 }
