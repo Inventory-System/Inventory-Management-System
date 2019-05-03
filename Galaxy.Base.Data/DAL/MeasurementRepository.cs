@@ -11,8 +11,5 @@ namespace Galaxy.Base.Data.DAL
 {
    public class MeasurementRepository : Repository<Measurement>, IMeasurementRepository
     {
-        public MeasurementRepository(ISession session, ITransaction transaction) : base(session, transaction)
-        {
-        }
     }
 }

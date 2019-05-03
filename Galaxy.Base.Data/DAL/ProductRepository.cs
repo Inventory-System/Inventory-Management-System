@@ -11,9 +11,8 @@ namespace Galaxy.Base.Data.DAL
 {
     public class ProductRepository: Repository<Product>, IProductRepository
     {
-        public ProductRepository(ISession session, ITransaction transaction) : base(session, transaction)
-        {
-            
-        }
+        public ProductRepository()
+        { }
+
     }
 }

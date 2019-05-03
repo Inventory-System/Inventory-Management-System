@@ -11,9 +11,5 @@ namespace Galaxy.Base.Data.DAL
 {
    public class FoctorRepository : Repository<Factor>,IFactorRepository
     {
-       public FoctorRepository(ISession session, ITransaction transaction) : base(session, transaction)
-       {
-           
-       }
     }
 }

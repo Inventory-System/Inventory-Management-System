@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sale.Domain", "Sale.Domain\Sale.Domain.csproj", "{8F2BF383-F1B1-4438-A99D-44E51BF3E484}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sale.Data", "Sale.Data\Sale.Data.csproj", "{18BB417D-9312-421C-A52B-2CB7F99FE3CC}"
@@ -30,6 +28,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.Base.Controller", "Galaxy.Base.Controller\Galaxy.Base.Controller.csproj", "{121AD2CB-4F92-4B85-AFCE-FEF354E9896B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Purchase.Controller", "Purchase.Controller\Purchase.Controller.csproj", "{C14BCEB1-1B6F-408B-8631-E16C927E6792}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "DependencyInjection\DependencyInjection.csproj", "{9590C06C-5A02-48D6-AC21-E9B39E2AD182}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller.Sale", "Controller.Sale\Controller.Sale.csproj", "{84474997-98FA-48E0-BD23-2F2601BEE3A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.Base.UnitTest", "Galaxy.Base.UnitTest\Galaxy.Base.UnitTest.csproj", "{5FBC71E8-1230-454E-8C3D-6ADE0D71C915}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +97,18 @@ Global
 		{C14BCEB1-1B6F-408B-8631-E16C927E6792}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C14BCEB1-1B6F-408B-8631-E16C927E6792}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C14BCEB1-1B6F-408B-8631-E16C927E6792}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9590C06C-5A02-48D6-AC21-E9B39E2AD182}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9590C06C-5A02-48D6-AC21-E9B39E2AD182}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9590C06C-5A02-48D6-AC21-E9B39E2AD182}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9590C06C-5A02-48D6-AC21-E9B39E2AD182}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84474997-98FA-48E0-BD23-2F2601BEE3A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84474997-98FA-48E0-BD23-2F2601BEE3A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84474997-98FA-48E0-BD23-2F2601BEE3A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84474997-98FA-48E0-BD23-2F2601BEE3A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FBC71E8-1230-454E-8C3D-6ADE0D71C915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FBC71E8-1230-454E-8C3D-6ADE0D71C915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FBC71E8-1230-454E-8C3D-6ADE0D71C915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FBC71E8-1230-454E-8C3D-6ADE0D71C915}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,10 +11,6 @@ namespace Galaxy.Base.Data.DAL
 {
    public class PartyRepository:Repository<Party>,IPartyRepository
     {
-       public PartyRepository(ISession session, ITransaction transaction) : base(session, transaction)
-       {
-           
-       }
 
     }
 }
