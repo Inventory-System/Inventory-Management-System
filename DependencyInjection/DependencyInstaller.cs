@@ -2,19 +2,13 @@
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 using NHibernate;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
+using Castle.Core;
 using Galaxy.Base.Data.DAL;
-using Galaxy.Base.Domain.DAL;
 using Galaxy.Base.Service;
 using Galaxy.Base.Domain;
 using FluentNHibernate.Cfg.Db;
 using FluentNHibernate.Cfg;
-using Castle.Core;
 
 namespace DependencyInjection
 {

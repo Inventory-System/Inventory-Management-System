@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Galaxy.Base.Data.DAL;
+using NHibernate;
 
 
 namespace Inventory.Data.DAL
@@ -13,6 +14,10 @@ namespace Inventory.Data.DAL
     {
         public IInventorytDocumentRepository InventoryDocumentRepository { get; private set; }
         public IInventoryProductDocumentRepository InventoryProductDocumentRepository { get; private set; }
+
+        public InventoryUnitOfWorkRepository(ISessionFactory sessionFactory) : base(sessionFactory)
+        {
+        }
     }
 }
 

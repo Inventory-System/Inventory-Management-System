@@ -11,6 +11,8 @@ using Galaxy.Base.Domain.ServiceInterfaces;
 using Galaxy.Base.Data.DAL;
 using Galaxy.Base.Domain.DAL;
 using Galaxy.Base.Domain;
+using NHibernate.Mapping;
+using Component = Castle.MicroKernel.Registration.Component;
 
 namespace DependencyInjection
 {
@@ -23,11 +25,10 @@ namespace DependencyInjection
             InitializeWindsor();
             _windsorContainer.Register(Component.For(typeof(IService<>)).ImplementedBy(typeof(Service<>)).LifestyleTransient());
             _windsorContainer.Register(Component.For(typeof(IRepository<>)).ImplementedBy(typeof(Repository<>)));
-
             _windsorContainer.Register(Component.For(typeof(IUnitOfWork)).ImplementedBy(typeof(UnitOfWork)));
           //  _windsorContainer.Resolve<ProductService>();
+            Console.ReadLine();
 
-            
 
         }
 
