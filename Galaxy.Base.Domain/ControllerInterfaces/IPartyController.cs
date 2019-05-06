@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Galaxy.Base.Domain.ControllerInterfaces
 {
-    interface IPartyController
+    public interface IPartyController:IController<Party>
     {
     }
 }

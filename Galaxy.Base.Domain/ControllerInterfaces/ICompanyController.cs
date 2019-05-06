@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Galaxy.Base.Domain.ControllerInterfaces
 {
-    class ICompanyController
+    public interface ICompanyController : IController<Company>
     {
     }
 }

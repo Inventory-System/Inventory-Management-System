@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Galaxy.Base.Domain.ControllerInterfaces
 {
-    interface IDocumentController
+    public interface IDocumentController: IController<Document>
     {
     }
 }
