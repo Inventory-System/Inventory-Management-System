@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Galaxy.Base.Data.DAL;
-using NHibernate;
 
-namespace Sale.Data.DAL
+namespace Galaxy.Base.Data
 {
-   public class SaleDocumentRepository:Repository<SaleDocument>
+    [AttributeUsage(AttributeTargets.Method)]
+    public class UnitOfWorkAttribute : Attribute
     {
+
     }
 }

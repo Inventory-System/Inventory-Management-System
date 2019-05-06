@@ -13,66 +13,76 @@ namespace Galaxy.Base.Data.DAL
 {
     public class UnitOfWork : IUnitOfWork 
     {
-        public ISession Session { get; private set; }
-        public ITransaction Transaction { get; private set; }
-        //public IProductRepository ProductRepository { get; private set; }
-        //public IMeasurementRepository MeasurementRepository { get; private set; }
-        //public IFactorRepository FactorRepository { get;private set; }
-        //public IDocumentRepository DocumentRepository { get;private set; }
-        //public IPartyRepository PartyRepository { get; private set; }
-        //public IPersonRepository PersonRepository { get; private set; }
-        //public ICompanyRepository CompanyRepository { get; private set; }
+    
+        public static UnitOfWork Current
+    {
+        get { return _current; }
+        set { _current = value; }
+    }
+    [ThreadStatic]
+    private static UnitOfWork _current;
 
-        public UnitOfWork()
+    /// <summary>
+    /// Gets Nhibernate session object to perform queries.
+    /// </summary>
+    public ISession Session { get; private set; }
+
+    /// <summary>
+    /// Reference to the session factory.
+    /// </summary>
+    private readonly ISessionFactory _sessionFactory;
+
+    /// <summary>
+    /// Reference to the currently running transcation.
+    /// </summary>
+    private ITransaction _transaction;
+
+    /// <summary>
+    /// Creates a new instance of NhUnitOfWork.
+    /// </summary>
+    /// <param name="sessionFactory"></param>
+    public UnitOfWork(ISessionFactory sessionFactory)
+    {
+        _sessionFactory = sessionFactory;
+    }
+
+    /// <summary>
+    /// Opens database connection and begins transaction.
+    /// </summary>
+    public void BeginTransaction()
+    {
+        Session = _sessionFactory.OpenSession();
+        _transaction = Session.BeginTransaction();
+    }
+
+    /// <summary>
+    /// Commits transaction and closes database connection.
+    /// </summary>
+    public void Commit()
+    {
+        try
         {
-
-            Session = FluentNHibernateHelper.OpenSesseion();
-            BeginTransaction();
-            //ProductRepository = new ProductRepository(Session, Transaction);
-            //MeasurementRepository = new MeasurementRepository(Session, Transaction);
-            //FactorRepository = new FoctorRepository(Session, Transaction);
-            //DocumentRepository=new DocumentRepository(Session,Transaction);
-            //PartyRepository=new PartyRepository(Session,Transaction);
-            //CompanyRepository = new CompanyRepository(Session, Transaction);
-            //PersonRepository=new PersonRepository(Session,Transaction);
-
+            _transaction.Commit();
         }
-
-
-        public void BeginTransaction()
+        finally
         {
-            Transaction = Session.BeginTransaction();
+            Session.Close();                
         }
+    }
 
-        public void Complete()
+    /// <summary>
+    /// Rollbacks transaction and closes database connection.
+    /// </summary>
+    public void Rollback()
+    {
+        try
         {
-            Transaction.Commit();
+            _transaction.Rollback();
         }
-
-        public void RollbackTransaction()
+        finally
         {
-            Transaction.Rollback();
-            CloseTransaction();
-            CloseSession();
+            Session.Close();                
         }
-
-        public void CloseTransaction()
-        {
-            Transaction.Dispose();
-            Transaction = null;
-        }
-
-        public void CloseSession()
-        {
-            Session.Close();
-            Session.Dispose();
-            Session = null;
-        }
-
-        public void Dispose()
-        {
-            if (Session != null) Session.Dispose();
-            if (Transaction != null) Transaction.Dispose();
-        }
+    }
     }
 }

@@ -6,10 +6,7 @@ using Galaxy.Base.Domain;
 using NHibernate;
 namespace Galaxy.Base.Data.DAL
 {
-    public class PersonRepository : Repository<Person>,IPersonRepository
+    public class PersonRepository : Repository<Person>, IPersonRepository, IRepository<Person>
     {
-        public PersonRepository(ISession session , ITransaction transaction) : base(session , transaction)
-        {
-        }
     }
 }

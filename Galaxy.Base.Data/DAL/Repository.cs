@@ -14,17 +14,18 @@ namespace Galaxy.Base.Data.DAL
 {
     public class Repository<T> : IRepository<T> where T : BaseClass
     {
-        protected readonly ISession Session = null;
-        protected readonly ITransaction Transaction = null;
 
-        public Repository(ISession session, ITransaction transaction)
+
+        public Repository() 
         {
-            Session = session;
-            Transaction = transaction;
+        
         }
+       
+        protected ISession Session { get { return UnitOfWork.Current.Session; } }
 
         public void Create(T entity)
         {
+            entity.Id = Guid.NewGuid();
             Session.Save(entity);
         }
 

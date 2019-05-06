@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Galaxy.Base.Data.DAL;
-using NHibernate;
 
-namespace Sale.Data.DAL
+namespace Galaxy.Base.Controller
 {
-   public class SaleDocumentRepository:Repository<SaleDocument>
+    class DocumentCotroller
     {
     }
 }

@@ -13,7 +13,7 @@ namespace Galaxy.Base.Domain.DAL
         T Read(Guid id); 
         void Delete(Guid id); 
 
-        //   object Find(Expression<Func<T, bool>> expression);
+        //   object Find(Expression<Func<T, bool>> expression); 
         //  void AddRange(List<T> entities);
         //   void RemoveRange(List<T> entities);
     }

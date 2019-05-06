@@ -67,7 +67,7 @@
     <Compile Include="Convertions\CustomIdConvention.cs" />
     <Compile Include="DAL\CompanyRepository.cs" />
     <Compile Include="DAL\DocumentRepository.cs" />
-    <Compile Include="DAL\FoctorRepository.cs" />
+    <Compile Include="DAL\FactorRepository.cs" />
     <Compile Include="DAL\PartyRepository.cs" />
     <Compile Include="DAL\PersonRepository.cs" />
     <Compile Include="DAL\UnitOfWork.cs" />
@@ -87,6 +87,7 @@
     <Compile Include="Mapping\SubsidiaryUnitMap.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitOfWorkAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

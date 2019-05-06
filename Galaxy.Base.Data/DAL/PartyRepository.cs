@@ -9,12 +9,8 @@ using NHibernate;
 
 namespace Galaxy.Base.Data.DAL
 {
-   public class PartyRepository:Repository<Party>,IPartyRepository
+    public class PartyRepository : Repository<Party>, IPartyRepository, IRepository<Party>
     {
-       public PartyRepository(ISession session, ITransaction transaction) : base(session, transaction)
-       {
-           
-       }
 
     }
 }

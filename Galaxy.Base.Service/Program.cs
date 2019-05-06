@@ -11,7 +11,7 @@ namespace Galaxy.Base.Service
 {
     public class Program
     {
-        public static IUnitOfWork unitOfWork { get; set; }
+      //  public static IUnitOfWork unitOfWork { get; set; }
 
         static void Main(string[] args)
         {

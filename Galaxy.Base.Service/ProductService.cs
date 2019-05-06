@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Galaxy.Base.Domain;
 using Galaxy.Base.Domain.DAL;
 using Galaxy.Base.Domain.ServiceInterface;
+using Galaxy.Base.Domain.ServiceInterfaces;
 
 namespace Galaxy.Base.Service
 {
