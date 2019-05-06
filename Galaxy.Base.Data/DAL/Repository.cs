@@ -25,6 +25,7 @@ namespace Galaxy.Base.Data.DAL
 
         public void Create(T entity)
         {
+            entity.Id = Guid.NewGuid();
             Session.Save(entity);
         }
 

@@ -65,7 +65,7 @@
     <Compile Include="ServiceInterfaces\ICompanyService.cs" />
     <Compile Include="ServiceInterfaces\IDocumentService.cs" />
     <Compile Include="ServiceInterfaces\IFactorService.cs" />
-    <Compile Include="ServiceInterfaces\IMeasurmentService.cs" />
+    <Compile Include="ServiceInterfaces\IMeasurementService.cs" />
     <Compile Include="ServiceInterfaces\IPartyService.cs" />
     <Compile Include="ServiceInterfaces\IPersonService.cs" />
     <Compile Include="ServiceInterfaces\IProductService.cs" />

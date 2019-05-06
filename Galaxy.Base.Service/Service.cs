@@ -1,4 +1,5 @@
 ﻿using System;
+using Galaxy.Base.Data;
 using Galaxy.Base.Domain;
 using Galaxy.Base.Domain.DAL;
 using Galaxy.Base.Domain.ServiceInterfaces;
@@ -13,12 +14,15 @@ namespace Galaxy.Base.Service
         {
             this.repository = repository;
         }
+
+        [UnitOfWork]
         public void Create(T entity)
         {
             repository.Create(entity);
         }
 
 
+        [UnitOfWork]
         public T Read(Guid id)
         {
             return repository.Read(id);
@@ -26,6 +30,8 @@ namespace Galaxy.Base.Service
         /// <summary>
         /////////////////////////////////////////////////////////////////////-----IT MUST BE CHECK AGAIN-------///////////////////////////////////////////////////////////////////////////////////////
         /// </summary>
+        /// 
+        [UnitOfWork]
         public void Update(T entity)
         {
             T tmp;
@@ -40,6 +46,8 @@ namespace Galaxy.Base.Service
             }
            repository.Create(tmp);
         }
+
+        [UnitOfWork]
         public void Delete(Guid id)
         {
             repository.Delete(id);

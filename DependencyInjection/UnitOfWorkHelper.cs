@@ -5,6 +5,9 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Galaxy.Base.Data.DAL;
+using Galaxy.Base.Domain.DAL;
+using NHibernate.Mapping.ByCode;
 
 namespace DependencyInjection
 {
@@ -17,12 +20,14 @@ namespace DependencyInjection
 
         public static bool IsRepositoryClass(Type type)
         {
-            return typeof(IRepository).IsAssignableFrom(type);
+            return type.BaseType.Name==typeof(Repository<>).Name;
         }
 
         public static bool HasUnitOfWorkAttribute(MethodInfo methodInfo)
         {
-            return methodInfo.IsDefined(typeof(UnitOfWorkAttribute), true);
+            bool x;
+            x =methodInfo.IsDefined(typeof(UnitOfWorkAttribute), true);
+            return x;
         }
     }
 }

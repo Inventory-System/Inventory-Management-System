@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Galaxy.Base.Domain.ServiceInterfaces;
-
-namespace Galaxy.Base.Domain.ServiceInterface
+﻿namespace Galaxy.Base.Domain.ServiceInterfaces
 {
     public interface IProductService : IService<Product>
     {

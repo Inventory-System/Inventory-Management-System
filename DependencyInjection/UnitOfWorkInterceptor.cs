@@ -56,7 +56,7 @@ namespace DependencyInjection
 
                     }
 
-                    throw;
+      throw;
                 }
             }
             finally

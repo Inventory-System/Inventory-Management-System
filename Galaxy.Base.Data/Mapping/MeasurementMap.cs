@@ -8,6 +8,7 @@ namespace Galaxy.Base.Data.Mapping
     {
         public void Override(AutoMapping<Measurement> mapping)
         {
+       //     mapping.Id(s => s.Id).GeneratedBy.Assigned();
             mapping.Map(x => x.Name).Length(20).Not.Nullable();
         }
     }
