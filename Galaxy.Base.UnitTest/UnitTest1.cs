@@ -13,7 +13,7 @@ namespace Galaxy.Base.UnitTest
         [TestMethod]
         public void TestMethod1()
         {
-            var measurmentCm = new Measurement { Code = 5555, Name = "test" };
+            var measurmentCm = new Measurement { Code = 5555, Name = "test2" };
       //      var product1 = new Product { Code = 8888, Name = "Union"};
             var registerService = WebConfiguration.RegisterProductService();
             registerService.Create(measurmentCm);
