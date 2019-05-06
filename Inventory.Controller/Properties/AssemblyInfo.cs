@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Controller.Sale")]
+[assembly: AssemblyTitle("Inventory.Controller")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Controller.Sale")]
+[assembly: AssemblyProduct("Inventory.Controller")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("95750b28-9ebc-4b56-bf12-a52e88087952")]
+[assembly: Guid("2111ac87-b181-4d32-ad88-df1c206a7fec")]
 
 // Version information for an assembly consists of the following four values:
 //
