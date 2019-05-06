@@ -44,6 +44,14 @@
     <Compile Include="BaseClass.cs" />
     <Compile Include="CalculationFactor.cs" />
     <Compile Include="Company.cs" />
+    <Compile Include="ControllerInterfaces\ICompanyController.cs" />
+    <Compile Include="ControllerInterfaces\IController.cs" />
+    <Compile Include="ControllerInterfaces\IDocumentController.cs" />
+    <Compile Include="ControllerInterfaces\IFactorController.cs" />
+    <Compile Include="ControllerInterfaces\IMeasurementController.cs" />
+    <Compile Include="ControllerInterfaces\IPartyController.cs" />
+    <Compile Include="ControllerInterfaces\IPersonController.cs" />
+    <Compile Include="ControllerInterfaces\IProductController.cs" />
     <Compile Include="DAL\ICompanyRepository.cs" />
     <Compile Include="DAL\IDocumentRepository.cs" />
     <Compile Include="DAL\IFactorRepository.cs" />

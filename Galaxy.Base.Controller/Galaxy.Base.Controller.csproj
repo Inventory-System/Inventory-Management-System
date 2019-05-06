@@ -46,10 +46,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CompanyController.cs" />
+    <Compile Include="Controller.cs" />
     <Compile Include="DocumentCotroller.cs" />
     <Compile Include="FactorController.cs" />
     <Compile Include="MeasurementController.cs" />
     <Compile Include="PartyController.cs" />
+    <Compile Include="PersonController.cs" />
+    <Compile Include="ProductController.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

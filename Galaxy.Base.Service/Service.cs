@@ -8,24 +8,24 @@ namespace Galaxy.Base.Service
 {
     public class Service<T> :IService<T> where T : BaseClass
     {
-        private IRepository<T> repository;
+        private readonly IRepository<T> Repository;
 
         public Service(IRepository<T> repository)
         {
-            this.repository = repository;
+            this.Repository = repository;
         }
 
         [UnitOfWork]
         public void Create(T entity)
         {
-            repository.Create(entity);
+            Repository.Create(entity);
         }
 
 
         [UnitOfWork]
         public T Read(Guid id)
         {
-            return repository.Read(id);
+            return Repository.Read(id);
         }
         /// <summary>
         /////////////////////////////////////////////////////////////////////-----IT MUST BE CHECK AGAIN-------///////////////////////////////////////////////////////////////////////////////////////
@@ -35,7 +35,7 @@ namespace Galaxy.Base.Service
         public void Update(T entity)
         {
             T tmp;
-            tmp=repository.Read(entity.Id);
+            tmp=Repository.Read(entity.Id);
             if (tmp == null)
             {
                 tmp.Id = new Guid();
@@ -44,13 +44,13 @@ namespace Galaxy.Base.Service
             {
                 tmp.Id = entity.Id;
             }
-           repository.Create(tmp);
+           Repository.Create(tmp);
         }
 
         [UnitOfWork]
         public void Delete(Guid id)
         {
-            repository.Delete(id);
+            Repository.Delete(id);
         }
     }
 }

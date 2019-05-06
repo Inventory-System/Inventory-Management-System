@@ -9,9 +9,9 @@ using Galaxy.Base.Domain.ServiceInterfaces;
 
 namespace Galaxy.Base.Controller
 {
-    public class PartyController: Controller<Party> , IPartyController
+    public class PersonController : Controller<Person> , IPersonController
     {
-        public PartyController(IService<Party> Service) : base(Service)
+        public PersonController(IService<Person> Service) : base(Service)
         {
         }
     }
