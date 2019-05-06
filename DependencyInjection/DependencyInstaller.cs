@@ -2,14 +2,8 @@
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 using NHibernate;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using Galaxy.Base.Data.DAL;
-using Galaxy.Base.Domain.DAL;
 using Galaxy.Base.Service;
 using Galaxy.Base.Domain;
 using FluentNHibernate.Cfg.Db;
@@ -43,18 +37,14 @@ namespace DependencyInjection
                 //All services
                 Classes.FromAssembly(Assembly.GetAssembly(typeof(Service<>))).InSameNamespaceAs(typeof(Service<>)).WithService.DefaultInterfaces().LifestyleTransient()
                
-                //All MVC controllers
+                //All controllers
              //   Classes.FromThisAssembly().BasedOn<IController>().LifestyleTransient()
 
                 );
         }
 
 
-        /// <summary>
-        /// Creates NHibernate Session Factory.
-        /// </summary>
-        /// <returns>NHibernate Session Factory</returns>
-        /// 
+       
           public static ISessionFactory CreateSessionFactory()
         {
             string ConnectionString = "Data Source=T-SAFARI;Initial Catalog=testInventoryDB;User ID=sa;Password=s@123456";
@@ -70,13 +60,13 @@ namespace DependencyInjection
                 fluentConfiguration.Mappings(m => m.AutoMappings.Add(AutoMap.AssemblyOf<BaseClass>(cfgi).
                         UseOverridesFromAssemblyOf<BaseClass>().Conventions.Add(typeof(CustomIdConvention))).
                     Add(AutoMap.AssemblyOf<Document>(cfgi)));
-            ISessionFactory _sessionFactory = configuration.ExposeConfiguration(cfg =>
+            ISessionFactory sessionFactory = configuration.ExposeConfiguration(cfg =>
                 {
                     new SchemaUpdate(cfg).Execute(true, true);
                     //  new SchemaExport(cfg).Create(true, true);
                 })
                 .BuildSessionFactory();
-            return _sessionFactory;
+            return sessionFactory;
         }
          
 
@@ -87,8 +77,6 @@ namespace DependencyInjection
             {
                 handler.ComponentModel.Interceptors.Add(new InterceptorReference(typeof(UnitOfWorkInterceptor)));
             }
-
-            //Intercept all methods of classes those have at least one method that has UnitOfWork attribute.
             foreach (var method in handler.ComponentModel.Implementation.GetMethods())
             {
                 if (UnitOfWorkHelper.HasUnitOfWorkAttribute(method))
@@ -97,26 +85,6 @@ namespace DependencyInjection
                     return;
                 }
             }
-
-
-
-
-
-            //Intercept all methods of all repositories.
-            //if (UnitOfWorkHelper.IsRepositoryClass(handler.ComponentModel.Implementation))
-            //{
-            //    handler.ComponentModel.Interceptors.Add(new InterceptorReference(typeof(UnitOfWorkInterceptor)));
-            //}
-
-            ////Intercept all methods of classes those have at least one method that has UnitOfWork attribute.
-            //foreach (var method in handler.ComponentModel.Implementation.GetMethods())
-            //{
-            //    if (UnitOfWorkHelper.HasUnitOfWorkAttribute(method))
-            //    {
-            //        handler.ComponentModel.Interceptors.Add(new InterceptorReference(typeof(UnitOfWorkInterceptor)));
-            //        return;
-            //    }
-            //}
         }
     }
 }
