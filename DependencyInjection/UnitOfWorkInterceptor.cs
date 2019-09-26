@@ -1,10 +1,8 @@
-﻿
+﻿ 
 using Galaxy.Base.Data.DAL;
 using NHibernate;
-using Castle.Windsor;
 using System.Reflection;
 using Castle.DynamicProxy;
-using NHibernate;
 using IInterceptor = Castle.DynamicProxy.IInterceptor;
 
 namespace DependencyInjection

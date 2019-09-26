@@ -10,6 +10,7 @@ using FluentNHibernate.Cfg.Db;
 using FluentNHibernate.Cfg;
 using Castle.Core;
 using FluentNHibernate.Automapping;
+using Galaxy.Base.Controller;
 using Galaxy.Base.Data.Convertions;
 using Galaxy.Base.Data.Mapping;
 using NHibernate.Tool.hbm2ddl;
@@ -24,51 +25,40 @@ namespace DependencyInjection
 
             //Register all controllers
             container.Register(
-
-                //Nhibernate session factory
                 Component.For<ISessionFactory>().UsingFactoryMethod(CreateSessionFactory).LifeStyle.Singleton,
-
-                //Unitofwork interceptor
                 Component.For<UnitOfWorkInterceptor>().LifeStyle.Transient,
-
-                //All repoistories
-                Classes.FromAssembly(Assembly.GetAssembly(typeof(Repository<>))).InSameNamespaceAs(typeof(Repository<>)).WithService.DefaultInterfaces().LifestyleTransient(),
-
-                //All services
-                Classes.FromAssembly(Assembly.GetAssembly(typeof(Service<>))).InSameNamespaceAs(typeof(Service<>)).WithService.DefaultInterfaces().LifestyleTransient()
-               
-                //All controllers
-             //   Classes.FromThisAssembly().BasedOn<IController>().LifestyleTransient()
+                Classes.FromAssembly(Assembly.GetAssembly(typeof(MeasurementRepository))).InSameNamespaceAs(typeof(MeasurementRepository)).WithService.DefaultInterfaces().LifestyleTransient(),
+                Classes.FromAssembly(Assembly.GetAssembly(typeof(MeasurementService))).InSameNamespaceAs(typeof(MeasurementService)).WithService.DefaultInterfaces().LifestyleTransient(),
+                Classes.FromAssembly(Assembly.GetAssembly(typeof(MeasurementController))).InSameNamespaceAs(typeof(MeasurementController)).WithService.DefaultInterfaces().LifestyleTransient()
 
                 );
         }
 
 
-       
-          public static ISessionFactory CreateSessionFactory()
+
+        public static ISessionFactory CreateSessionFactory()
         {
-            string ConnectionString = "Data Source=T-SAFARI;Initial Catalog=testInventoryDB;User ID=sa;Password=s@123456";
+
+            var connStr = "Data Source=.;Initial Catalog=testInventoryDB;Integrated Security=True";
+            ////Write your Connection String here....
 
             var cfgi = new StoreConfiguration();
 
             var fluentConfiguration = Fluently.Configure()
                 .Database(MsSqlConfiguration.MsSql2012
-                    .ConnectionString(ConnectionString)
+                    .ConnectionString(connStr)
                     .ShowSql()
                 );
             var configuration =
-                fluentConfiguration.Mappings(m => m.AutoMappings.Add(AutoMap.AssemblyOf<BaseClass>(cfgi).
-                        UseOverridesFromAssemblyOf<BaseClass>().Conventions.Add(typeof(CustomIdConvention))).
-                    Add(AutoMap.AssemblyOf<Document>(cfgi)));
-            ISessionFactory sessionFactory = configuration.ExposeConfiguration(cfg =>
-                {
-                    new SchemaUpdate(cfg).Execute(true, true);
-                    //  new SchemaExport(cfg).Create(true, true);
-                })
+                fluentConfiguration.Mappings(m =>
+                    m.AutoMappings
+                        .Add(AutoMap.AssemblyOf<BaseClass>(cfgi).UseOverridesFromAssemblyOf<BaseClass>().Conventions
+                            .Add(typeof(CustomIdConvention))).Add(AutoMap.AssemblyOf<Document>(cfgi)));
+            return configuration.ExposeConfiguration(cfg => { new SchemaUpdate(cfg).Execute(true, true); })
                 .BuildSessionFactory();
-            return sessionFactory;
+
         }
-         
+
 
         void Kernel_ComponentRegistered(string key, Castle.MicroKernel.IHandler handler)
         {
