@@ -10,7 +10,6 @@ namespace Sale
 {
   public  class SaleProductDocument:ProductDocument<SaleDocument>
     {
-        DateTime datetime;
 
 
     }
