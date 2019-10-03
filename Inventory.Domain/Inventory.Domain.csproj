@@ -71,13 +71,13 @@
   <ItemGroup>
     <Compile Include="DAL\IInventoryProductDocumentRepository.cs" />
     <Compile Include="DAL\IInventorytDocumentRepository.cs" />
-    <Compile Include="DAL\IInventoryUnitOfWorkRepository.cs" />
+    <Compile Include="DAL\IInventoryUnitOfWork.cs" />
     <Compile Include="InventoryDocument.cs" />
     <Compile Include="InventoryProductDocument.cs" />
-    <Compile Include="InventoryServiceInterface\IInventoryProductDocumentService.cs" />
+    <Compile Include="InterfaceService\IInventoryProductDocumentService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="InventoryServiceInterface\IInventoryDocumentService.cs" />
+    <Compile Include="InterfaceService\IInventoryDocumentService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

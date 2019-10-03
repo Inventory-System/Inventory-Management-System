@@ -10,8 +10,6 @@ namespace Inventory.Domain
 {
     public class InventoryProductDocument : ProductDocument<InventoryDocument>
     {
-        public virtual DateTime EpxDate { set; get; }
-        public virtual DateTime DateIn { set; get; }
-        public virtual DateTime DateOut { set; get; }
+
     }
 }
