@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Galaxy.Base.Service;
 using Inventory.Domain;
 using Galaxy.Base.Domain.DAL;
-using Inventory.Domain.InventoryServiceInterface;
+using Inventory.Domain.InterfaceService;
 
-namespace InventoryServis
+namespace InventoryService
 {
     public class InventoryProductDocumentService : Service<InventoryProductDocument> , IInventoryProductDocumentService
     {
