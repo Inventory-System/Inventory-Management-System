@@ -10,7 +10,15 @@ namespace Inventory.Domain
 {
     public class InventoryDocument : Document<InventoryProductDocument>
     {
-        public virtual string InventoryName { set; get; }
-        public virtual string InventoryCode { set; get; }
+        public InventoryDocument()
+        {
+
+            //party.posiontion = Position.Supplier;
+            DateIn = DateTime.Now;
+        }
+        
+        public virtual DateTime EpxDate { set; get; }
+        public virtual DateTime DateIn { set; get; }
+        public virtual DateTime DateOut { set; get; }
     }
 }

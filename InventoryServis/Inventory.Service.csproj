@@ -7,8 +7,8 @@
     <ProjectGuid>{BCC4F4E3-33B1-4DF2-9077-2F0BF07652C4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>InventoryServis</RootNamespace>
-    <AssemblyName>InventoryServis</AssemblyName>
+    <RootNamespace>InventoryService</RootNamespace>
+    <AssemblyName>InventoryService</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -63,7 +63,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InventoryDocumentServic.cs" />
+    <Compile Include="InventoryDocumentService.cs" />
     <Compile Include="InventoryProductDocumentservice.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

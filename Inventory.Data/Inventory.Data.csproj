@@ -72,7 +72,7 @@
     <Compile Include="DAL\InventoryDocumentRepository.cs" />
     <Compile Include="DAL\InventoryProductDocumentMap.cs" />
     <Compile Include="DAL\InventoryUnitOfWorkRepository.cs" />
-    <Compile Include="InventoryHelper.cs" />
+    <Compile Include="InventoryFluentNhibernateHelper.cs" />
     <Compile Include="InventoryDocumentMap.cs" />
     <Compile Include="InventoryProductDocumentMap.cs" />
     <Compile Include="Program.cs" />

@@ -13,9 +13,9 @@ namespace Inventory.Data
     {
         public void Override(FluentNHibernate.Automapping.AutoMapping<InventoryDocument> mapping)
         {
-            mapping.Map(c => c.InventoryCode).Column("InventoryCode");
-           mapping.Map(c => c.InventoryName).Column("InventoryName");
-           mapping.Table("Inventory");
+            mapping.Map(c => c.DateIn).Column("InventoryDateIn");
+           mapping.Map(c => c.DateOut).Column("InventoryDateOut");
+           mapping.Map(c => c.EpxDate).Column("InventoryExpDate");
         }
     }
 }
