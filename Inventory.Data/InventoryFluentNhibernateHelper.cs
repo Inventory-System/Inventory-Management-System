@@ -27,7 +27,7 @@ namespace Inventory.Data
             return false;
         }
     }
-    public class InventoryHelper
+    public class InventoryFluentNhibernateHelper
     {
 
         private static ISessionFactory _sessionFactory;

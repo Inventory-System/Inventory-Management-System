@@ -11,10 +11,7 @@ namespace Inventory.Data
     {
         static void Main(string[] args)
         {
-            using (var session = InventoryHelper.OpenSesseion())
-            {
-
-            }
+           
             Console.ReadKey();
         }
     }
