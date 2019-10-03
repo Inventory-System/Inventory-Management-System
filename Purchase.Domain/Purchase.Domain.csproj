@@ -44,7 +44,7 @@
     <Compile Include="DAL\IPurchaseDocumentRepository.cs" />
     <Compile Include="DAL\IPurchaseProductDocumentRepository.cs" />
     <Compile Include="DAL\IPurchaseUnitOfWork.cs" />
-    <Compile Include="InterfaceService\IPurcaseProductDocumentService.cs" />
+    <Compile Include="InterfaceService\IPurchaseProductDocumentService.cs" />
     <Compile Include="InterfaceService\IPurcasheDocumentService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

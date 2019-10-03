@@ -7,7 +7,7 @@ using Galaxy.Base.Domain.ServiceInterfaces;
 
 namespace Purchase.Domain.ServiceInterface
 {
-    public interface IPurcasheDocumentService:IService<PurchaseDocument>
+    public interface IPurchaseDocumentService:IService<PurchaseDocument>
     {
     }
 }
