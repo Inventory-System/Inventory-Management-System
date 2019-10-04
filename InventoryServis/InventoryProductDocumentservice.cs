@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Galaxy.Base.Service;
 using Inventory.Domain;
 using Galaxy.Base.Domain.DAL;
-using Inventory.Domain.InterfaceService;
+using Inventory.Domain.ServiceInterface;
 
 namespace InventoryService
 {
