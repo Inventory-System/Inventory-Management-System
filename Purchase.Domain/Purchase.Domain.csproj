@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControllerInterface\IPurcahseProductDocumentController.cs" />
+    <Compile Include="ControllerInterface\IPurchaseDocumentController.cs" />
     <Compile Include="DAL\IPurchaseDocumentRepository.cs" />
     <Compile Include="DAL\IPurchaseProductDocumentRepository.cs" />
     <Compile Include="DAL\IPurchaseUnitOfWork.cs" />
