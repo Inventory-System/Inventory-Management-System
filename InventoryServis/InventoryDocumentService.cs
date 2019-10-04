@@ -10,9 +10,9 @@ using Inventory.Domain.ServiceInterface;
 
 namespace InventoryService
 {
-    public class InventoryDocumentServic : Service<InventoryDocument> , IInventoryDocumentService
+    public class InventoryDocumentService : Service<InventoryDocument> , IInventoryDocumentService
     {
-        public InventoryDocumentServic(IRepository<InventoryDocument> repository): base(repository)
+        public InventoryDocumentService(IRepository<InventoryDocument> repository): base(repository)
         {
  
         }
