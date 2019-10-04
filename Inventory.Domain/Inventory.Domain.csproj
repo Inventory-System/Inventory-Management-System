@@ -74,10 +74,10 @@
     <Compile Include="DAL\IInventoryUnitOfWork.cs" />
     <Compile Include="InventoryDocument.cs" />
     <Compile Include="InventoryProductDocument.cs" />
-    <Compile Include="InterfaceService\IInventoryProductDocumentService.cs" />
+    <Compile Include="ServiceInterface\IInventoryProductDocumentService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="InterfaceService\IInventoryDocumentService.cs" />
+    <Compile Include="ServiceInterface\IInventoryDocumentService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -88,6 +88,9 @@
       <Project>{7b96ae5b-2dc7-4fa3-b32e-381ed2f7e339}</Project>
       <Name>Galaxy.Base.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ControllerInterface\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
