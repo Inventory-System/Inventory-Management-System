@@ -69,6 +69,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControllerInterface\IInventoryDocumentController.cs" />
+    <Compile Include="ControllerInterface\IInventoryProductDocumentController.cs" />
     <Compile Include="DAL\IInventoryProductDocumentRepository.cs" />
     <Compile Include="DAL\IInventorytDocumentRepository.cs" />
     <Compile Include="DAL\IInventoryUnitOfWork.cs" />
@@ -84,13 +86,15 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Galaxy.Base.Controller\Galaxy.Base.Controller.csproj">
+      <Project>{121AD2CB-4F92-4B85-AFCE-FEF354E9896B}</Project>
+      <Name>Galaxy.Base.Controller</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Galaxy.Base.Domain\Galaxy.Base.Domain.csproj">
       <Project>{7b96ae5b-2dc7-4fa3-b32e-381ed2f7e339}</Project>
       <Name>Galaxy.Base.Domain</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ControllerInterface\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

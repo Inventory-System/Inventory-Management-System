@@ -42,11 +42,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InventoryDocumentController.cs" />
+    <Compile Include="InventoryProductDocumentController.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Galaxy.Base.Controller\Galaxy.Base.Controller.csproj">
+      <Project>{121ad2cb-4f92-4b85-afce-fef354e9896b}</Project>
+      <Name>Galaxy.Base.Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Galaxy.Base.Domain\Galaxy.Base.Domain.csproj">
+      <Project>{7B96AE5B-2DC7-4FA3-B32E-381ED2F7E339}</Project>
+      <Name>Galaxy.Base.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inventory.Domain\Inventory.Domain.csproj">
+      <Project>{AA96CBF6-E5E9-4571-A217-7AC691D4206B}</Project>
+      <Name>Inventory.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
