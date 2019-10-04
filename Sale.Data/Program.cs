@@ -10,10 +10,10 @@ namespace Sale.Data
     {
         static void Main(string[] args)
         {
-            using (var session = FluentNHibernateHelper.OpenSesseion())
-            {
+            //using (var session = FluentNHibernateHelper.OpenSesseion())
+            //{
 
-            }
+            //}
         }
     }
 }
