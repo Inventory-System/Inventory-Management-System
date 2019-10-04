@@ -46,9 +46,29 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaleDocuementController.cs" />
+    <Compile Include="SaleProductDocumentController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Galaxy.Base.Controller\Galaxy.Base.Controller.csproj">
+      <Project>{121ad2cb-4f92-4b85-afce-fef354e9896b}</Project>
+      <Name>Galaxy.Base.Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Galaxy.Base.Data\Galaxy.Base.Data.csproj">
+      <Project>{28ff5ffb-1d67-4a3f-b32f-8e36f9a09abd}</Project>
+      <Name>Galaxy.Base.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Galaxy.Base.Domain\Galaxy.Base.Domain.csproj">
+      <Project>{7B96AE5B-2DC7-4FA3-B32E-381ED2F7E339}</Project>
+      <Name>Galaxy.Base.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sale.Domain\Sale.Domain.csproj">
+      <Project>{8f2bf383-f1b1-4438-a99d-44e51bf3e484}</Project>
+      <Name>Sale.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
