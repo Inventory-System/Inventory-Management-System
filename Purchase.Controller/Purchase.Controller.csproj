@@ -43,9 +43,28 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseDocumentController.cs" />
+    <Compile Include="PurchaseProductDocumentController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Galaxy.Base.Controller\Galaxy.Base.Controller.csproj">
+      <Project>{121ad2cb-4f92-4b85-afce-fef354e9896b}</Project>
+      <Name>Galaxy.Base.Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Galaxy.Base.Domain\Galaxy.Base.Domain.csproj">
+      <Project>{7b96ae5b-2dc7-4fa3-b32e-381ed2f7e339}</Project>
+      <Name>Galaxy.Base.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Purchase.Domain\Purchase.Domain.csproj">
+      <Project>{32037a8a-c49d-42d9-921b-e038a52953e1}</Project>
+      <Name>Purchase.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
