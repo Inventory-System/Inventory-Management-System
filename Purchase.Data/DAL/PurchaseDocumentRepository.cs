@@ -9,7 +9,7 @@ using Purchase.Domain.DAL;
 
 namespace Purchase.Data.DAL
 {
-    class PurchaseDocumentRepository : Repository<PurchaseDocument> , IPurchaseDocumentRepository
+    public class PurchaseDocumentRepository : Repository<PurchaseDocument> , IPurchaseDocumentRepository
     {
     }
 }
