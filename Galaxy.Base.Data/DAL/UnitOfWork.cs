@@ -8,9 +8,23 @@ using Galaxy.Base.Data.Mapping;
 using Galaxy.Base.Domain.DAL;
 using Galaxy.Base.Domain;
 using NHibernate;
+using FluentNHibernate.Automapping;
 
 namespace Galaxy.Base.Data.DAL
 {
+
+
+    public class StoreConfiguration : DefaultAutomappingConfiguration
+    {
+        public override bool ShouldMap(Type type)
+        {
+            if (type.IsSubclassOf(typeof(BaseClass)))
+            {
+                return true;
+            }
+            return false;
+        }
+    }
     public class UnitOfWork : IUnitOfWork 
     {
     
